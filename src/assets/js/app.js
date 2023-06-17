@@ -194,30 +194,3 @@ function showTabWholesale (number) {
 };
 
 
-
-  // Функция для создания и добавления элемента <link> в <head>
-  function loadCSS(href) {
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = href;
-    document.head.appendChild(link);
-  }
-
-  // Отложенная загрузка файлов CSS
-  window.addEventListener('load', function() {
-    loadCSS('assets/fonts/Montserrat/stylesheet.css');
-    loadCSS('assets/fonts/Gilroy/stylesheet.css');
-    loadCSS('assets/fonts/Raleway/stylesheet.css');
-    loadCSS('assets/fonts/icon-fonts/css/fontello.css');
-    loadCSS('assets/css/reset.min.css');
-    loadCSS('assets/css/style.min.css');
-    loadCSS('assets/css/fonts.min.css');
-    loadCSS('assets/css/elements.min.css');
-    loadCSS('assets/css/header.min.css');
-    loadCSS('assets/css/footer.min.css');
-    loadCSS('{{ link-element }}');
-    loadCSS('{{ link-swiper }}');
-    loadCSS('{{ link-pages }}');
-    loadCSS('{{ link-pages-two }}');
-  });
-

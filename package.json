@@ -23,6 +23,7 @@
         "gulp-sass": "^5.0.0",
         "gulp-strip-css-comments": "^2.0.0",
         "gulp-uglify": "^3.0.2",
+        "gulp-uglify-es": "^3.0.0",
         "panini": "^1.7.2",
         "sass": "^1.43.4",
         "webpack": "^5.64.3",

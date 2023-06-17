@@ -8,7 +8,7 @@ const removeComments = require('gulp-strip-css-comments');
 const rename = require("gulp-rename");
 const sass = require("gulp-sass")(require("sass"));
 const cssnano = require("gulp-cssnano");
-const uglify = require("gulp-uglify");
+const uglify = require("gulp-uglify-es").default; // Добавляем ".default" для gulp-uglify-es
 const plumber = require("gulp-plumber");
 const panini = require("panini");
 const del = require("del");
@@ -128,9 +128,9 @@ function cssWatch() {
     .on("end", browserSync.reload);
 }
 
-
 function js() {
   return src(path.src.js, { base: srcPath + 'assets/js/' })
+    .pipe(uglify()) // Используем плагин gulp-uglify-es для сжатия JavaScript
     .pipe(dest(path.build.js))
     .pipe(browserSync.reload({ stream: true }));
 }

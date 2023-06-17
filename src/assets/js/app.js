@@ -155,42 +155,8 @@ window.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-//Табуляция доставка и оплата
-const mainDelivery = document.querySelector('.main-delivery')
-function showTab (number) {
-  if(number===1){
-    mainDelivery.classList.remove('lorry-active', 'package-active' )
-    mainDelivery.classList.add('wallet-active')
-  }else if(number===2){
-    mainDelivery.classList.remove('wallet-active', 'package-active' )
-    mainDelivery.classList.add('lorry-active')
-  }else if(number===3){
-    mainDelivery.classList.remove('lorry-active', 'wallet-active' )
-    mainDelivery.classList.add('package-active')
-  }
-};
-// showTab(1);
 
-//Табуляция Оптовым и корпоративным клиентам
 
-const tabs = document.querySelector('.tabs')
-function showTabWholesale (number) {
-  if(number===1){
-    tabs.classList.remove('tab__shop', 'tab__horeca', 'tab__sport-club', 'tab__confectionery' );
-    tabs.classList.add('tab__super-market');
-  }else if(number===2){
-    tabs.classList.remove('tab__super-market', 'tab__horeca', 'tab__sport-club', 'tab__confectionery' );
-    tabs.classList.add('tab__shop');
-  }else if(number===3){
-    tabs.classList.remove('tab__super-market', 'tab__shop', 'tab__sport-club', 'tab__confectionery' );
-    tabs.classList.add('tab__horeca');
-  }else if(number===4){
-    tabs.classList.remove('tab__super-market', 'tab__shop', 'tab__horeca', 'tab__confectionery' );
-    tabs.classList.add('tab__sport-club');
-  }else if(number===5){
-    tabs.classList.remove('tab__super-market', 'tab__shop', 'tab__horeca', 'tab__sport-club' );
-    tabs.classList.add('tab__confectionery');
-  }
-};
+
 
 

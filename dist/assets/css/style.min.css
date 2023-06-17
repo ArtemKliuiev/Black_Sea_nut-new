@@ -4,7 +4,8 @@ html {
 
 body {
   color: #1A2F3F;
-  background-color: rgb(150, 156, 154);
+  background-color: rgb(120, 196, 170);
+  font-display: swap;
 }
 
 img {

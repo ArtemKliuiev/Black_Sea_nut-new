@@ -8,7 +8,7 @@ const removeComments = require('gulp-strip-css-comments');
 const rename = require("gulp-rename");
 const sass = require("gulp-sass")(require("sass"));
 const cssnano = require("gulp-cssnano");
-const uglify = require("gulp-uglify-es").default; // Добавляем ".default" для gulp-uglify-es
+const uglify = require("gulp-uglify-es").default;
 const plumber = require("gulp-plumber");
 const panini = require("panini");
 const del = require("del");
@@ -16,6 +16,7 @@ const notify = require("gulp-notify");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const browserSync = require("browser-sync").create();
+const webp = require("gulp-webp"); // Добавляем плагин gulp-webp
 
 /* Paths */
 const srcPath = 'src/';
@@ -47,6 +48,14 @@ const path = {
 };
 
 /* Tasks */
+
+// Определяем новую задачу для конвертации изображений в формат WebP
+function convertToWebP() {
+  return src(path.src.images)
+    .pipe(webp())
+    .pipe(dest(path.build.images))
+    .pipe(browserSync.reload({ stream: true }));
+}
 
 function serve() {
   browserSync.init({
@@ -130,7 +139,7 @@ function cssWatch() {
 
 function js() {
   return src(path.src.js, { base: srcPath + 'assets/js/' })
-    .pipe(uglify()) // Используем плагин gulp-uglify-es для сжатия JavaScript
+    .pipe(uglify())
     .pipe(dest(path.build.js))
     .pipe(browserSync.reload({ stream: true }));
 }
@@ -175,4 +184,5 @@ exports.fonts = fonts;
 exports.clean = clean;
 exports.build = build;
 exports.default = dev;
+exports.convertToWebP = convertToWebP; // Добавляем задачу конвертации в экспорт
 

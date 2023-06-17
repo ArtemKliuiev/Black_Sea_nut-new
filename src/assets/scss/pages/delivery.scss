@@ -1,0 +1,312 @@
+
+
+iframe{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/10;
+    grid-row: 1/10;
+}
+.delivery-top {
+    background: url(../../images/delivery/1.jpg) center/ cover no-repeat;
+    height: 300px;
+    &__title{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 62px;
+        line-height: 73px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 66px;
+    }
+}
+
+.order-info {
+    &__main{
+        max-width: 1330px;
+        margin: 0 auto 139px;
+        padding: 35px 20px 0;
+        display: grid;
+        grid-template: 1fr  / minmax(auto , 420px) 1fr minmax(auto , 770px);
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1A2F3F;
+        span{
+            font-family: 'Raleway';
+            font-style: italic;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        
+    }
+}
+.icon-wallet {
+    display: flex;
+    font-size: 38px;
+}
+.icon-lorry {
+    font-size: 42px;
+    display: flex;
+    span{
+        margin: 10px 0 0 10px ;
+    }
+}
+.icon-package {
+    display: flex;
+    font-size: 40px;
+    span{
+        margin: 10px 5px 0 10px ;
+    }
+}
+.order-pay {
+    grid-column: 1;
+    grid-row: 1;
+    display: none;
+    grid-template: 8px 20px 25px 50px 9px 45px 39px 50px 9px 45px 40px 50px 8px 50px 20px / 1fr ;
+    &__title {
+        grid-row: 2;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    &__cashless-title {
+        grid-row: 4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        letter-spacing: 0.2px;
+        max-width: 233px;
+    }
+    &__cashless-info {
+        grid-row: 6;
+    }
+    &__card-title {
+        grid-row: 8;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        letter-spacing: 0.2px;
+        max-width: 374px;
+    }
+    &__card-info {
+        grid-row: 10;
+    }
+    &__cash-title {
+        grid-row: 12;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        letter-spacing: 0.2px;
+        max-width: 208px;
+    }
+    &__cash-info {
+        grid-row: 14;
+    }
+}
+.delivery-return{
+    margin-bottom: 140px;
+}
+.order-image {
+    display: none;
+    grid-column: 3;
+    grid-row: 1;
+    img{
+        width: 100%;
+        max-height: 471px;
+        object-fit: cover;
+    }
+}
+.wallet-active{
+    .tabs {
+        &__button{
+            &:nth-child(1){
+                border-bottom: 3px solid  #337D5A;
+                color: #337D5A;
+                span{
+                    color: #1A2F3F;
+                }
+            }
+        }
+    }
+    .order-pay {
+        display: grid;
+    }
+    .order-image {
+        display: block;
+    }
+}
+.lorry-active{
+    .tabs {
+        &__button{
+            &:nth-child(2){
+                border-bottom: 3px solid  #337D5A;
+                color: #337D5A;
+                span{
+                    color: #1A2F3F;
+                }
+            }
+        }
+    }
+    .order-info {
+        &__main{
+            margin: 0;
+        }
+    }
+    .delivery-return{
+        display: grid;
+    }
+}
+.package-active{
+    .tabs {
+        &__main{
+            margin: 0;
+        }
+        &__button{
+            &:nth-child(3){
+                border-bottom: 3px solid  #337D5A;
+                color: #337D5A;
+                span{
+                    color: #1A2F3F;
+                }
+            }
+        }
+    }
+    .order-info {
+        &__main{
+            margin: 0;
+        }
+    }
+    .delivery-return{
+        display: grid;
+    }
+}
+
+
+.delivery-video {
+    background: url(../../images/delivery/3.jpg) center / cover no-repeat ;
+    height: 740px;
+    width: 100%;
+    margin: 60px 0 0 0;
+    display: grid;
+    justify-items: center;
+    grid-template: 240px 150px 23px 65px 25px 30px 1fr /1fr;
+		&__button {
+            grid-column: 1;
+            grid-row: 4;
+            background: url(../../images/svg/play-icon.svg) center no-repeat;
+            width: 65px;
+            margin-right: 20px;
+
+        }
+		&__video-title {
+            grid-column: 1;
+            grid-row: 2;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 45px;
+            line-height: 53px;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding-right: 14px;
+        }
+		&__video-info {
+            grid-column: 1;
+            grid-row: 6;
+            font-family: 'Raleway';
+            font-style: italic;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 28px;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+            text-align: center;
+            margin-right: 21px;
+        }
+}
+
+.ready{
+    .delivery-video {
+        background: none ;
+            &__button {
+                display: none;
+            }
+            &__video-title {
+                display: none;
+            }
+            &__video-info {
+                display: none;
+            }
+    }
+}
+.contact {
+    display: grid;
+    grid-template: 95px 518px 15px / 1fr minmax(auto, 739px);
+}
+////////////////////////////////////////////////////////////////
+@media (max-width: 1200px) {
+    .order-info {
+        &__main{
+            grid-template: auto 5vw auto  / 1fr;
+        }
+    }
+    .order-pay {
+        grid-column: 1;
+        grid-row: 1;
+        grid-template: 8px 20px 15px 50px 5px 45px 10px 50px 5px 45px 5px 50px 5px 40px / 1fr ;
+    }
+    .order-image {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .delivery-video {
+        height: 60vw;
+        grid-template: 1fr auto auto 65px auto auto  1fr /1fr;
+            &__video-title {
+                font-size: 22px;
+                line-height: 25px;
+                max-width: 600px;
+            }
+            &__video-info {
+                font-size: 18px;
+                line-height: 21px;
+            }
+    }
+
+}
+@media (max-width: 450px) {
+    .order-pay {
+        grid-template: 8px 20px 15px 50px 5px 45px 10px 50px 5px 45px 5px 50px 5px 40px / 1fr ;
+        &__title {
+            font-size: 12px;
+        }
+        &__cashless-title {
+            font-size: 12px;
+        }
+        &__cashless-info {
+            font-size: 12px;
+        }
+        &__card-title {
+            font-size: 12px;
+        }
+        &__card-info {
+            font-size: 12px;
+        }
+        &__cash-title {
+            font-size: 12px;
+        }
+        &__cash-info {
+            font-size: 12px;
+        }
+    }
+}

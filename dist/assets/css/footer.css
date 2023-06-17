@@ -1,0 +1,570 @@
+.fotter-wrapper {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+footer {
+    width: 100%;
+}
+
+#map {
+    max-width: 739px;
+    max-height: 518px;
+}
+
+.contact {
+    display: grid;
+    grid-template: 102px 518px 15px/1fr minmax(auto, 739px);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    margin-bottom: 120px;
+}
+
+.contact__info {
+    grid-row: 2;
+    grid-column: 1;
+    display: grid;
+    grid-template: 12px 64px 59px 46px 39px 20px 49px 22px 16px 25px 55px 21px 15px 30px 15px/1fr;
+}
+
+.contact__map {
+    grid-row: 2;
+    grid-column: 2;
+    max-height: 518px;
+}
+
+.contact__map-marker {
+    border: none;
+}
+
+.contact__title {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 53px;
+    letter-spacing: 0.01em;
+    color: #1A2F3F;
+    grid-row: 2;
+    grid-column: 1;
+    margin-left: -1px;
+}
+
+.contact__phone-link {
+    grid-row: 4;
+    grid-column: 1;
+    display: grid;
+    grid-template: 1fr/14px 16px 120px 45px 113px;
+    max-width: 400px;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contact__phone-img {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.contact__phone-img img {
+    width: 14px;
+    height: 14px;
+}
+
+.contact__phones {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.contact__phone-one {
+    padding-bottom: 5px;
+}
+
+.contact__links {
+    grid-row: 1;
+    grid-column: 5;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 2px;
+}
+
+.contact__mail {
+    grid-row: 6;
+    grid-column: 1;
+}
+
+.contact__mail img {
+    padding: 2px 0 0 0;
+}
+
+.contact__mail span {
+    margin: 0 0 0 10px;
+}
+
+.contact__sales {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    grid-row: 8;
+    grid-column: 1;
+}
+
+.contact__sales span {
+    padding-left: 9px;
+}
+
+.contact__sales-info {
+    grid-row: 10;
+    grid-column: 1;
+    max-width: 150px;
+    margin-left: 29px;
+}
+
+.contact__production {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    grid-row: 12;
+    grid-column: 1;
+}
+
+.contact__production span {
+    padding-left: 9px;
+}
+
+.contact__production-info {
+    grid-row: 14;
+    grid-column: 1;
+    max-width: 230px;
+    margin-left: 29px;
+}
+
+.bottom-menu {
+    display: grid;
+    grid-template: 1fr/220px 75px 1fr;
+    margin-bottom: 50px;
+}
+
+.bottom-menu__logo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.bottom-menu__logo-title {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #1A2F3F;
+    padding: 0 0 2px 8px;
+}
+
+.bottom-menu__menu {
+    grid-row: 1;
+    grid-column: 3;
+    display: grid;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-template: 1fr/auto 1fr 3px auto 1fr auto 1fr auto 1fr auto 1fr auto;
+}
+
+.bottom-menu__link {
+    padding-top: 18px;
+}
+
+.bottom-menu__link a {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: #1A2F3F;
+}
+
+.bottom-menu__link1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.bottom-menu__link2 {
+    grid-row: 1;
+    grid-column: 8;
+}
+
+.bottom-menu__link3 {
+    grid-row: 1;
+    grid-column: 6;
+    margin-left: -2px;
+}
+
+.bottom-menu__link4 {
+    grid-row: 1;
+    grid-column: 4;
+}
+
+.bottom-menu__link5 {
+    grid-row: 1;
+    grid-column: 10;
+}
+
+.bottom-menu__link7 {
+    grid-row: 1;
+    grid-column: 12;
+}
+
+.bottom-menu .active a {
+    color: #337D5A;
+}
+
+.bottom-line {
+    display: grid;
+    grid-template: 1fr/auto 1fr auto 1fr 77px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1A2F3F;
+    margin-bottom: 40px;
+}
+
+.bottom-line__production {
+    grid-row: 1;
+    grid-column: 1;
+    padding: 2px 0 0 0;
+}
+
+.bottom-line__production span {
+    color: rgb(51, 125, 90);
+}
+
+.bottom-line__production span:nth-child(1) {
+    font-weight: 600;
+}
+
+.bottom-line__rights-reserved {
+    grid-row: 1;
+    grid-column: 3;
+    padding: 2px 100px 0 0;
+}
+
+.bottom-line__links {
+    grid-row: 1;
+    grid-column: 5;
+    max-width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.bottom-line__links img:nth-child(2) {
+    max-width: 13px;
+    padding-bottom: 2px;
+}
+
+/*____________________________________________Adaptive____________________________________________________*/
+@media (max-width: 1200px) {
+    .contact {
+        grid-template: 15px 400px 15px 518px 15px/0.5fr 0.75fr 2fr 0.75fr 0.5fr;
+    }
+
+    .contact__info {
+        grid-row: 2;
+        grid-column: 1/6;
+        margin: 0 auto;
+        grid-template: 12px auto 1fr auto 1fr auto 16px auto 1fr/0.5fr auto 1fr auto 0.5fr;
+        width: 100%;
+    }
+
+    .contact__map {
+        grid-row: 4;
+        grid-column: 2/5;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .contact__title {
+        grid-column: 2;
+    }
+
+    .contact__phone-link {
+        grid-row: 4;
+        grid-column: 2;
+    }
+
+    .contact__links {
+        grid-row: 1;
+        grid-column: 5;
+    }
+
+    .contact__mail {
+        grid-row: 4;
+        grid-column: 4;
+    }
+
+    .contact__sales {
+        grid-row: 6;
+        grid-column: 2;
+    }
+
+    .contact__sales-info {
+        grid-row: 8;
+        grid-column: 2;
+    }
+
+    .contact__production {
+        grid-row: 6;
+        grid-column: 4;
+    }
+
+    .contact__production-info {
+        grid-row: 8;
+        grid-column: 4;
+    }
+
+    .contact #map {
+        max-width: 100%;
+        max-height: 518px;
+    }
+
+    .bottom-menu {
+        display: grid;
+        grid-template: 30px 50px 15px 1fr/0.5fr 3.5fr 0.5fr;
+        margin-bottom: 50px;
+    }
+
+    .bottom-menu__logo {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .bottom-menu__logo-title {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        color: #1A2F3F;
+        padding: 0 0 2px 8px;
+    }
+
+    .bottom-menu__menu {
+        grid-row: 4;
+        grid-column: 2;
+        display: grid;
+        -ms-flex-align: center;
+        align-items: center;
+        grid-template: auto 1fr auto 1fr auto 1fr auto 1fr auto 1fr auto/1fr;
+    }
+
+    .bottom-menu__link {
+        padding-top: 18px;
+    }
+
+    .bottom-menu__link1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .bottom-menu__link2 {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .bottom-menu__link3 {
+        grid-row: 5;
+        grid-column: 1;
+        margin-left: 0;
+    }
+
+    .bottom-menu__link4 {
+        grid-row: 7;
+        grid-column: 1;
+    }
+
+    .bottom-menu__link5 {
+        grid-row: 9;
+        grid-column: 1;
+    }
+
+    .bottom-menu__link7 {
+        grid-row: 11;
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact {
+        grid-template: 15px 500px 15px 518px 15px/0.5fr 0.75fr 2fr 0.75fr 0.5fr;
+    }
+
+    .contact__info {
+        grid-column: 3;
+        grid-template: 12px 64px 59px 50px 39px 20px 47px 20px 16px 25px 55px 21px 15px 30px 15px/1fr;
+    }
+
+    .contact__map-marker {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    .contact__title {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 53px;
+        letter-spacing: 0.01em;
+        color: #1A2F3F;
+        grid-row: 2;
+        grid-column: 1;
+        margin-left: -1px;
+    }
+
+    .contact__phone-link {
+        grid-row: 4;
+        grid-column: 1;
+        display: grid;
+        grid-template: 1fr/14px 16px 120px 45px 113px;
+        max-width: 400px;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .contact__phone-img {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .contact__phone-img img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .contact__phones {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    .contact__phone-one {
+        padding-bottom: 5px;
+    }
+
+    .contact__links {
+        grid-row: 1;
+        grid-column: 5;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 2px;
+    }
+
+    .contact__mail {
+        grid-row: 6;
+        grid-column: 1;
+    }
+
+    .contact__mail img {
+        padding: 2px 0 0 0;
+    }
+
+    .contact__mail span {
+        margin: 0 0 0 10px;
+    }
+
+    .contact__sales {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        grid-row: 8;
+        grid-column: 1;
+    }
+
+    .contact__sales span {
+        padding-left: 9px;
+    }
+
+    .contact__sales-info {
+        grid-row: 10;
+        grid-column: 1;
+        max-width: 150px;
+        margin-left: 29px;
+    }
+
+    .contact__production {
+        grid-row: 12;
+        grid-column: 1;
+    }
+
+    .contact__production span {
+        padding-left: 9px;
+    }
+
+    .contact__production-info {
+        grid-row: 14;
+        grid-column: 1;
+        max-width: 230px;
+        margin-left: 29px;
+    }
+
+    .bottom-line {
+        display: grid;
+        grid-template: 1fr 1fr/auto 1fr auto 1fr 77px;
+    }
+
+    .bottom-line__production {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .bottom-line__rights-reserved {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .bottom-line__links {
+        grid-row: 1/3;
+        grid-column: 5;
+        max-width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}

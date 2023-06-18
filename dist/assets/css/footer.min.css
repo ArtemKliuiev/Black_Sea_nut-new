@@ -29,7 +29,7 @@ footer {
   grid-row: 2;
   grid-column: 1;
   display: grid;
-  grid-template: 12px 64px 59px 46px 39px 20px 49px 22px 16px 25px 55px 21px 15px 30px 15px/1fr;
+  grid-template: 12px 64px 59px 46px 41px 20px 47px 22px 16px 25px 55px 21px 15px 30px 15px/1fr;
 }
 .contact__map {
   grid-row: 2;
@@ -89,14 +89,15 @@ footer {
 .contact__mail {
   grid-row: 6;
   grid-column: 1;
+  display: flex;
+  align-items: center;
 }
 .contact__mail img {
-  padding: 2px 0 0 0;
   height: 17px;
   width: 16px;
 }
 .contact__mail span {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 14px;
 }
 .contact__sales {
   font-family: "Raleway";
@@ -108,18 +109,18 @@ footer {
   grid-row: 8;
   grid-column: 1;
 }
+.contact__sales img {
+  width: 17px;
+  height: 16px;
+}
 .contact__sales span {
-  padding-left: 9px;
+  padding-left: 11px;
 }
 .contact__sales-info {
   grid-row: 10;
   grid-column: 1;
   max-width: 150px;
   margin-left: 29px;
-}
-.contact__sales-info img {
-  width: 17px;
-  height: 16px;
 }
 .contact__production {
   font-family: "Raleway";
@@ -262,15 +263,15 @@ footer {
   max-width: 13px;
   padding-bottom: 2px;
 }
-.bottom-line__links-image:nth-child(1) {
+.bottom-line__links-image1 img {
   width: 7px;
   height: 13px;
 }
-.bottom-line__links-image:nth-child(2) {
+.bottom-line__links-image2 img {
   height: 13px;
   width: 13px;
 }
-.bottom-line__links-image:nth-child(3) {
+.bottom-line__links-image3 img {
   width: 16px;
   height: 16px;
 }

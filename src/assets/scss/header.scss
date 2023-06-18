@@ -116,8 +116,8 @@ select {
   &__logo-image {
     padding: 3px 0 0 0;
     img{
-      height: 53px ;
-      width: 54px ;
+      height: 34px ;
+      width: 34px ;
     }
   }
 
@@ -602,7 +602,8 @@ select {
 
     &__logo-image {
       img {
-        max-width: 29px;
+        width: 29px;
+        height: 29px;
       }
     }
 
@@ -621,6 +622,10 @@ select {
       grid-row: 1;
       grid-column: 6;
       padding: 0 0 5px 0;
+      img{
+        width: 22px;
+        height: 24px;
+      }
     }
   }
 }

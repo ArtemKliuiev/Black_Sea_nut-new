@@ -103,8 +103,8 @@ select:focus {
   padding: 3px 0 0 0;
 }
 .request-call__logo-image img {
-  height: 53px;
-  width: 54px;
+  height: 34px;
+  width: 34px;
 }
 .request-call__loge-title {
   font-family: "Raleway";
@@ -499,7 +499,8 @@ select:focus {
     padding: 2px 0 0 0;
   }
   .adaptive-header__logo-image img {
-    max-width: 29px;
+    width: 29px;
+    height: 29px;
   }
   .adaptive-header__logo-title {
     font-family: "Raleway";
@@ -515,6 +516,10 @@ select:focus {
     grid-row: 1;
     grid-column: 6;
     padding: 0 0 5px 0;
+  }
+  .adaptive-header__basket img {
+    width: 22px;
+    height: 24px;
   }
 }
 .adaptive-menu-active .main {

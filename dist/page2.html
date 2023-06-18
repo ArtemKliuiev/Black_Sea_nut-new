@@ -304,6 +304,12 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" ></script>
   <script src="assets/js/production.js" defer async></script>
   <script src="assets/js/gallery.js" defer async></script>
+  <script>
+    window.addEventListener("load", function() {
+  var iframe = document.getElementById("map").querySelector("iframe");
+  iframe.style.display = "block";
+});
+  </script>
 </body>
 
 </html>

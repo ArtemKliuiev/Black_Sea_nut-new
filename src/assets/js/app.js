@@ -157,10 +157,7 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 
-window.addEventListener("load", function() {
-  var iframe = document.getElementById("map").querySelector("iframe");
-  iframe.style.display = "block";
-});
+
 
 
 

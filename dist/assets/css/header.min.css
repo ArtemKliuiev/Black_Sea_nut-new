@@ -67,6 +67,10 @@ select:focus {
   display: flex;
   justify-content: space-between;
 }
+.top-line__input img {
+  height: 15px;
+  width: 11px;
+}
 .top-line__registration {
   grid-column: 12;
 }

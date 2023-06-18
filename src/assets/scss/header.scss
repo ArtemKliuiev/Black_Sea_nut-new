@@ -73,6 +73,10 @@ select {
     grid-column: 10;
     display: flex;
     justify-content: space-between;
+    img{
+      height: 15px;
+      width: 11px;
+    }
   }
 
   &__registration {

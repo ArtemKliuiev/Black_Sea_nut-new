@@ -82,12 +82,18 @@ footer {
   align-items: center;
   padding-top: 2px;
 }
+.contact__links img {
+  width: 31px;
+  height: 31px;
+}
 .contact__mail {
   grid-row: 6;
   grid-column: 1;
 }
 .contact__mail img {
   padding: 2px 0 0 0;
+  height: 17px;
+  width: 16px;
 }
 .contact__mail span {
   margin: 0 0 0 10px;
@@ -111,6 +117,10 @@ footer {
   max-width: 150px;
   margin-left: 29px;
 }
+.contact__sales-info img {
+  width: 17px;
+  height: 16px;
+}
 .contact__production {
   font-family: "Raleway";
   font-style: normal;
@@ -120,6 +130,10 @@ footer {
   letter-spacing: 0.01em;
   grid-row: 12;
   grid-column: 1;
+}
+.contact__production img {
+  width: 16px;
+  height: 16px;
 }
 .contact__production span {
   padding-left: 9px;
@@ -133,7 +147,7 @@ footer {
 
 .bottom-menu {
   max-width: 1330px;
-  padding: 0 20px;
+  padding: 0;
   margin: 0 auto;
   display: grid;
   grid-template: 1fr/220px 75px 1fr;
@@ -144,6 +158,10 @@ footer {
   align-items: center;
   grid-row: 1;
   grid-column: 1;
+}
+.bottom-menu__logo img {
+  height: 53px;
+  width: 54px;
 }
 .bottom-menu__logo-title {
   font-family: "Raleway";
@@ -206,7 +224,6 @@ footer {
 
 .bottom-line {
   max-width: 1330px;
-  padding: 0 20px;
   margin: 0 auto;
   display: grid;
   grid-template: 1fr/auto 1fr auto 1fr 77px;
@@ -244,6 +261,18 @@ footer {
 .bottom-line__links img:nth-child(2) {
   max-width: 13px;
   padding-bottom: 2px;
+}
+.bottom-line__links-image:nth-child(1) {
+  width: 7px;
+  height: 13px;
+}
+.bottom-line__links-image:nth-child(2) {
+  height: 13px;
+  width: 13px;
+}
+.bottom-line__links-image:nth-child(3) {
+  width: 16px;
+  height: 16px;
 }
 
 /*____________________________________________Adaptive____________________________________________________*/

@@ -32,14 +32,26 @@ select {
 
   &__facebook {
     grid-column: 2;
+    img{
+      height: 13px;
+      width: 7px;
+    }
   }
 
   &__insta {
     grid-column: 4;
+    img{
+      height: 13px;
+      width: 13px;
+    }
   }
 
   &__you-tube {
     grid-column: 6;
+    img{
+      height: 16px;
+      width: 16px;
+    }
   }
 
   &__order-call {
@@ -103,6 +115,10 @@ select {
 
   &__logo-image {
     padding: 3px 0 0 0;
+    img{
+      height: 53px ;
+      width: 54px ;
+    }
   }
 
   &__loge-title {
@@ -123,6 +139,10 @@ select {
     display: flex;
     justify-content: space-between;
     padding: 0 0 8px 0;
+    img{
+      width: 31px;
+      height: 31px;
+    }
   }
 
   &__phones {
@@ -179,6 +199,10 @@ select {
     grid-column: 12;
     grid-row: 1;
     padding: 0 0 2px 0;
+    img{
+      width: 22px;
+      height: 24px;
+    }
   }
 }
 
@@ -488,6 +512,10 @@ select {
     &__phone-image {
       grid-row: 1;
       grid-column: 2;
+      img{
+        width: 10px;
+        height: 10px;
+      }
     }
 
     &__number {

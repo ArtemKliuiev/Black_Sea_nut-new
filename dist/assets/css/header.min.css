@@ -32,11 +32,23 @@ select:focus {
 .top-line__facebook {
   grid-column: 2;
 }
+.top-line__facebook img {
+  height: 13px;
+  width: 7px;
+}
 .top-line__insta {
   grid-column: 4;
 }
+.top-line__insta img {
+  height: 13px;
+  width: 13px;
+}
 .top-line__you-tube {
   grid-column: 6;
+}
+.top-line__you-tube img {
+  height: 16px;
+  width: 16px;
 }
 .top-line__order-call {
   display: none;
@@ -90,6 +102,10 @@ select:focus {
 .request-call__logo-image {
   padding: 3px 0 0 0;
 }
+.request-call__logo-image img {
+  height: 53px;
+  width: 54px;
+}
 .request-call__loge-title {
   font-family: "Raleway";
   font-style: normal;
@@ -107,6 +123,10 @@ select:focus {
   display: flex;
   justify-content: space-between;
   padding: 0 0 8px 0;
+}
+.request-call__linls img {
+  width: 31px;
+  height: 31px;
 }
 .request-call__phones {
   grid-column: 5;
@@ -155,6 +175,10 @@ select:focus {
   grid-column: 12;
   grid-row: 1;
   padding: 0 0 2px 0;
+}
+.request-call__basket img {
+  width: 22px;
+  height: 24px;
 }
 
 .link-row {
@@ -400,6 +424,10 @@ select:focus {
   .adaptive-header__phone-image {
     grid-row: 1;
     grid-column: 2;
+  }
+  .adaptive-header__phone-image img {
+    width: 10px;
+    height: 10px;
   }
   .adaptive-header__number {
     grid-row: 1;

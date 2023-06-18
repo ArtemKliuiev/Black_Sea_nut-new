@@ -161,38 +161,38 @@ function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 46.4310976, lng: 30.7147007 },
     zoom: 16,
-    styles: [
-      {
-        "featureType": "road",
-        "elementType": "geometry",
-        "stylers": [
-          { "lightness": 100 },
-          { "visibility": "simplified" }
-        ]
-      },
-      {
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [
-          { "visibility": "on" },
-          { "color": "#C6E2FF" }
-        ]
-      },
-      {
-        "featureType": "poi",
-        "elementType": "geometry.fill",
-        "stylers": [
-          { "color": "#C5E3BF" }
-        ]
-      },
-      {
-        "featureType": "road",
-        "elementType": "geometry.fill",
-        "stylers": [
-          { "color": "#D1D1B8" }
-        ]
-      }
-    ]
+    // styles: [
+    //   {
+    //     "featureType": "road",
+    //     "elementType": "geometry",
+    //     "stylers": [
+    //       { "lightness": 100 },
+    //       { "visibility": "simplified" }
+    //     ]
+    //   },
+    //   {
+    //     "featureType": "water",
+    //     "elementType": "geometry",
+    //     "stylers": [
+    //       { "visibility": "on" },
+    //       { "color": "#C6E2FF" }
+    //     ]
+    //   },
+    //   {
+    //     "featureType": "poi",
+    //     "elementType": "geometry.fill",
+    //     "stylers": [
+    //       { "color": "#C5E3BF" }
+    //     ]
+    //   },
+    //   {
+    //     "featureType": "road",
+    //     "elementType": "geometry.fill",
+    //     "stylers": [
+    //       { "color": "#D1D1B8" }
+    //     ]
+    //   }
+    // ]
   });
 
   var marker = new google.maps.Marker({

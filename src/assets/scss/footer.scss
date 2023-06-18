@@ -158,6 +158,9 @@ footer {
 //////////////////////////////////////////
 
 .bottom-menu {
+  max-width: 1330px;
+  padding: 0 20px;
+  margin: 0 auto;
   display: grid;
   grid-template: 1fr/ 220px 75px 1fr;
   margin-bottom: 50px;
@@ -245,6 +248,9 @@ footer {
 }
 
 .bottom-line {
+  max-width: 1330px;
+  padding: 0 20px;
+  margin: 0 auto;
   display: grid;
   grid-template: 1fr / auto 1fr auto 1fr 77px;
   font-family: 'Montserrat';

@@ -4,7 +4,7 @@ main {
 
 .top-video {
     height: 600px;
-    background: url(../../images/production/pic.jpg) center/cover no-repeat;
+    background: url(../../images/production/pic.webp) center/cover no-repeat;
 }
 
 .top-video__title {
@@ -140,15 +140,15 @@ main {
 }
 
 .swiper-slide1 {
-    background: url(../../images/production/2.png) center/cover no-repeat;
+    background: url(../../images/production/2.webp) center/cover no-repeat;
 }
 
 .swiper-slide2 {
-    background: url(../../images/production/4.jpg) center/cover no-repeat;
+    background: url(../../images/production/4.webp) center/cover no-repeat;
 }
 
 .swiper-slide3 {
-    background: url(../../images/production/pic.jpg) center/cover no-repeat;
+    background: url(../../images/production/pic.webp) center/cover no-repeat;
 }
 
 video {
@@ -262,7 +262,7 @@ video::-webkit-media-controls-start-playback-button {
 .pavel__history {
     grid-row: 1;
     grid-column: 5;
-    background: rgba(51, 125, 90, 0.97) url(../../images/png/Vector.png) 168% 112% no-repeat;
+    background: rgba(51, 125, 90, 0.97) url(../../images/png/Vector.webp) 168% 112% no-repeat;
     padding: 32px 20px 20px 47px;
 }
 
@@ -400,7 +400,7 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 .gallery__image1 {
-    background-image: url(../../images/gallery/45632373_2188773571449301_4610134036289945600_n.jpg);
+    background-image: url(../../images/gallery/45632373_2188773571449301_4610134036289945600_n.webp);
     display: grid;
     grid-template: 77px 25px 25px 50px 1fr/39px auto 1fr;
     position: relative;

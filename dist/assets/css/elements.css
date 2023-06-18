@@ -497,7 +497,7 @@ a {
     height: 740px;
     display: grid;
     justify-items: center;
-    background: url(../images/production/4.jpg) center/cover no-repeat;
+    background: url(../images/production/4.webp) center/cover no-repeat;
     grid-template: 231px 72px 22px 60px 21px 100px 1fr/1fr;
 }
 

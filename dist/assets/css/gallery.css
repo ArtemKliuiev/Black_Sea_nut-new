@@ -33,7 +33,7 @@ main {
 .gallery__image2 {
     grid-row: 1;
     grid-column: 7/10;
-    background: rgba(51, 125, 90, 0.97) url(../images/png/Vector.png) 158% 121% no-repeat;
+    background: rgba(51, 125, 90, 0.97) url(../images/png/Vector.webp) 158% 121% no-repeat;
     display: grid;
     grid-template: 77px 25px 25px 50px 1fr/39px auto 1fr;
 }
@@ -67,7 +67,7 @@ main {
 }
 
 .gallery__image3 {
-    background: url(../images/gallery/19554243_858907857607637_4214998944410660234_n.png) center/cover no-repeat;
+    background: url(../images/gallery/19554243_858907857607637_4214998944410660234_n.webp) center/cover no-repeat;
     grid-row: 3;
     grid-column: 1/10;
     display: grid;
@@ -141,7 +141,7 @@ main {
 .gallery__image6 {
     grid-row: 5;
     grid-column: 9;
-    background: url(../images/gallery/тулба.jpg);
+    background: url(../images/gallery/тулба.webp);
     display: grid;
     justify-items: center;
     grid-template: 110px 58px 27px 25px 15px 50px 1fr/1fr;
@@ -159,7 +159,7 @@ main {
 }
 
 .gallery__image9 {
-    background: url(../images/gallery/19554243_858907857607637_4214998944410660234_n.png);
+    background: url(../images/gallery/19554243_858907857607637_4214998944410660234_n.webp);
     grid-row: 9;
     grid-column: 1/10;
     display: grid;
@@ -181,7 +181,7 @@ main {
 .gallery__image12 {
     grid-row: 11;
     grid-column: 9;
-    background: url(../images/gallery/тулба.jpg);
+    background: url(../images/gallery/тулба.webp);
     display: grid;
     justify-items: center;
     grid-template: 110px 58px 27px 25px 15px 50px 1fr/1fr;

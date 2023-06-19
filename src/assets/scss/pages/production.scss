@@ -1,6 +1,4 @@
-main{
-    min-height: 6026px;
-}
+
 .top-video {
     height: 600px;
     background: url(../../images/production/pic.webp) center/ cover no-repeat;
@@ -34,8 +32,6 @@ main{
         height: 61px;
         background: url(../../images/svg/play-icon.svg);
     }
-}
-.video {
 }
 .address-line {
     &__main {}
@@ -110,41 +106,38 @@ main{
         bottom: 0;
         left: 0;
     }
-    &__video-play{
-        width: 61px;
-        height: 61px;
-        background: url(../../images/svg/play-icon.svg);
-        margin: 10px 0 0 6px;
-    }
     &__button-left {}
     &__button-right {}
+    &__swiper{
+        .swiper {
+            width: 100%;
+            height: 472px;
+        }
+        .swiper-wrapper {
+        }
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+            color: red;
+            align-items: center;
+            justify-items: center;
+            display: grid;
+        
+        }
+        .swiper-slide1 {
+            background: url(../../images/production/2.webp) center/ cover no-repeat;
+        }
+        .swiper-slide2 {
+            background: url(../../images/production/4.webp) center/ cover no-repeat;
+        }
+        .swiper-slide3 {
+            background: url(../../images/production/pic.webp) center/ cover no-repeat;
+        }
+    }
 }
 .icon-slider-arrow {
 }
-.swiper {
-    width: 100%;
-    height: 472px;
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-    width: 100%;
-    height: 100%;
-    color: red;
-    align-items: center;
-    justify-items: center;
-    display: grid;
 
-}
-.swiper-slide1 {
-    background: url(../../images/production/2.webp) center/ cover no-repeat;
-}
-.swiper-slide2 {
-    background: url(../../images/production/4.webp) center/ cover no-repeat;
-}
-.swiper-slide3 {
-    background: url(../../images/production/pic.webp) center/ cover no-repeat;
-}
 video{
 display: none;
 width: 100%;
@@ -160,53 +153,8 @@ video::-webkit-media-controls-panel {
   video::-webkit-media-controls-start-playback-button {
     display: none;
   }
-.slider-arrow {
-    width: 141px;
-    height: 58px;
-    display: grid;
-    grid-template: 1fr / 1fr 1fr;
-    color: rgba(255, 255, 255, 0.5);
-    background: #337D5A;
-    font-size: 17px;
-    &__button-left {
-        grid-row: 1;
-        grid-column: 1;
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        rotate: 180deg;
-        i{
-            margin: 1px 0px 0 2px;
-        }
-        &:active{
-            color: #FFFFFF;
-        }
-    }
-    &__button-right {
-        grid-row: 1;
-        grid-column: 2;
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        i{
-            margin: 0 0px 0px 0;
-        }
-        &:active{
-            color: #FFFFFF;
-        }
-    }
-}
-.ready{
 
-    .about-production{
-        &__video-play{
-            display: none;
-        }
-    }
-    video{
-        display: block;
-    }
-}
+
 .swiper-cube-shadow{
     display: none;
 }
@@ -388,54 +336,31 @@ video::-webkit-media-controls-panel {
         z-index: 2;
     }
 }
-.button{
+.button-gallery-production{
     width: 100%;
     max-width: 235px;
+    margin: 70px auto 98px;
 }
 .bottom-image {
     grid-template: 256px 72px 42px 60px 8px 100px 1fr / 1fr;
+    margin-bottom: 1px;
 }
-.bottom-news {
-    max-width: 1330px;
-    margin: 89px auto 0;
-    padding: 0 19px;
-    display: grid;
-    align-items: center;
-    grid-template: 50px 25px 40px / minmax(auto, 400px) 1fr 142px;
-    &__title {
-        grid-column: 1;
-        grid-row: 1;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 45px;
-        line-height: 53px;
-        letter-spacing: 0.01em;
-    }
-    &__info {
-        grid-column: 1;
-        grid-row: 3;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        letter-spacing: 0.01em;
-    }
-    &__slider-arrow {
-        grid-column: 3;
-        grid-row: 1/4;
-        margin-right: 1px;
-        .slider-arrow {
-            &__button-left {}
-            &__button-right {
-                margin:  0 4px 0 0;
-            }
-        }
-    }
-}
+
 .slider-arrow {
     &__button-left {}
     &__button-right {}
 }
-
+.news-row-production{
+    &__button{
+        display: block;
+        width: 225px;
+        height: 52px;
+        line-height: 52px;
+        margin: 100px auto 87px;
+    }
+    .news {
+        &__center--link{
+            margin-top: 2px;
+        }
+    }
+}

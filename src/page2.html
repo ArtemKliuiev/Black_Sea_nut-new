@@ -3,8 +3,10 @@ layout: default
 title: О производстве
 link-pages: assets/css/pages/production.min.css
 link-element: assets/css/gallery.min.css
+link-element-two: assets/css/news.min.css
 link-script: assets/js/production.js
 link-script-two: assets/js/gallery.js
+link-script-three: assets/js/store.js
 link-script-swiper: https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js
 link-swiper: https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css
 ---
@@ -28,11 +30,13 @@ link-swiper: https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css
       </div>
     </div>
     <div class="about-production__video">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide swiper-slide1 video"><div class="about-production__video-play"></div><video src="./assets/video/1.mp4" muted controls ></video></div>
-          <div class="swiper-slide swiper-slide2 video"><div class="about-production__video-play"></div><video src="./assets/video/1.mp4" muted controls></video></div>
-          <div class="swiper-slide swiper-slide3 video"><div class="about-production__video-play"></div><video src="./assets/video/1.mp4" muted controls></video></div>
+      <div class="about-production__swiper">
+        <div class="swiper about-production__slider-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide1 video"><div class="video-play"></div><video src="./assets/video/1.mp4" muted controls ></video></div>
+            <div class="swiper-slide swiper-slide2 video"><div class="video-play"></div><video src="./assets/video/1.mp4" muted controls></video></div>
+            <div class="swiper-slide swiper-slide3 video"><div class="video-play"></div><video src="./assets/video/1.mp4" muted controls></video></div>
+          </div>
         </div>
       </div>
       <div class="about-production__slider-arrow slider-arrow">
@@ -90,18 +94,97 @@ link-swiper: https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css
     <div class="gallery__image5 gallery__image"><img src="assets/images/gallery/22228639_1924407937885867_5973791433315664057_n.webp" alt=""></div>
     <div class="gallery__image6 gallery__image video"><div class="gallery__video-button gallery__video-button2"></div><div class="gallery__video-title">Проект UBHDP</div><div class="gallery__mini-video-info">Вчера к нам приезжал американский агроном Рон, спасибо Мельнику Евгению и проекту UBHDP за возможность получить консультацию от мировых специалистов!</div></div>
   </div>
-  <div class="button" id="load_more_button">Смотреть всю галерею</div>
+  <div class="button button-gallery-production" id="load_more_button">Смотреть всю галерею</div>
   <div class="bottom-image">
     <div class="bottom-image__logo"><img src="assets/images/svg/eco.svg" alt=""></div>
     <div class="bottom-image__title">Эко продукция</div>
     <div class="bottom-image__info">Выращиваем каждое деревцо с любовью, на экологически &nbspчистой земле, без использования пестицидов и химии</div>
 </div>
-<div class="bottom-news">
-  <div class="bottom-news__title">Новости</div>
-  <div class="bottom-news__info">Свежие новости и полезная информация</div>
-  <div class="bottom-news__slider-arrow slider-arrow">
-    <div class="slider-arrow__button-left"><i class="icon-slider-arrow" ></i></div>
-    <div class="slider-arrow__button-right"><i class="icon-slider-arrow" ></i></div>
+<div class="news-row-production">
+<div class="news-row">
+  <div class="news-row__top-line">
+    <div class="news-row__title">Новости</div>
+    <div class="news-row__info">Свежие новости и полезная информация</div>
+    <div class="news-row__slider-arrow slider-arrow">
+      <div class="slider-arrow__button-left news-row__button-left"><i class="icon-slider-arrow" ></i></div>
+      <div class="slider-arrow__button-right news-row__button-right"><i class="icon-slider-arrow" ></i></div>
+    </div>
   </div>
+  <!-- Swiper -->
+  <div class="news-row__swiper">
+    <div class="swiper news-row__slider-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="news__left-center news__center">
+            <div class="news__left-center--image news__center-image"><img src="./assets/images/news/2.webp" alt=""></div>
+            <div class="news__left-center--info news__center-info">
+                <div class="news__data news__data--center">12.04.2019</div>
+                <div class="news__center--title news__center--title1">Центр поддержки экспорта, в студии Павел Тулба</div>
+                <div class="news__center--text">Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...</div>
+                <a class="link news__center--link news__center--link1" href="page8.html">Читать <div class="link-arrow"><i class="icon-arrow"></i></div></a>
+            </div>
+        </div>
+        </div>
+        <div class="swiper-slide ">
+          <div class="news__center-center news__center">
+            <div class="news__center-center--image news__center-image news__center-video swiper-slide__video1 video"><div class="video-play"></div><video src="./assets/video/1.mp4" muted controls ></video></div>
+            <div class="news__center-center--info news__center-info">
+                <div class="news__data news__data--center">12.04.2019</div>
+                <div class="news__center--title news__center--title2">В Одесской области состоялся масштабный торгово - экспортный форум</div>
+                <div class="news__center--text">Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...</div>
+                <a class="link news__center--link news__center--link2" href="page8.html">Читать <div class="link-arrow"><i class="icon-arrow"></i></div></a>
+            </div>
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="news__right-center news__center">
+            <div class="news__right-center--image news__center-image"><img src="./assets/images/news/4.webp" alt=""></div>
+            <div class="news__right-center--info news__center-info">
+                <div class="news__data news__data--center">12.04.2019</div>
+                <div class="news__center--title news__center--title3">Сертификация органического производителя</div>
+                <div class="news__center--text">Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...</div>
+                <a class="link news__center--link news__center--link3" href="page8.html">Читать <div class="link-arrow"><i class="icon-arrow"></i></div></a>
+            </div>
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="news__left-center news__center">
+            <div class="news__left-center--image news__center-image"><img src="./assets/images/news/2.webp" alt=""></div>
+            <div class="news__left-center--info news__center-info">
+                <div class="news__data news__data--center">12.04.2019</div>
+                <div class="news__center--title news__center--title1 ">Центр поддержки экспорта, в студии Павел Тулба</div>
+                <div class="news__center--text">Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...</div>
+                <a class="link news__center--link news__center--link1" href="page8.html">Читать <div class="link-arrow"><i class="icon-arrow"></i></div></a>
+            </div>
+        </div>
+        </div>
+        <div class="swiper-slide ">
+          <div class="news__center-center news__center">
+            <div class="news__center-center--image news__center-image news__center-video swiper-slide__video2 video"><div class="video-play"></div><video src="./assets/video/1.mp4" muted controls ></video></div>
+            <div class="news__center-center--info news__center-info">
+                <div class="news__data news__data--center">12.04.2019</div>
+                <div class="news__center--title news__center--title2">В Одесской области состоялся масштабный торгово - экспортный форум</div>
+                <div class="news__center--text">Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...</div>
+                <a class="link news__center--link news__center--link2" href="page8.html">Читать <div class="link-arrow"><i class="icon-arrow"></i></div></a>
+            </div>
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="news__right-center news__center">
+            <div class="news__right-center--image news__center-image"><img src="./assets/images/news/4.webp" alt=""></div>
+            <div class="news__right-center--info news__center-info">
+                <div class="news__data news__data--center">12.04.2019</div>
+                <div class="news__center--title news__center--title3">Сертификация органического производителя</div>
+                <div class="news__center--text">Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена среди наших садоводов, не смотря на большой спрос в Европе и отличную...</div>
+                <a class="link news__center--link news__center--link3" href="page8.html">Читать <div class="link-arrow"><i class="icon-arrow"></i></div></a>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <a href="" class="button news-row-production__button">Смотреть все новости</a>
 </div>
+
 </main>

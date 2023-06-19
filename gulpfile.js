@@ -16,7 +16,7 @@ const notify = require("gulp-notify");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const browserSync = require("browser-sync").create();
-const webp = require("gulp-webp"); // Добавляем плагин gulp-webp
+const webp = require("gulp-webp");
 
 /* Paths */
 const srcPath = 'src/';
@@ -28,28 +28,30 @@ const path = {
     js: 'dist/assets/js/',
     css: 'dist/assets/css/',
     images: 'dist/assets/images/',
-    fonts: 'dist/assets/fonts/'
+    fonts: 'dist/assets/fonts/',
+    videos: 'dist/assets/video/'
   },
   src: {
     html: ['src/*.html', 'src/pages/**/*.html'],
     js: 'src/assets/js/*.js',
     css: 'src/assets/scss/**/*.scss',
     images: 'src/assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}',
-    fonts: 'src/assets/fonts/**/*'
+    fonts: 'src/assets/fonts/**/*',
+    videos: 'src/assets/video/**/*'
   },
   watch: {
     html: 'src/**/*.html',
     js: 'src/assets/js/**/*.js',
     css: 'src/assets/scss/**/*.scss',
     images: 'src/assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}',
-    fonts: 'src/assets/fonts/**/*'
+    fonts: 'src/assets/fonts/**/*',
+    videos: 'src/assets/video/**/*'
   },
   clean: './dist/'
 };
 
 /* Tasks */
 
-// Определяем новую задачу для конвертации изображений в формат WebP
 function convertToWebP() {
   return src(path.src.images)
     .pipe(webp())
@@ -160,6 +162,12 @@ function fonts() {
     .pipe(browserSync.reload({ stream: true }));
 }
 
+function videos() {
+  return src(path.src.videos)
+    .pipe(dest(path.build.videos))
+    .pipe(browserSync.reload({ stream: true }));
+}
+
 function clean() {
   return del(path.clean);
 }
@@ -170,9 +178,10 @@ function watchFiles() {
   watch([path.watch.js], js);
   watch([path.watch.images], images);
   watch([path.watch.fonts], fonts);
+  watch([path.watch.videos], videos);
 }
 
-const build = series(clean, parallel(html, css, js, images, fonts));
+const build = series(clean, parallel(html, css, js, images, fonts, videos));
 const dev = parallel(build, watchFiles, serve);
 
 /* Exports Tasks */
@@ -181,8 +190,8 @@ exports.css = css;
 exports.js = js;
 exports.images = images;
 exports.fonts = fonts;
+exports.videos = videos;
 exports.clean = clean;
 exports.build = build;
 exports.default = dev;
-exports.convertToWebP = convertToWebP; // Добавляем задачу конвертации в экспорт
-
+exports.convertToWebP = convertToWebP;

@@ -49,6 +49,27 @@
   color: #337D5A;
 }
 
+.video-play {
+  width: 61px;
+  height: 61px;
+  background: url(../images/svg/play-icon.svg);
+  margin: 10px 0 0 6px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  display: none;
+  object-fit: cover;
+}
+
+.ready .video-play {
+  display: none;
+}
+.ready video {
+  display: block;
+}
+
 .video {
   cursor: pointer;
 }
@@ -493,5 +514,202 @@ a {
     max-width: 480px;
     padding: 0 10px;
     padding-left: 0;
+  }
+}
+.slider-arrow {
+  width: 141px;
+  height: 58px;
+  display: grid;
+  position: relative;
+  grid-template: 1fr/1fr 1fr;
+  color: rgba(255, 255, 255, 0.5);
+  background: #337D5A;
+  font-size: 17px;
+}
+.slider-arrow__button-left {
+  background: #337D5A;
+  grid-row: 1;
+  grid-column: 1;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  rotate: 180deg;
+}
+.slider-arrow__button-left i {
+  margin: 1px 0px 0 2px;
+}
+.slider-arrow__button-left:active {
+  color: #FFFFFF;
+}
+.slider-arrow__button-right {
+  background: #337D5A;
+  grid-row: 1;
+  grid-column: 2;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.slider-arrow__button-right i {
+  margin: 0 0px 0px 0;
+}
+.slider-arrow__button-right:active {
+  color: #FFFFFF;
+}
+
+@media (max-width: 1360px) {
+  .slider-arrow {
+    width: 100px;
+    height: 45px;
+  }
+}
+@media (max-width: 500px) {
+  .slider-arrow {
+    width: 80px;
+    height: 35px;
+  }
+}
+.news-row__top-line {
+  max-width: 1330px;
+  margin: 89px auto 55px;
+  padding: 0 18px;
+  display: grid;
+  align-items: center;
+  grid-template: 50px 25px 40px/minmax(auto, 400px) 1fr 142px;
+}
+.news-row__title {
+  grid-column: 1;
+  grid-row: 1;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 53px;
+  letter-spacing: 0.01em;
+}
+.news-row__info {
+  grid-column: 1;
+  grid-row: 3;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+}
+.news-row__slider-arrow {
+  grid-column: 3;
+  grid-row: 1/4;
+  margin-right: 1px;
+}
+.news-row__slider-arrow .slider-arrow__button-right {
+  margin: 0 4px 0 0;
+}
+.news-row .swiper {
+  max-width: 1290px;
+}
+.news-row .swiper-slide {
+  max-width: 408px;
+}
+.news-row .news__center-info {
+  grid-template: 20px 20px 9px 50px 10px 80px 20px 20px/22px 1fr;
+}
+.news-row .news__data--center {
+  grid-column: 2;
+  grid-row: 2;
+}
+.news-row .news__center--title {
+  grid-column: 2;
+  grid-row: 4;
+  line-height: 22px;
+  margin-top: 3px;
+}
+.news-row .news__center--title1 {
+  line-height: 24px;
+}
+.news-row .news__center--text {
+  grid-column: 2;
+  grid-row: 6;
+}
+.news-row .news__center--link {
+  grid-column: 2;
+  grid-row: 8;
+}
+
+@media (max-width: 1360px) {
+  .news-row .swiper {
+    max-width: 849px;
+    overflow: hidden;
+  }
+  .news-row .news__center {
+    display: flex;
+    flex-direction: column;
+  }
+  .news-row .news__center-info {
+    flex: 1 0 auto;
+    display: grid;
+    grid-template: 20px 20px 9px 50px 10px 80px 20px 20px/22px 1fr;
+  }
+  .news-row .news__center-video {
+    max-height: 400px;
+  }
+  .news-row__top-line {
+    grid-template: 36px 5px 30px/minmax(auto, 400px) 1fr 100px;
+  }
+  .news-row__title {
+    grid-column: 1;
+    grid-row: 1;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 0.01em;
+  }
+  .news-row__info {
+    grid-column: 1;
+    grid-row: 3;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+  }
+}
+@media (max-width: 915px) {
+  .news-row {
+    padding: 0 3vw;
+  }
+  .news-row .swiper {
+    max-width: 408px;
+  }
+}
+@media (max-width: 700px) {
+  .news-row .news__center {
+    display: flex;
+    flex-direction: column;
+  }
+  .news-row .news__center-info {
+    flex: 1 0 auto;
+    display: grid;
+    grid-template: 20px 20px 9px 50px 10px 80px 20px 20px/22px 1fr;
+  }
+  .news-row .news__center-video {
+    height: 60vw;
+  }
+}
+@media (max-width: 520px) {
+  .news-row__top-line {
+    grid-template: 36px 5px 30px 20px 35px/1fr;
+    margin: 89px auto 35px;
+  }
+  .news-row__slider-arrow {
+    grid-column: 1;
+    grid-row: 5;
+  }
+}
+@media (max-width: 430px) {
+  .news-row .swiper {
+    max-width: 96vw;
   }
 }

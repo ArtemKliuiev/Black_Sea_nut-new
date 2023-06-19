@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.about-production__slider-swiper', {
     // Optional parameters
     direction:  'horizontal',
     loop: true,

@@ -115,6 +115,7 @@ select {
     grid-column: 1;
     grid-row: 1;
     display: flex;
+    text-decoration: none;
   }
 
   &__logo-image {
@@ -371,6 +372,7 @@ select {
     &__logo-image {
       img {
         max-width: 34px;
+        max-height: 33px;
       }
     }
 

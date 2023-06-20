@@ -1,144 +1,5 @@
 .top-video {
-  height: 600px;
   background: url(../../images/production/pic.webp) center/cover no-repeat;
-}
-.top-video__title {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 62px;
-  line-height: 73px;
-  letter-spacing: 0.01em;
-  color: #FFFFFF;
-  text-align: center;
-  margin-top: 144px;
-}
-.top-video__info {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 32px;
-  text-align: center;
-  letter-spacing: 0.01em;
-  color: #FFFFFF;
-  max-width: 535px;
-  margin: 30px auto 0;
-}
-.top-video__button {
-  margin: 37px auto;
-  width: 61px;
-  height: 61px;
-  background: url(../../images/svg/play-icon.svg) center/cover no-repeat;
-}
-
-.ready .address-line {
-  display: none;
-}
-.ready .top-video__title {
-  display: none;
-}
-.ready .top-video__info {
-  display: none;
-}
-.ready .top-video__button {
-  display: none;
-}
-
-.about-production {
-  max-width: 1330px;
-  padding: 0 20px;
-  margin: 100px auto 0;
-  display: grid;
-  grid-template: 1fr/minmax(auto, 540px) 1fr minmax(auto, 700px);
-}
-.about-production__info {
-  grid-row: 1;
-  grid-column: 1;
-  display: grid;
-  grid-template: 29px 50px 48px 1fr/1fr;
-}
-.about-production__title {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 45px;
-  line-height: 53px;
-  letter-spacing: 0.01em;
-  grid-column: 1;
-  grid-row: 2;
-}
-.about-production__text {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.01em;
-  grid-column: 1;
-  grid-row: 4;
-}
-.about-production__text P {
-  margin-bottom: 30px;
-}
-.about-production__text P:nth-child(1) {
-  max-width: 419px;
-}
-.about-production__text P:nth-child(2) {
-  max-width: 476px;
-}
-.about-production__video {
-  grid-row: 1;
-  grid-column: 3;
-  position: relative;
-}
-.about-production__slider-arrow {
-  position: absolute;
-  z-index: 2;
-  bottom: 0;
-  left: 0;
-}
-.about-production__swiper .swiper {
-  width: 100%;
-  height: 472px;
-}
-.about-production__swiper .swiper-slide {
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-items: center;
-  display: grid;
-}
-.about-production__swiper .swiper-slide1 {
-  background: url(../../images/production/2.webp) center/cover no-repeat;
-}
-.about-production__swiper .swiper-slide2 {
-  background: url(../../images/production/4.webp) center/cover no-repeat;
-}
-.about-production__swiper .swiper-slide3 {
-  background: url(../../images/production/pic.webp) center/cover no-repeat;
-}
-
-video {
-  display: none;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-video input {
-  margin: 50%;
-}
-
-video::-webkit-media-controls-panel {
-  margin: 0 0 0 141px;
-}
-
-video::-webkit-media-controls-start-playback-button {
-  display: none;
-}
-
-.swiper-cube-shadow {
-  display: none;
 }
 
 .pavel {
@@ -333,6 +194,10 @@ video::-webkit-media-controls-start-playback-button {
   margin-top: 2px;
 }
 
+.bottom-image {
+  grid-template: 258px 72px 41px 60px 8px 100px 1fr/1fr;
+}
+
 @media (max-width: 1100px) {
   .gallery {
     grid-template: 41.4vw 2.2vw 41.4vw 2.2vw 41.4vw 2.2vw 41.4vw/1fr 2.2vw 1fr;
@@ -361,6 +226,11 @@ video::-webkit-media-controls-start-playback-button {
   .gallery__image6 {
     grid-column: 1/4;
     grid-row: 7;
+  }
+  .bottom-image {
+    margin: 50px 0 0px 0;
+    height: 540px;
+    grid-template: 1fr 72px 22px 60px 21px 100px 1fr/1fr;
   }
 }
 @media (max-width: 650px) {
@@ -393,40 +263,22 @@ video::-webkit-media-controls-start-playback-button {
     grid-row: 11;
     grid-template: 2fr 61px 10px 27px 10px 50px 1fr/1fr;
   }
-}
-@media (max-width: 1300px) {
-  .about-production {
-    padding: 0 5vw;
-    grid-template: auto 15px auto/1fr;
+  .bottom-image {
+    margin: 30px 0 0px 0;
+    height: 400px;
+    grid-template: 1fr 72px 22px 40px 21px 100px 1fr/1fr;
   }
-  .about-production__info {
-    grid-row: 1;
-    grid-column: 1;
+  .bottom-image__title {
+    font-size: 36px;
+    line-height: 40px;
+    padding-right: 0;
   }
-  .about-production__video {
-    grid-row: 3;
-    grid-column: 1;
-  }
-  .about-production .swiper {
-    width: 94vw;
-    height: 472px;
-  }
-  .about-production__text P {
-    max-width: 100%;
-    margin-bottom: 30px;
-  }
-  .about-production__text P:nth-child(1) {
-    max-width: 100%;
-  }
-  .about-production__text P:nth-child(2) {
-    max-width: 100%;
-  }
-  .about-production .swiper-slide {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-items: center;
-    display: grid;
+  .bottom-image__info {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 480px;
+    padding: 0 10px;
+    padding-left: 0;
   }
 }
 @media (max-width: 1150px) {
@@ -448,88 +300,6 @@ video::-webkit-media-controls-start-playback-button {
     grid-column: 1/4;
     max-width: 500px;
     margin: 0 auto;
-  }
-}
-@media (max-width: 900px) {
-  .top-video {
-    height: 40vw;
-  }
-  .top-video__title {
-    font-size: 32px;
-    line-height: 36px;
-    margin-top: 5vw;
-  }
-  .top-video__info {
-    font-size: 18px;
-    line-height: 22px;
-    margin: 2vw auto 4vw;
-    padding: 0 3.4vw;
-  }
-}
-@media (max-width: 750px) {
-  .top-video {
-    height: 45vw;
-  }
-  .top-video__title {
-    font-size: 24px;
-    line-height: 28px;
-    margin-top: 5vw;
-  }
-  .top-video__info {
-    font-size: 16px;
-    line-height: 20px;
-    margin: 2vw auto 4vw;
-  }
-  .top-video__button {
-    width: 40px;
-    height: 40px;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 700px) {
-  .about-production {
-    margin: 15px auto 0;
-    grid-template: auto 15px auto/1fr;
-  }
-  .about-production__info {
-    grid-row: 1;
-    grid-column: 1;
-    display: grid;
-    grid-template: 15px 30px 20px 1fr/90vw;
-  }
-  .about-production__title {
-    font-size: 24px;
-    line-height: 30px;
-  }
-  .about-production__video {
-    grid-row: 3;
-    grid-column: 1;
-    position: relative;
-  }
-  .about-production .swiper {
-    width: 90vw;
-    height: 70vw;
-  }
-  .about-production__text {
-    font-size: 14px;
-  }
-  .about-production__text P {
-    max-width: 100%;
-    margin-bottom: 30px;
-  }
-  .about-production__text P:nth-child(1) {
-    max-width: 100%;
-  }
-  .about-production__text P:nth-child(2) {
-    max-width: 100%;
-  }
-  .about-production .swiper-slide {
-    width: 100%;
-    height: 100%;
-    color: red;
-    align-items: center;
-    justify-items: center;
-    display: grid;
   }
 }
 @media (max-width: 600px) {

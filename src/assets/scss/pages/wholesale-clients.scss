@@ -276,7 +276,9 @@ main{
         }
     }
 }
-
+.bottom-image {
+    background: url(../../images/wholesale-clients/3.webp) center / cover no-repeat;
+}
 @media (max-width: 1320px) {
     .tabs {
         &__buttons {

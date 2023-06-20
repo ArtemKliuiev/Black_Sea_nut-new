@@ -102,6 +102,7 @@ select:focus {
   grid-column: 1;
   grid-row: 1;
   display: flex;
+  text-decoration: none;
 }
 .request-call__logo-image {
   padding: 3px 0 0 0;
@@ -316,6 +317,7 @@ select:focus {
   }
   .request-call__logo-image img {
     max-width: 34px;
+    max-height: 33px;
   }
   .request-call__loge-title {
     font-size: 12px;

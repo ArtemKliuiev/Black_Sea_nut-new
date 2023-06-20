@@ -1,0 +1,14 @@
+.top-video {
+    background: url(../../images/main/pic.webp) center/ cover no-repeat;
+    &__title {
+        padding-top: 195px;
+    }
+}
+
+@media (max-width: 900px) {
+    .top-video {
+        &__title {
+            padding-top: 10vw;
+        }
+    }
+}

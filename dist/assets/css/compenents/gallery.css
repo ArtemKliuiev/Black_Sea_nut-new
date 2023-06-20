@@ -141,7 +141,7 @@ main {
 .gallery__image6 {
     grid-row: 5;
     grid-column: 9;
-    background: url(../images/gallery/тулба.webp);
+    background: url(../images/gallery/тулба.webp) center/cover no-repeat;
     display: grid;
     justify-items: center;
     grid-template: 110px 58px 27px 25px 15px 50px 1fr/1fr;

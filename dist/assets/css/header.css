@@ -124,6 +124,7 @@ select:focus {
     grid-row: 1;
     display: -ms-flexbox;
     display: flex;
+    text-decoration: none;
 }
 
 .request-call__logo-image {
@@ -382,6 +383,7 @@ select:focus {
 
     .request-call__logo-image img {
         max-width: 34px;
+        max-height: 33px;
     }
 
     .request-call__loge-title {

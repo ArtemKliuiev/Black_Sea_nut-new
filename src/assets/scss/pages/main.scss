@@ -1,9 +1,81 @@
+main{
+    height: 3000px;
+}
 .top-video {
     background: url(../../images/main/pic.webp) center/ cover no-repeat;
     &__title {
         padding-top: 195px;
     }
+    margin-bottom: 83px;
 }
+.top-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 53px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin: 0 auto 28px;
+}
+.top-info {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin: 0 auto;
+    max-width: 604px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 900px) {
     .top-video {

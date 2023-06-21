@@ -9,5 +9,9 @@
 .icon-shop:before { content: '\e807'; } /* '' */
 .icon-supermarket:before { content: '\e808'; } /* '' */
 .icon-cake:before { content: '\e809'; } /* '' */
+.icon-filter-restart:before { content: '\e80a'; } /* '' */
 .icon-slider-arrow:before { content: '\e80b'; } /* '' */
+.icon-filter:before { content: '\e80c'; } /* '' */
+.icon-filter-arrow:before { content: '\e80d'; } /* '' */
+.icon-filter-option-arrow:before { content: '\e80e'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */

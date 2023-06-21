@@ -1,3 +1,11 @@
 main {
     height: 3000vh;
 }
+
+.image-banner {
+    background: url(../../images/store/Untitled-20.webp) center/cover no-repeat;
+}
+
+.image-banner__title {
+    margin-top: 75px;
+}

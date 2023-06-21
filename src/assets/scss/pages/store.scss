@@ -7,3 +7,247 @@ main{
         margin-top: 75px;
     }
 }
+.filter {
+    max-width: 1330px;
+    padding: 0 20px;
+    display: grid;
+    align-items: end;
+    margin: 66px auto 0;
+    grid-template: 1fr / 100px minmax(auto, 72px) minmax(auto, 283px) minmax(auto, 30px) minmax(auto, 171px) minmax(auto, 40px) 145px minmax(auto, 155px) minmax(130px, 150px) minmax(auto, 46px) 88px ;
+    font-family: 'Raleway';
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    &__title-logo {
+        grid-column: 1;
+        font-weight: 700;
+        font-size: 17px;
+        display: flex;
+        span{
+            display: block;
+            margin: 0 0 0 0 ;
+        }
+        i{
+            display: block;
+            font-size: 20px;
+            margin: 0px 0 9px 8px;
+            color: #337D5A;
+        }
+    }
+    &__taste {
+        grid-column: 3;
+    }
+    &__weight {
+        grid-column: 5;
+    }
+    &__price {
+        grid-column: 7;
+        font-weight: 700;
+        font-size: 17px;
+        display: flex;
+        span{
+            display: inline-block;
+            margin: 0 0 10px 0;
+        }
+        i{  
+            font-size: 14px;
+            margin: 0 0 0 0;
+            &::before{
+                margin: 0 0 0 6.5px;
+                width: 12.5px;
+            }
+            &:hover{
+                color: #337D5A;
+            }
+        }
+    }
+    &__price-arrow{
+        margin: 0 0 0 10px;
+    }
+    &__button {
+        grid-column: 9;
+        max-width: 150px;
+        max-height: 48px;
+        line-height: 48px;
+    }
+    &__reset {
+        height: 100%;
+        grid-column: 11;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.01em;
+        color: #8A8A8A;
+        display: flex;
+        i{
+            font-size: 12px;
+
+        }
+        span{
+            display: inline-block;
+            margin:14px 0 0 5px;
+        }
+    }
+    &__reset-icon{
+        margin: 13px 0  0 0;
+    }
+
+}
+.icon-filter {
+}
+.icon-filter-arrow {
+}
+.icon-filter-arrow-top {
+}
+.icon-filter-restart {
+}
+
+
+
+
+.custom-select {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    position: relative;
+    width: 100%;
+    min-width: 100px;
+    height: 48px;
+    line-height: 42px;
+    position: relative;
+    z-index: 1;
+    &__option {
+        display: block;
+        padding: 8px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+      }
+    &__list {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background-color: #ffffff;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #337D5A;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        padding: 8px;
+        cursor: pointer;
+        &:hover {
+            background-color: #337D5A;
+            color: #ffffff;
+          }
+      }
+    }
+    i{
+        position: absolute;
+        z-index: 1;
+        right: 25px;
+        top: 10px;
+        color: #337D5A;
+        font-size: 10px;
+    }
+    &:hover .custom-select__list {
+        display: block;
+      }
+    &:hover .icon-filter-option-arrow::before {
+        transform: translate(50%, 0) rotate(180deg);
+        transform-origin: center center;
+  }
+  }
+  
+  
+  @media (max-width: 900px) {
+    .filter {
+        margin: 50px auto 0;
+        grid-template: 1fr 3.4vw 1fr / auto 1fr auto 1fr auto ;
+        &__title-logo {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        &__taste {
+            grid-column: 1;
+            grid-row: 3;
+        }
+        &__weight {
+            grid-column: 3;
+            grid-row: 3;
+        }
+        &__price {
+            grid-column: 3;
+            grid-row: 1;
+        }
+        &__button {
+            grid-column: 5;
+            grid-row: 3;
+        }
+        &__reset {
+            grid-column: 5;
+            grid-row: 1;
+            align-items: end;
+            justify-content: center;
+        }
+    
+    }
+    .custom-select {
+        i{
+            right: 5px;
+            top: 10px;
+        }
+  }
+}
+@media (max-width: 500px) {
+    .filter {
+        margin: 35px auto 0;
+        grid-template: 1fr 3.4vw 1fr 3.4vw 1fr / auto 1fr auto  ;
+        align-items: center;
+        &__title-logo {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        &__taste {
+            grid-column: 3;
+            grid-row: 5;
+        }
+        &__weight {
+            grid-column: 1;
+            grid-row: 5;
+        }
+        &__price {
+            grid-column: 3;
+            grid-row: 1;
+        }
+        &__price-arrow{
+            margin: 0;
+        }
+        &__button {
+            grid-column: 1;
+            grid-row: 3;
+            width: 110px;
+            height: 40px;
+            line-height: 40px;
+        }
+        &__reset {
+            grid-column: 3;
+            grid-row: 3;
+            align-items: center;
+            span{
+                margin: 0 0 0 5px;
+            }
+        }
+        &__reset-icon{
+            margin: 0;
+        }
+    }
+    .custom-select {
+        min-width: none;
+    }
+}

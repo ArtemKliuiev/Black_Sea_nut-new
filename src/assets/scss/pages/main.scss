@@ -246,7 +246,12 @@ main{
     width: 223px;
 }
 
-
+.video-play{
+    width: 61px;
+    height: 61px;
+    background: url(../../images/svg/play-icon.svg);
+    margin: 18px 0 0 6px;
+}
 @media (max-width: 1330px) {
     .nuts-info {
         max-width: 890px;

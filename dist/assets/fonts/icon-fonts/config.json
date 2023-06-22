@@ -221,6 +221,48 @@
       "search": [
         "filter-option-arrow"
       ]
+    },
+    {
+      "uid": "a12ceedd7dd32ccd51a31abea49bf15d",
+      "css": "filter-arrow-top",
+      "code": 59407,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M850 416.7L791.7 475 475 158.3 475 1000H391.7L391.7 158.3 75 475 16.7 416.7 433.3 0 850 416.7Z",
+        "width": 867
+      },
+      "search": [
+        "filter-arrow-top"
+      ]
+    },
+    {
+      "uid": "22fd1b7a41551938513d355fd940720e",
+      "css": "slider-arrow-left",
+      "code": 59409,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M456.3 956.3L520.2 892.5 173.4 545.6H1095.2V454.4H173.4L520.2 107.5 456.3 43.7 0 500 456.3 956.3Z",
+        "width": 1095
+      },
+      "search": [
+        "slider-arrow-left"
+      ]
+    },
+    {
+      "uid": "61eea1c4655ae4ad77f997e35925cc17",
+      "css": "slider-arrow-right",
+      "code": 59408,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M638.9 956.3L575 892.5 921.8 545.6H0V454.4H921.8L575 107.5 638.9 43.7 1095.2 500 638.9 956.3Z",
+        "width": 1095
+      },
+      "search": [
+        "slider-arrow-right"
+      ]
     }
   ]
 }

@@ -44,20 +44,7 @@
         }
 }
 
-.ready{
-    .delivery-video {
-        background: none ;
-            &__button {
-                display: none;
-            }
-            &__video-title {
-                display: none;
-            }
-            &__video-info {
-                display: none;
-            }
-    }
-}
+
 @media (max-width: 1200px) {
     .delivery-video {
         height: 60vw;

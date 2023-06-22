@@ -183,6 +183,18 @@
   margin: 70px auto 98px;
 }
 
+.news-row__top-line {
+  max-width: 1330px;
+  margin: 90px auto 56px;
+  padding: 0 18px;
+  display: grid;
+  align-items: center;
+  grid-template: 50px 25px 40px/minmax(auto, 400px) 1fr 142px;
+}
+.news-row__info {
+  margin: 0 0 0 2px;
+}
+
 .news-row-production__button {
   display: block;
   width: 225px;

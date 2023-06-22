@@ -1,5 +1,4 @@
 .about-production {
-  overflow: hidden;
   max-width: 1330px;
   padding: 0 20px;
   margin: 100px auto 0;
@@ -140,6 +139,7 @@ video::-webkit-media-controls-start-playback-button {
     grid-column: 1;
     display: grid;
     grid-template: 15px 30px 20px 1fr/90vw;
+    margin-bottom: 15px;
   }
   .about-production__title {
     font-size: 24px;

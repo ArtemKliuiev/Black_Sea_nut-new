@@ -14,4 +14,7 @@
 .icon-filter:before { content: '\e80c'; } /* '' */
 .icon-filter-arrow:before { content: '\e80d'; } /* '' */
 .icon-filter-option-arrow:before { content: '\e80e'; } /* '' */
+.icon-filter-arrow-top:before { content: '\e80f'; } /* '' */
+.icon-slider-arrow-right:before { content: '\e810'; } /* '' */
+.icon-slider-arrow-left:before { content: '\e811'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */

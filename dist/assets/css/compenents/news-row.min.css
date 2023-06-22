@@ -131,7 +131,8 @@
 @media (max-width: 520px) {
   .news-row__top-line {
     grid-template: 36px 5px 30px 20px 35px/1fr;
-    margin: 89px auto 35px;
+    margin: 40px auto 15px;
+    padding: 0;
   }
   .news-row__slider-arrow {
     grid-column: 1;

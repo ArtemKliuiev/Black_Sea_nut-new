@@ -270,7 +270,7 @@ a {
 
 @media (max-width: 900px) {
   .top-video {
-    height: 40vw;
+    height: 45vw;
   }
   .top-video__title {
     font-size: 32px;
@@ -286,7 +286,7 @@ a {
 }
 @media (max-width: 750px) {
   .top-video {
-    height: 45vw;
+    height: 50vw;
   }
   .top-video__title {
     font-size: 24px;

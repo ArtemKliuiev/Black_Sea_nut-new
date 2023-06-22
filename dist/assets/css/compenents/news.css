@@ -271,7 +271,7 @@
 
 @media (max-width: 700px) {
     .news {
-        grid-template: 60vw 3vw 60vw 3vw 60vw 3vw 60vw 3vw 60vw 3vw 60vw 3vw 60vw 3vw 60vw/1fr;
+        grid-template: 60vw 3vw auto 3vw 60vw 3vw auto 3vw 60vw 3vw auto 3vw 60vw 3vw 60vw/1fr;
     }
 
     .news__center {
@@ -292,12 +292,16 @@
 
     .news__left-center {
         grid-column: 1;
-        grid-row: 5;
+        grid-row: 5/9;
     }
 
     .news__center-center {
         grid-column: 1;
-        grid-row: 9;
+        grid-row: 9/12;
+    }
+
+    .news__center-info {
+        margin-bottom: 15px;
     }
 
     .news__right-center {

@@ -46,22 +46,6 @@
     margin-right: 21px;
 }
 
-.ready .delivery-video {
-    background: none;
-}
-
-.ready .delivery-video__button {
-    display: none;
-}
-
-.ready .delivery-video__video-title {
-    display: none;
-}
-
-.ready .delivery-video__video-info {
-    display: none;
-}
-
 @media (max-width: 1200px) {
     .delivery-video {
         height: 60vw;

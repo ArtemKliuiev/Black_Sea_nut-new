@@ -92,22 +92,6 @@ main {
   margin: 62px 0 80px 0;
 }
 
-.ready {
-  display: block;
-}
-.ready .delivery-video {
-  background: none;
-}
-.ready .delivery-video__button {
-  display: none;
-}
-.ready .delivery-video__video-title {
-  display: none;
-}
-.ready .delivery-video__video-info {
-  display: none;
-}
-
 .main-title--two {
   margin: 0 auto 28px;
 }

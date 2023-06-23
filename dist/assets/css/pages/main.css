@@ -248,13 +248,20 @@ main {
 .bottom-image {
     background: url(../../images/main/bottom-img.jpg) center/cover no-repeat;
     grid-template: 226px 72px 44px 60px 14px 100px 1fr/1fr;
-    margin: 59px 0 -5px 0;
+    margin: 59px 0 -6px 0;
 }
 
 .main-bottom-button {
     display: block;
-    margin: 99px auto 88px;
+    margin: 97px auto 88px;
     width: 223px;
+}
+
+.video-play {
+    width: 61px;
+    height: 61px;
+    background: url(../../images/svg/play-icon.svg);
+    margin: 18px 0 0 6px;
 }
 
 @media (max-width: 1330px) {

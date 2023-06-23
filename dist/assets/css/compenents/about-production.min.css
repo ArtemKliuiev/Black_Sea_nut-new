@@ -50,6 +50,7 @@
   z-index: 2;
   bottom: 0;
   left: 0;
+  background-color: #337D5A;
 }
 .about-production__swiper .swiper {
   width: 100%;

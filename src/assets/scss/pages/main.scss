@@ -102,25 +102,6 @@ main{
 
 
 
-.ready{
-    display: block;
-    .delivery-video {
-        background: none ;
-            &__button {
-                display: none;
-            }
-            &__video-title {
-                display: none;
-            }
-            &__video-info {
-                display: none;
-            }
-    }
-}
-
-
-
-
 .main-title {
 }
 .main-title--two {

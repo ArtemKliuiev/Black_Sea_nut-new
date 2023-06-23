@@ -50,6 +50,7 @@
         z-index: 2;
         bottom: 0;
         left: 0;
+        background-color: #337D5A ;
     }
     &__button-left {}
     &__button-right {}
@@ -102,6 +103,9 @@ video::-webkit-media-controls-panel {
 .swiper-cube-shadow{
     display: none;
 }
+
+
+
 @media (max-width: 1300px) {
     .about-production {
         padding: 0 5vw;

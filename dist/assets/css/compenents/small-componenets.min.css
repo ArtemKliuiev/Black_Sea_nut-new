@@ -67,7 +67,7 @@ video {
   display: none;
 }
 .ready video {
-  display: block;
+  display: grid;
 }
 .ready .address-line {
   display: none;

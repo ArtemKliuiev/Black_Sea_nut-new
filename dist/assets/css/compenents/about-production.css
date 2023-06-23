@@ -51,6 +51,7 @@
     grid-row: 1;
     grid-column: 3;
     position: relative;
+    height: 472px;
 }
 
 .about-production__slider-arrow {
@@ -58,6 +59,7 @@
     z-index: 2;
     bottom: 0;
     left: 0;
+    background-color: #337D5A;
 }
 
 .about-production__swiper .swiper {

@@ -1,4 +1,6 @@
 .goods {
+    position: relative;
+    z-index: 1;
     max-width: 1330px;
     padding: 0 20px;
     margin: 0 auto;
@@ -37,6 +39,7 @@
 }
 
 .product{
+    overflow: hidden;
     box-sizing: content-box;
     &__slider-image{
         width: 100%;
@@ -327,7 +330,7 @@
             grid-column: 1;
         }
         &__item6 {
-            grid-row: 4;
+            grid-row: 5;
             grid-column: 3;
         }
     }

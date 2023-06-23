@@ -72,7 +72,7 @@ video {
 }
 
 .ready video {
-    display: block;
+    display: grid;
 }
 
 .ready .address-line {

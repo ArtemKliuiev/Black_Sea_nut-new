@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 .goods {
+    position: relative;
+    z-index: 1;
     max-width: 1330px;
     padding: 0 20px;
     margin: 0 auto;
@@ -46,6 +48,7 @@
 }
 
 .product {
+    overflow: hidden;
     box-sizing: content-box;
 }
 

@@ -91,3 +91,27 @@ customSelects.forEach((select) => {
     });
   });
 });
+////////////////////////////////////////////////////////////
+const swiperStore = new Swiper('.about-production__slider-swiper', {
+  // Optional parameters
+  direction:  'horizontal',
+  loop: true,
+
+  effect: 'cube',
+  cubeEffect: {
+    slideShadows: false,
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+    dragSize:35,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider-arrow__button-right',
+    prevEl: '.slider-arrow__button-left',
+  },
+
+
+});

@@ -33,10 +33,7 @@ if (currentPagePath.includes('page1.html')) {
 } else if (currentPagePath.includes('page5.html')) {
   link5.classList.add('active');
   link25.classList.add('active');
-} else if (currentPagePath.includes('page6.html')) {
-  link6.classList.add('active');
-  link26.classList.add('active');
-} else if (currentPagePath.includes('page7.html')) {
+}  else if (currentPagePath.includes('page7.html')) {
   link27.classList.add('active');
 }
 //Бургер

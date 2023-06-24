@@ -1,0 +1,52 @@
+.main {
+    max-width: 550px;
+    margin: 100px auto 97px;
+    &__title {
+        background: url('../../images/404/e0678ef1.webp') center/ cover no-repeat;
+        background-clip: text;
+        -webkit-background-clip: text; /* Для поддержки веб-браузерами, основанными на WebKit, такими как Chrome и Safari */
+        color: transparent;
+        font-size: 244px;
+        font-family: Montserrat;
+        font-weight: 900;
+        line-height: 200px;
+        letter-spacing: 2.44px;
+        text-align: center;
+        height: 200px;
+        margin-bottom: 25px;
+    }
+    &__info {
+        text-align: center;
+        font-size: 18px;
+        font-family: Raleway;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0.18px;
+        margin-left: 5px;
+    }
+    &__button {
+        display: block;
+        width: 335px;
+        font-size: 16px;
+        font-family: Raleway;
+        font-weight: 700;
+        line-height: 48px;
+        height: 48px;
+        margin: 17px auto;
+        letter-spacing: 0.1px;
+        span{
+            margin: 0 0 0 7px;
+        }
+    }
+}
+@media (max-width:600px) {
+    .main {
+        margin: 70px auto 70px;
+        &__title {
+            font-size: 130px;
+        }
+        &__button {
+            width: 300px;
+        }
+    }
+}

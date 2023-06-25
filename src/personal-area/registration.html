@@ -1,0 +1,162 @@
+---
+layout: default
+title: Вход
+link-pages: ../assets/css/personal-area/registration.min.css
+link-component-one: 
+link-component-two: 
+link-component-three: 
+link-component-four: 
+link-component-five:
+link-component-six: 
+link-component-seven:
+link-script: ../assets/js/registration.js
+link-script-two: 
+link-script-three: 
+add: ../
+---
+
+<div class="address-line-two">
+    <div class="address-line-two__main"><a href="{{add}}index.html">Главная</a><div class="address-line-two__image"><i class="icon-slider-arrow-right"></i></div><span>Регистрация</span></div>
+</div>
+<div class="registration ">
+    <div class="registration__title">Регистрация</div>
+    <div class="registration__column1">
+        <div class="registration__contact-title">1. Контактные данные</div>
+        <div class="registration__tabs">
+            <div class="registration__contact-tabs1" onclick="registrTab(1)" >Физическое лицо</div>
+            <div class="registration__contact-tabs2" onclick="registrTab(2)" >Юридическое лицо</div>
+             <div class="registration__individual">
+                <input type="text" class="registration__input-name input" placeholder="ФИО*" >
+                <input type="text" class="registration__input-email input" placeholder="Email*" >
+                <input type="number" class="registration__input-phone input" placeholder="Телефон*">
+                <div class="registration__address-title">2. Адрес</div>
+                <div class="custom-select custom-select-1 registration__country">
+                    <i class="icon-filter-option-arrow"></i>
+                    <span class="custom-select__option"><span>Страна</span></span>
+                    <ul class="custom-select__list">
+                      <li>Украина</li>
+                    </ul>
+                </div>
+                <div class="custom-select custom-select-2 registration__region">
+                    <i class="icon-filter-option-arrow"></i>
+                    <span class="custom-select__option"><span>Область</span></span>
+                    <ul class="custom-select__list">
+                      <li>Киевская</li>
+                      <li>Одесская</li>
+                      <li>Полтавская</li>
+                    </ul>
+                </div>
+                <input type="text" class="registration__input-city input" placeholder="Город*" >
+                <input type="text" class="registration__input-address input" placeholder="Адрес" >
+                <div class="registration__password-title">3. Пароль</div>
+                <input type="text" class="registration__new-password input" placeholder="Пароль*" >
+                <input type="text" class="registration__confirm-paswword input" placeholder="Подтвердите пароль*" >
+                <div class="registration__conditions destop-button">
+                    <label for="my-checkbox" class="custom-checkbox-label">
+                        <input type="checkbox" id="my-checkbox" class="custom-checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      <span class="registration__conditions-text">Я согласен с <span>Условиями регистрации</span></span>
+                </div>
+                <a href="" class="registration__button button-two destop-button">Продолжить</a>
+            </div>
+            <div class="registration__legal">
+                <input type="text" class="registration__input-name input" placeholder="ФИО*" >
+                <input type="text" class="registration__input-email input" placeholder="Email*" >
+                <input type="number" class="registration__input-phone input" placeholder="Телефон*">
+                <div class="registration__address-title">2. Адрес</div>
+                <div class="custom-select custom-select-1 registration__country">
+                    <i class="icon-filter-option-arrow"></i>
+                    <span class="custom-select__option"><span>Страна</span></span>
+                    <ul class="custom-select__list">
+                      <li>Украина</li>
+                    </ul>
+                </div>
+                <div class="custom-select custom-select-2 registration__region">
+                    <i class="icon-filter-option-arrow"></i>
+                    <span class="custom-select__option"><span>Область</span></span>
+                    <ul class="custom-select__list">
+                      <li>Киевская</li>
+                      <li>Одесская</li>
+                      <li>Полтавская</li>
+                    </ul>
+                </div>
+                <input type="text" class="registration__input-city input" placeholder="Город*" >
+                <input type="text" class="registration__input-address input" placeholder="Адрес" >
+                <div class="registration__password-title">3. Пароль</div>
+                <input type="text" class="registration__new-password input" placeholder="Пароль*" >
+                <input type="text" class="registration__confirm-paswword input" placeholder="Подтвердите пароль*" >
+                <div class="registration__conditions destop-button">
+                    <label for="my-checkbox3" class="custom-checkbox-label">
+                        <input type="checkbox" id="my-checkbox3" class="custom-checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      <span class="registration__conditions-text">Я согласен с <span>Условиями регистрации</span></span>
+                </div>
+                <a href="" class="registration__button button-two destop-button">Продолжить</a>
+            </div>
+        </div>
+    </div>
+    <div class="registration__column2">
+        <div class="registration__photo">
+            <div class="upload-container">
+            <input type="file" name="photo" id="photo-input">
+            <span>Загрузить фото</span>
+            </div>
+        </div>
+        <div class="registration__fop-tabs">
+            <label for="my-checkbox2" class="custom-checkbox-label">
+                <input type="checkbox" id="my-checkbox2" class="custom-checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <span class="registration__fop-info">Являюсь ФОП</span>
+        </div>
+        <div class="registration__leg-info">
+            <div class="registration__leg-radio-legal">
+                <div class="custom-radio">
+                    <input type="radio" id="option1" checked name="option" value="option1">
+                    <label for="option1">Юр. лицо</label>
+                </div>
+            </div>
+            <div class="registration__leg-radio-fop">
+                <div class="custom-radio">
+                    <input type="radio" id="option2" name="option" value="option2">
+                    <label for="option2">ФОП</label>
+                </div>
+            </div>
+            <div class="registration__leg-requisites-title">1. Реквизиты</div>
+            <input type="text" placeholder="ОКПО" class="registration__leg-requisites-input leg input">
+            <input type="text" placeholder="ЕДРПО" class="registration__leg-requisites-input fop input">
+            <div class="registration__leg-legal-adress-title">2. Юридический адрес</div>
+            <div class="custom-select custom-select-1 registration__leg-country">
+                <i class="icon-filter-option-arrow"></i>
+                <span class="custom-select__option"><span>Страна</span></span>
+                <ul class="custom-select__list">
+                  <li>Украина</li>
+                </ul>
+            </div>
+            <div class="custom-select custom-select-2 registration__leg-region">
+                <i class="icon-filter-option-arrow"></i>
+                <span class="custom-select__option"><span>Область</span></span>
+                <ul class="custom-select__list">
+                  <li>Киевская</li>
+                  <li>Одесская</li>
+                  <li>Полтавская</li>
+                </ul>
+            </div>
+            <input type="text" class="registration__leg-input-city input" placeholder="Город*" >
+            <input type="text" class="registration__leg-input-address input" placeholder="Адрес" >
+            <input type="text" class="registration__leg-input-index input" placeholder="Индекс" >
+        </div>
+        <div class="registration__conditions adaptive-button adaptive-button-flex ">
+            <label for="my-checkbox3" class="custom-checkbox-label">
+                <input type="checkbox" id="my-checkbox3" class="custom-checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <span class="registration__conditions-text">Я согласен с <span>Условиями регистрации</span></span>
+        </div>
+        <a href="" class="registration__button button-two adaptive-button">Продолжить</a>
+    </div>
+
+
+</div>

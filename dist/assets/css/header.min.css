@@ -72,6 +72,7 @@ select:focus {
   width: 11px;
 }
 .top-line__registration {
+  display: block;
   grid-column: 12;
 }
 .top-line__language {

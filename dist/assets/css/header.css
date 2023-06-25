@@ -87,6 +87,7 @@ select:focus {
 }
 
 .top-line__registration {
+    display: block;
     grid-column: 12;
 }
 

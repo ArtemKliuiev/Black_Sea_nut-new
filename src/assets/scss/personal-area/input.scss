@@ -1,0 +1,79 @@
+
+
+.input-account {
+    max-width: 440px;
+    margin: 56px auto 91px;
+    padding: 0 15px;
+    &__title {
+        text-align: center;
+        font-size: 32px;
+        font-family: Raleway;
+        font-weight: 800;
+        line-height: 32px;
+        letter-spacing: 0.32px;
+        margin-bottom: 44px;
+    }
+    &__email {
+        width: 100%;
+        height: 47px;
+        margin-bottom: 15px;
+        border: 0.5px solid rgba(0, 0, 0, 0.15);
+        &::placeholder{
+            color: #1A2F3F;
+            font-size: 14px;
+            font-family: Montserrat;
+            font-weight: 500;
+            line-height: 17px;
+            padding-left: 8px;
+        }
+    }
+    &__password {
+        width: 100%;
+        height: 47px;
+        margin-bottom: 6px;
+        border: 0.5px solid rgba(0, 0, 0, 0.15);
+        &::placeholder{
+            color: #1A2F3F;
+            font-size: 14px;
+            font-family: Montserrat;
+            font-weight: 500;
+            line-height: 17px;
+            padding-left: 8px;
+        }
+    }
+    &__recovery {
+        text-align: center;
+        color: #337D5A;
+        font-size: 13px;
+        font-family: Montserrat;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0.13px;
+        margin-bottom: 6px;
+    }
+    &__button {
+        color: #FFF;
+        font-size: 16px;
+        font-family: Raleway;
+        font-weight: 700;
+        width: 100%;
+        margin-bottom: 6px;
+    }
+    &__registration {
+        text-align: center;
+        color: #337D5A;
+        font-size: 13px;
+        font-family: Montserrat;
+        font-weight: 600;
+        letter-spacing: 0.13px;
+        span{
+            margin-top: 9px;
+            line-height: 20px;
+            display: inline-block;
+            border-bottom: 1.5px solid #337D5A;
+        }
+    }
+    a{
+        display: block;
+    }
+}

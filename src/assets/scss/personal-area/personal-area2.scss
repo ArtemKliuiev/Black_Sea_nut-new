@@ -633,6 +633,10 @@ main{
     .transactions {
         grid-template: 64px 62px 62px 62px / 0px  120px  minmax(auto, 264px )  130px  minmax(auto, 310px ) 110px 1fr ;
     }
+    
+    .adress-info {
+        grid-template: 40px minmax(852px, 1fr) / 0px  minmax(auto, 474px) minmax(auto, 46px) minmax(auto, 440px) 1fr;
+    }
 }
 @media (max-width: 700px) {
     .history-orders {

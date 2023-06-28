@@ -48,3 +48,7 @@ customSelects.forEach((select) => {
 });
 
 
+//Стилизация input "file"
+document.querySelector('.upload-container').addEventListener('click', function() {
+  document.querySelector('#photo-input').click();
+});

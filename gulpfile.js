@@ -32,7 +32,7 @@ const path = {
     videos: 'dist/assets/video/'
   },
   src: {
-    html: ['src/*.html', 'src/personal-area/**/*.html'],
+    html: ['src/*.html', 'src/personal-area/**/*.html', 'src/basket/**/*.html'],
     js: 'src/assets/js/*.js',
     css: 'src/assets/scss/**/*.scss',
     images: 'src/assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}',

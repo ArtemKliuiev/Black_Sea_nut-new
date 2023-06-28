@@ -202,3 +202,7 @@ function initMap() {
 
 
 
+//Стилизация input "file"
+document.querySelector('.upload-container').addEventListener('click', function() {
+  document.querySelector('#photo-input').click();
+});

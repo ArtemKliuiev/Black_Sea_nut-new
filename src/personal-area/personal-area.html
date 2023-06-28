@@ -1,0 +1,168 @@
+---
+layout: default
+title: Учетная запись
+link-pages: ../assets/css/personal-area/personal-area.min.css
+link-component-one: ../assets/css/personal-area/components.min.css
+link-component-two: 
+link-component-three: 
+link-component-four: 
+link-component-five:
+link-component-six: 
+link-component-seven:
+link-script: ../assets/js/personal-area.js
+link-script-two: 
+link-script-three: 
+add: ../
+---
+<div class="address-line-two">
+    <div class="address-line-two__main"><a href="{{add}}index.html">Главная</a>
+        <div class="address-line-two__image address-line-two__cabinet"><i class="icon-slider-arrow-right"></i></div><span class="address-line-two__cabinet">Личный кабинет</span>
+        <div class="address-line-two__image address-line-two__order"><i class="icon-slider-arrow-right"></i></div><span class="address-line-two__order">История заказов</span>
+        <div class="address-line-two__image address-line-two__transaction"><i class="icon-slider-arrow-right"></i></div><span class="address-line-two__transaction">История транзакций</span>
+        <div class="address-line-two__image address-line-two__adress"><i class="icon-slider-arrow-right"></i></div><span class="address-line-two__adress">Адрес</span>
+        <div class="address-line-two__image address-line-two__adress-and-info"><i class="icon-slider-arrow-right"></i></div><span class="address-line-two__adress-and-info">Адрес и реквизиты</span>
+        <div class="address-line-two__image address-line-two__contact"><i class="icon-slider-arrow-right"></i></div><span class="address-line-two__contact">Контактная информация</span>
+    </div>
+</div>
+<div class="personal-area">
+    <div class="personal-area__title">Учетная запись</div>
+    <div class="personal-area__manager">
+        <div class="personal-area__manager-title">Ваш личный менеджер Олег</div>
+        <div class="personal-area__manager-number">
+            <img src="../assets/images/svg/phone.svg" alt="">
+            <span>+38 067 777 14 12</span>
+        </div>
+    </div>
+    <div class="personal-area__discount">Ваша персональная скидка - 5%</div>
+    <ul class="personal-area__list">
+        <div class="personal-area__item1 personal-area__list-title">Мои заказы</div>
+        <li class="personal-area__item2 personal-area__item" onclick="personalTab(1)"><span>История заказов</span></li>
+        <li class="personal-area__item3 personal-area__item" onclick="personalTab(2)"><span>История транзакций</span></li>
+        <div class="personal-area__item4 personal-area__list-title">Моя учетная запись</div>
+        <li class="personal-area__item5 personal-area__item" onclick="personalTab(3)"><span>Контактная информация</span></li>
+        <li class="personal-area__item6 personal-area__item" ><a href="password.html">Пароль</a></li>
+        <li class="personal-area__item7 personal-area__item" onclick="personalTab(5)"><span>Адрес</span></li>
+    </ul>
+    <div class="personal-area__main">
+        <div class="history-orders">
+            <div class="history-orders__info-row">
+                <div class="history-orders__number">
+                    <span>№ Заказа</span>
+                    <i class="icon-filter-option-arrow"></i>
+                </div>
+                <div class="history-orders__data">
+                    <span>Дата</span>
+                    <i class="icon-filter-option-arrow"></i>
+                </div>
+                <div class="history-orders__quantity">
+                    <span>Кол - во товаров</span>
+                    <i class="icon-filter-option-arrow"></i>
+                </div>
+                <div class="history-orders__status">
+                    <span>Статус</span>
+                    <i class="icon-filter-option-arrow"></i>
+                </div>
+                <div class="history-orders__price">
+                    <span>Стоимость</span>
+                    <i class="icon-filter-option-arrow"></i>
+                </div>
+                <div class="history-orders__function">
+                    <span>Функции</span>
+                    <i class="icon-filter-option-arrow"></i>
+                </div>
+            
+                <div class="history-orders__orders-number history-orders__orders">23</div>
+                <div class="history-orders__orders-data history-orders__orders">3.05.2019</div>
+                <div class="history-orders__orders-quantity history-orders__orders">13</div>
+                <div class="history-orders__orders-status history-orders__orders">Отправлено</div>
+                <div class="history-orders__orders-price history-orders__orders">2500 грн.</div>
+                <div class="history-orders__orders-function history-orders__orders">
+                    <div class="history-orders__orders-icons">
+                        <i class="icon-view"></i>
+                        <i class="icon-copy"></i>
+                    </div>
+                </div>
+
+                <div class="history-orders__orders-number--two history-orders__orders">24</div>
+                <div class="history-orders__orders-data--two history-orders__orders">10.05.2019</div>
+                <div class="history-orders__orders-quantity--two history-orders__orders">15</div>
+                <div class="history-orders__orders-status--two history-orders__orders">В ожидании </div>
+                <div class="history-orders__orders-price--two history-orders__orders">2400 грн.</div>
+                <div class="history-orders__orders-function--two history-orders__orders">
+                    <div class="history-orders__orders-icons">
+                        <i class="icon-view"></i>
+                        <i class="icon-copy"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="transactions">
+                <div class="transactions__info-adds">
+                    <span>Добавлено</span>
+                    <i class="icon-filter-option-arrow"></i>
+                </div>
+                <div class="transactions__info-status">
+                    <span>Статус</span>
+                    <i class="icon-filter-option-arrow"></i>
+                </div>
+                <div class="transactions__info-price">
+                    <span>Сумма</span>
+                    <i class="icon-filter-option-arrow"></i>
+                </div>
+
+            <div class="transactions__adds--one transactions__info">3.05.2019</div>
+            <div class="transactions__status--one transactions__info">Платеж принят</div>
+            <div class="transactions__price--one transactions__info">
+                <span>2500 грн.</span>
+                <i class="icon-view"></i>
+            </div>
+
+            <div class="transactions__adds--two transactions__info">10.05.2019</div>
+            <div class="transactions__status--two transactions__info">Платеж принят</div>
+            <div class="transactions__price--two transactions__info">
+                <span>2400 грн.</span>
+                <i class="icon-view"></i>
+            </div>
+            <div class="transactions__no-transactions">У вас не было транзакций!</div>
+
+        </div>
+        <div class="contact-info">
+            <div class="contact-info__main">
+                <input type="text" placeholder="ФИО*" class="contact-info__name input">
+                <input type="text" placeholder="Email*" class="contact-info__email leg input">
+                <input type="text" placeholder="Телефон*" class="contact-info__phone input">
+                <div class="contact-info__button button-two">Сохранить</div>
+            </div>
+            <div class="contact-info__photo upload-container">
+            <div class="upload-container">
+            <input type="file" name="photo" id="photo-input">
+            <span>Изменить фото</span>
+            </div>
+            </div>
+        </div>
+        <div class="adress-info">
+            <div class="adress-info__main">
+                <div class="adress-info__title">Адрес</div>
+                <div class="custom-select custom-select-1 adress-info__country">
+                    <i class="icon-filter-option-arrow"></i>
+                    <span class="custom-select__option"><span>Страна</span></span>
+                    <ul class="custom-select__list">
+                    <li>Украина</li>
+                    </ul>
+                </div>
+                <div class="custom-select custom-select-2 adress-info__region">
+                    <i class="icon-filter-option-arrow"></i>
+                    <span class="custom-select__option"><span>Область</span></span>
+                    <ul class="custom-select__list">
+                    <li>Киевская</li>
+                    <li>Одесская</li>
+                    <li>Полтавская</li>
+                    </ul>
+                </div>
+                <input type="text" placeholder="Город*" class="adress-info__city input">
+                <input type="text" placeholder="Адрес*" class="adress-info__adress input">
+                <div class="adress-info__button"><div class="button-two">Сохранить</div></div>
+            </div>
+        </div>
+    </div>
+</div>

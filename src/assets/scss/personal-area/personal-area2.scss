@@ -1,0 +1,786 @@
+main{
+    height: 100%;
+}
+
+.address-line-two {
+    &__order {
+        display: none;
+    }
+    &__transaction {
+        display: none;
+    }
+    &__adress {
+        display: none;
+    }
+    &__adress-and-info {
+        display: none;
+    }
+    &__contact {
+        display: none;
+    }
+}
+
+
+.personal-area {
+    max-width: 1330px;
+    margin: 58px auto 98px;
+    padding: 0 20px;
+    display: grid;
+    grid-template: auto 40px auto / minmax(auto, 250px) minmax(auto, 77px)  1fr minmax(auto, 280px) ;
+    &__title {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 32px;
+        font-family: Raleway;
+        font-weight: 800;
+        line-height: 32px;
+        letter-spacing: 0.32px;
+    }
+    &__manager {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    &__manager-title {
+        font-size: 16px;
+        font-family: Raleway;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0.16px;
+    }
+    &__manager-number {
+        color: #337D5A;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0.14px;
+        span{
+            margin-left: 5px;
+        }
+    }
+    &__discount {
+        grid-column: 4;
+        grid-row: 1;
+        color: #337D5A;
+        font-size: 16px;
+        font-family: Montserrat;
+        font-weight: 600;
+        display: flex;
+        justify-content: end;
+        margin-top: 10px;
+    }
+    &__list {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    &__list-title {
+        font-size: 18px;
+        font-family: Raleway;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0.01px;
+    }
+    &__item {
+        font-size: 16px;
+        font-family: Raleway;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.16px;
+        cursor: pointer;
+        span{
+            border-bottom: 2px solid #337d5a00;
+        }
+        &:hover, a:hover{
+            color: #337D5A;
+        }
+    }
+    &__item1 {
+        margin: 5px 0 16px 0;
+    }
+    &__item2 {
+        margin-bottom: 10px;
+    }
+    &__item3 {
+        margin-bottom: 35px;
+    }
+    &__item4 {
+        margin-bottom: 15px;
+    }
+    &__item5 {
+        margin-bottom: 10px;
+    }
+    &__item6 {
+        margin-bottom: 10px;
+    }
+    &__item7 {}
+    &__main {
+        grid-row: 3;
+        grid-column: 2/5;
+    }
+}
+
+.history-orders {
+    display: none;
+    &__info-row {
+        color: #1A2F3F;
+        font-size: 16px;
+        font-family: Raleway;
+        text-align: center;
+        font-weight: 700;
+        line-height: 32px;
+        margin: 39px 0 0 0;
+        display: grid;
+        grid-template: 65px 62px 62px / minmax(auto, 62px )  120px  minmax(auto, 52px )  80px  minmax(auto, 62px )  150px minmax(auto, 73px ) 75px minmax(auto, 74px ) 105px minmax(auto, 69px ) 100px ;
+        i{  
+            display: inline-flex;
+            transform: translateY(-1px);
+        }
+    }
+    &__number {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    &__data {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    &__quantity {
+        grid-column: 6;
+        grid-row: 1;
+    }
+    &__status {
+        grid-column: 8;
+        grid-row: 1;
+    }
+    &__price {
+        grid-column: 10;
+        grid-row: 1;
+
+    }
+    &__function {
+        grid-column: 12;
+        grid-row: 1;
+    }
+    &__orders {
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 500;
+        line-height: 32px;
+        text-align: center;
+
+    }
+    &__orders-number {
+        grid-column: 2;
+        grid-row: 2;
+        margin-right: 17px;
+    }
+    &__orders-data {
+        grid-column: 4;
+        grid-row: 2;
+        margin-right: 12px;
+    }
+    &__orders-quantity {
+        grid-column: 6;
+        grid-row: 2;
+        margin-right: 15px;
+    }
+    &__orders-status {
+        grid-column: 7/10;
+        grid-row: 2;
+        margin-right: 10px;
+    }
+    &__orders-price {
+        grid-column: 10;
+        grid-row: 2;
+        margin-right: 12px;
+    }
+    &__orders-function {
+        grid-column: 12;
+        grid-row: 2;
+    }
+    &__orders-number--two {
+        grid-column: 2;
+        grid-row: 3;
+        margin-right: 17px;
+    }
+    &__orders-data--two {
+        grid-column: 4;
+        grid-row: 3;
+        margin-right: 12px;
+    }
+    &__orders-quantity--two {
+        grid-column: 6;
+        grid-row: 3;
+        margin-right: 15px;
+    }
+    &__orders-status--two {
+        grid-column: 7/10;
+        grid-row: 3;
+        margin-right: 13px;
+    }
+    &__orders-price--two {
+        grid-column: 10;
+        grid-row: 3;
+        margin-right: 11px;
+    }
+    &__orders-function--two {
+        grid-column: 12;
+        grid-row: 3;
+    }
+    &__orders-icons{
+        margin: 3px 9px 0 0 ;
+    }
+}
+.icon-view {
+    font-size: 24px;
+    margin: 2px 0 0 0;
+    position: relative;
+    &:hover{
+        color: #337D5A;
+        &::after{
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -37px;
+            width: 150px;
+            height: 50px;
+            background: url(../../images/account/tool\ tip\ просмотреть\ заказ.webp);
+        }
+    }
+}
+.icon-copy {
+    font-size: 21px;
+    margin: 0 0 0 -3px;
+    &:hover{
+        color: #337D5A;
+    }
+}
+.icon-filter-option-arrow {
+    font-size: 8px;
+    color: rgba(138, 138, 138, 1);
+}
+.transactions {
+    margin: 39px 0 0 0;
+    display: none;
+    grid-template: 64px 62px 62px 62px / minmax(auto, 89px )  120px  minmax(auto, 264px )  130px  minmax(auto, 310px ) 110px 1fr ;
+    font-size: 16px;
+    font-family: Raleway;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    i{  
+        display: inline-flex;
+        transform: translateY(-1px);
+    }
+
+    &__info-adds {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    &__info-status {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    &__info-price {
+        grid-column: 6;
+        grid-row: 1;
+        margin-right: 15px;
+    }
+    &__info {
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 500;
+        line-height: 32px;
+    }
+    &__adds--one {
+        grid-column: 2;
+        grid-row: 2;
+        margin-right: 12px;
+    }
+    &__status--one {
+        grid-column: 4;
+        grid-row: 2;
+        margin-right: 9px;
+    }
+    &__price--one {
+        grid-column: 6;
+        grid-row: 2;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__adds--two {
+        grid-column: 2;
+        grid-row: 3;
+        margin-right: 12px;
+    }
+    &__status--two {
+        grid-column: 4;
+        grid-row: 3;
+        margin-right: 9px;
+    }
+    &__price--two {
+        grid-column: 6;
+        grid-row: 3;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__no-transactions {
+        grid-column: 1/8;
+        grid-row: 4;
+        text-align: right;
+        margin-right: 0px;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 700;
+        line-height: 32px;
+
+    }
+    .icon-view {
+        margin: 7px 0 0 0;
+    }
+}
+
+.contact-info {
+    display: none;
+    grid-template: 1fr / minmax(auto, 80px) minmax(auto, 474px) 30px 1fr;
+    &__main {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    &__company{
+        margin: 20px 0 15px 0;
+    }
+    &__name {
+        margin-bottom: 15px;
+    }
+    &__email {
+        margin-bottom: 15px;
+    }
+    &__phone {
+        margin-bottom: 15px;
+    }
+    &__button {
+        width: 229px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        font-family: Raleway;
+        font-weight: 700;
+    }
+    &__photo {
+        grid-row: 1;
+        grid-column: 4;
+        .upload-container {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            margin: 50px 0 0 0;
+            width: 131.009px;
+            height: 170px;
+            background: url(../../images/account/pic2.webp)center/cover no-repeat;
+            text-align: center;
+        }
+    
+        .upload-container input[type="file"] {
+        display: none;
+        }
+        span{
+        display: inline-block;
+        margin-top: 79px;
+        color: #FFF;
+        font-size: 13px;
+        font-family: Montserrat;
+        font-weight: 600;
+        line-height: 17px;
+        border-bottom: 1.5px dashed #FFF ;
+        }
+    }
+}
+
+
+.adress-info {
+    margin: 5px 0 0px 0 ;
+    display: none;
+    grid-template: 40px minmax(852px, 1fr) / minmax(auto, 80px)  minmax(auto, 474px) minmax(auto, 46px) minmax(auto, 440px) 1fr;
+    font-size: 17px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.17px;
+    &__column1 {
+        grid-row: 1/3;
+        grid-column: 2;
+    }
+    &__requisites-title {
+    }
+    &__requisites-input {
+        margin: 23px 0 45px 0;
+    }
+    &__adress-title {
+        margin-bottom: 19px;
+    }
+    &__country {
+        margin-bottom: 13px;
+    }
+    &__region {
+        margin-bottom: 20px;
+    }
+    &__city-one{
+        margin-bottom: 14px;
+    }
+    &__adress-one {
+        margin-bottom: 45px;
+    }
+    &__legal-title {
+        margin-bottom: 18px;
+    }
+    &__country-two{
+        margin-bottom: 15px;
+    }
+    &__region-two{
+        margin-bottom: 17px;
+    }
+    &__city {
+        margin-bottom: 17px;
+    }
+    &__adress-two {
+        margin-bottom: 15px;
+    }
+    &__index {
+        margin-bottom: 14px;
+    }
+    &__button {
+        display: flex;
+        justify-content: end;
+    }
+    .button-two{
+        font-size: 16px;
+        font-family: Raleway;
+        font-weight: 700;
+        line-height: 50px;
+        height: 50px;
+        width: 229px;
+    }
+    &__column2 {
+        grid-row: 2;
+        grid-column: 4;
+        background: url(../../images/account/28.webp) center/ cover no-repeat;
+        position: relative;
+        display: grid;
+        grid-template: minmax(auto, 326px) auto 19px auto 1fr / 1fr;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.45);
+        }
+    }
+    &__column2-title {
+        grid-column: 1;
+        grid-row: 2;
+        color: #FFF;
+        text-align: center;
+        font-size: 42px;
+        font-family: Raleway;
+        font-weight: 800;
+        line-height: 44px;
+        letter-spacing: 0.42px;
+        position: relative;
+        z-index: 2;
+    }
+    &__column2-info {
+        grid-column: 1;
+        grid-row: 4;
+        color: #FFF;
+        text-align: center;
+        font-size: 20px;
+        font-family: Raleway;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        line-height: 26px;
+        position: relative;
+        z-index: 2;
+        max-width: 300px;
+        padding-left: 3px;
+        margin: 0 auto;
+    }
+}
+
+
+
+///////TABS
+.history-order{
+    .history-orders {
+        display: block;
+    }
+    .personal-area {
+        &__item2 {
+            color: #337D5A;
+            span{
+                border-bottom: 2px solid #337d5a;
+            }
+        }
+    }
+    .address-line-two {
+        &__order {
+            display: block;
+        }
+    }
+}
+.history-transaction{
+    .personal-area {
+        margin: 58px auto 62px;
+    }
+    .transactions {
+        display: grid;
+    }
+    .personal-area {
+        &__item3 {
+            color: #337D5A;
+            span{
+                border-bottom: 2px solid #337d5a;
+            }
+        }
+    }
+    .address-line-two {
+        &__transaction {
+            display: block;
+        }
+    }
+}
+.contact-inform{
+    .personal-area {
+        &__item5 {
+            color: #337D5A;
+            span{
+                border-bottom: 2px solid #337d5a;
+            }
+        }
+    }
+    .address-line-two {
+        &__contact {
+            display: block;
+        }
+    }
+    .contact-info {
+        display: grid;
+    }
+}
+.adress{
+    .personal-area {
+        &__item7 {
+            color: #337D5A;
+            span{
+                border-bottom: 2px solid #337d5a;
+            }
+        }
+    }
+    .address-line-two {
+        &__adress-and-info {
+            display: block;
+        }
+    }
+    .adress-info {
+        display: grid;
+    }
+}
+.password{
+    .personal-area {
+        &__item6 {
+            color: #337D5A;
+            span{
+                border-bottom: 2px solid #337d5a;
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .personal-area {
+        margin: 58px auto;
+        grid-template: auto 10px auto 10px auto 40px auto 40px auto / 1fr ;
+        &__title {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        &__manager {
+            grid-column: 1;
+            grid-row: 5;
+        }
+        &__discount {
+            grid-column: 1;
+            grid-row: 3;
+            display: block;
+        }
+        &__list {
+            grid-column: 1;
+            grid-row: 7;
+        }
+        &__main {
+            grid-row: 9;
+            grid-column: 1;
+        }
+    }
+    .history-orders {
+        &__info-row {
+            grid-template: 65px 62px 62px / 0px  120px  minmax(auto, 52px )  80px  minmax(auto, 62px )  150px minmax(auto, 73px ) 75px minmax(auto, 74px ) 105px minmax(auto, 69px ) 100px ;
+        }
+    }
+    .transactions {
+        grid-template: 64px 62px 62px 62px / 0px  120px  minmax(auto, 264px )  130px  minmax(auto, 310px ) 110px 1fr ;
+    }
+}
+@media (max-width: 700px) {
+    .history-orders {
+        display: none;
+        &__info-row {
+            grid-template: 50px 20px 50px 20px 50px 20px 50px 20px 50px 20px 50px / 1fr  150px  minmax(auto, 30px )  90px  minmax(auto, 15px )  90px 1fr ;
+            text-align: left;
+            font-size: 14px;
+            .icon-filter-option-arrow{
+                rotate: -90deg;
+            }
+        }
+        &__orders {
+            text-align: left;
+            font-size: 12px;
+        }
+        &__number {
+            grid-column: 2;
+            grid-row: 1;
+        }
+        &__data {
+            grid-column: 2;
+            grid-row: 3;
+        }
+        &__quantity {
+            grid-column: 2;
+            grid-row: 5;
+        }
+        &__status {
+            grid-column: 2;
+            grid-row: 7;
+        }
+        &__price {
+            grid-column: 2;
+            grid-row: 9;
+    
+        }
+        &__function {
+            grid-column: 2;
+            grid-row: 11;
+        }
+        &__orders-number {
+            grid-column: 4;
+            grid-row: 1;
+            margin: 0;
+        }
+        &__orders-data {
+            grid-column: 4;
+            grid-row: 3;
+            margin-right: 0;
+        }
+        &__orders-quantity {
+            grid-column: 4;
+            grid-row: 5;
+            margin-right: 0px;
+        }
+        &__orders-status {
+            grid-column: 4;
+            grid-row: 7;
+            margin-right: 0px;
+        }
+        &__orders-price {
+            grid-column: 4;
+            grid-row: 9;
+            margin-right: 0px;
+        }
+        &__orders-function {
+            grid-column: 4;
+            grid-row: 11;
+        }
+        &__orders-number--two {
+            grid-column: 6;
+            grid-row: 1;
+            margin-right: 0px;
+        }
+        &__orders-data--two {
+            grid-column: 6;
+            grid-row: 3;
+            margin-right: 0px;
+        }
+        &__orders-quantity--two {
+            grid-column: 6;
+            grid-row: 5;
+            margin-right: 15px;
+        }
+        &__orders-status--two {
+            grid-column: 6;
+            grid-row: 7;
+            margin-right: 0px;
+        }
+        &__orders-price--two {
+            grid-column: 6;
+            grid-row: 9;
+            margin-right: 0px;
+        }
+        &__orders-function--two {
+            grid-column: 6;
+            grid-row: 11;
+        }
+    }
+    .transactions {
+        grid-template: 64px 62px 62px 62px / 0px  100px  minmax(auto, 264px )  110px  minmax(auto, 310px ) 95px 1fr ;
+        font-size: 14px;
+        &__info {
+            font-size: 12px;
+        }
+    }
+    .adress-info {
+        grid-template: 40px 110vw 30px auto  / 1fr;
+        &__column1 {
+            grid-row: 4;
+            grid-column: 1;
+        }
+        &__column2 {
+            grid-row: 2;
+            grid-column: 1;
+            grid-template: 1fr auto 19px auto 1fr / 1fr;
+        }
+        &__column2-title {
+            font-size: 32px;
+        }
+        &__column2-info {
+            font-size: 16px;
+        }
+        &__button {
+            display: block;
+        }
+        .button-two{
+            line-height: 42px;
+            height: 42px;
+        }
+    }
+    .contact-info {
+        grid-template: auto 30px auto / 1fr;
+        justify-items: center;
+        &__main {
+            grid-row: 3;
+            grid-column: 1;
+        }
+        &__photo {
+            grid-row: 1;
+            grid-column: 1;
+        }
+        &__button{
+            height: 42px;
+            line-height: 42px;
+        }
+        
+    }
+}
+

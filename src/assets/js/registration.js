@@ -44,10 +44,6 @@ customSelects.forEach((select) => {
   });
 });
 
-//Стилизация input "file"
-document.querySelector('.upload-container').addEventListener('click', function() {
-  document.querySelector('#photo-input').click();
-});
 
 //Табуляция доставка и оплата
 const registration = document.querySelector('.registration')

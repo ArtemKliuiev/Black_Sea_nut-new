@@ -41,6 +41,7 @@
   width: 188px;
   color: #FFFFFF;
   background-color: #337D5A;
+  cursor: pointer;
 }
 .button-two:active {
   background-color: #FFFFFF;

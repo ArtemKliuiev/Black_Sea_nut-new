@@ -43,6 +43,7 @@
     width: 188px;
     color: #FFFFFF;
     background-color: #337D5A;
+    cursor: pointer;
 }
 
 .button-two:active {
@@ -447,4 +448,9 @@ a {
     font-weight: 500;
     line-height: 17px;
     padding-left: 10px;
+}
+
+.input:focus {
+    outline: none;
+    border: 1px solid #337D5A;
 }

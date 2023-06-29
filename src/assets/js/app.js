@@ -202,3 +202,13 @@ function initMap() {
 
 
 
+var myObject = document.querySelector('.request-call__basket');
+const bodySelect = document.querySelector("body")
+
+myObject.addEventListener('mouseenter', function() {
+  bodySelect.classList.add('hide');
+});
+
+myObject.addEventListener('mouseleave', function() {
+  bodySelect.classList.remove('hide');
+});

@@ -97,11 +97,6 @@ main{
 .delivery-video {
     margin: 62px 0 80px 0;
 }
-
-
-
-
-
 .main-title {
 }
 .main-title--two {
@@ -372,5 +367,11 @@ main{
     .main-bottom-button{
         margin: 50px auto 50px;
         width: 200px;
+    }
+}
+@media (max-width: 500px) { 
+    .slider-arrow {
+        width: 80px;
+        height: 35px;
     }
 }

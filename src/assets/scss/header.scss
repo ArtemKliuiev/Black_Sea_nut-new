@@ -1,3 +1,8 @@
+header{
+  position: relative;
+  z-index: 10;
+}
+
 select {
   border: none;
   appearance: none;
@@ -24,6 +29,7 @@ select {
 }
 
 .top-line {
+  position: relative;
   display: grid;
   height: 38px;
   align-items: center;
@@ -205,9 +211,16 @@ select {
     grid-column: 12;
     grid-row: 1;
     padding: 0 0 2px 0;
+    position: relative;
     img{
       width: 22px;
       height: 24px;
+    }
+    &:hover{
+      .basket-hover {
+        display: block;
+        
+      }
     }
   }
 }
@@ -282,6 +295,163 @@ select {
 
 .adaptive-header {
   display: none;
+}
+
+.hide{
+  .basket-hover {
+    display: block;
+  }
+}
+
+.basket-hover {
+  position: absolute;
+  display: none;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  &__main {  
+    max-width: 1290px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 1px / 1fr auto 5px;
+  }
+  &__main-line{
+    grid-row: 2;
+    grid-column: 2;
+    width: 468px;
+    height: 1px;
+  }
+  &__goods{
+    top: 73px;
+    position: absolute;
+    width: 468px;
+    height:  229px;
+    margin: 50px 0;
+    border: 1.5px solid #337D5A;
+    background: #FFF;
+    display: grid;
+    justify-items: end;
+    align-items: center;
+    grid-template: 19px 50px 8px 50px 25px 50px / 170px 35px 100px 0px 160px   ;
+  }
+  &__item {
+    font-size: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+  }
+  &__item--one {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  &__item--two {
+    grid-column: 1;
+    grid-row: 4;
+    letter-spacing: 0px;
+  }
+  &__quantity {
+    font-size: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  &__quantity--one {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  &__quantity--two {
+    grid-column: 3;
+    grid-row: 4;
+  }
+  &__price {
+    font-size: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    i{
+      color: rgba(196, 196, 196, 1);
+      font-size: 12px;
+      margin: 0 30px 0 30px;
+    }
+    .icon-filter-restart-two{
+      margin: 0 30px 0 34px;
+    }
+  }
+  &__price--one {
+    grid-column: 5;
+    grid-row: 2;
+  }
+  &__price--two {
+    grid-column: 5;
+    grid-row: 4;
+
+  }
+  &__sum {
+    grid-column: 1/7;
+    grid-row: 6;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-right: 30px;
+    span{
+        color: #337D5A;
+        font-size: 22px;
+        font-family: Montserrat;
+        font-weight: 700;
+        line-height: 32px;
+        margin-left: 5px;
+        span{
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 32px;
+            margin-left: 2px;
+        }
+    }
+  }
+  &__checkout{
+    width: 191px;
+    height: 50px !important;
+    line-height: 50px !important;
+    font-size: 15px !important;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 17px;
+  }
+}
+
+
+
+.basket-hover {
+  &__main-line {}
+  &__goods {}
+}
+.container {
+}
+.decreaseButton {
+}
+.icon-filter-option-arrow {
+}
+.button-left {
+}
+.number {
+}
+.increaseButton {
+}
+.button-right {
+}
+.basket {
+  &__checkout {}
+}
+.button-two {
 }
 
 /*_________________________________________________ADAPTIVE______________________________________________________*/

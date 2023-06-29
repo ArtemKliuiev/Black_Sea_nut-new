@@ -337,3 +337,9 @@ main {
     width: 200px;
   }
 }
+@media (max-width: 500px) {
+  .slider-arrow {
+    width: 80px;
+    height: 35px;
+  }
+}

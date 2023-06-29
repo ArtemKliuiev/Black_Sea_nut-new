@@ -1,0 +1,163 @@
+---
+layout: default
+title: Оформление заказа
+link-pages: ../assets/css/basket/checkout.min.css
+link-component-one:  
+link-component-two: ../assets/css/personal-area/components.min.css
+link-component-three: 
+link-component-four: 
+link-component-five:
+link-component-six: 
+link-component-seven:
+link-script: ../assets/js/basket.js
+link-script-two: ../assets/js/checkout.js
+link-script-three: 
+add: ../
+---
+
+
+
+<div class="address-line-two">
+    <div class="address-line-two__main"><a href="{{add}}index.html">Главная</a><div class="address-line-two__image"><i class="icon-slider-arrow-right"></i></div><a href="basket.html">Корзина</a><div class="address-line-two__image"><i class="icon-slider-arrow-right"></i></div><span>Оформление заказа</span></div>
+</div>
+<div class="basket">
+    <div class="basket__top-line">
+        <div class="basket__title">Оформление заказа</div>
+        <div class="basket__manager">
+            <div class="basket__manager-title">Ваш личный менеджер Олег</div>
+            <div class="basket__manager-phone">
+                <img src="../assets/images/svg/phone.svg" alt="">
+                <span>+38 067 777 14 12</span>
+            </div>
+        </div>
+    </div>
+    <div class="basket__info-line">
+        <div class="basket__item-info">
+            <span>Товар</span>
+            <i class="icon-filter-option-arrow"></i>
+        </div>
+        <div class="basket__quantity-info">
+            <span>Кол - во</span>
+            <i class="icon-filter-option-arrow"></i>
+        </div>
+        <div class="basket__price-info">
+            <span>Цена за товар</span>
+            <i class="icon-filter-option-arrow"></i>
+        </div>
+        <div class="basket__finish-price-info">
+            <span>Итоговая стоимость</span>
+            <i class="icon-filter-option-arrow"></i>
+        </div>
+    </div>
+    <div class="basket__godds">
+    <div class="basket__item basket__item--one">Орех соленый 80г.</div>
+    <div class="basket__item basket__item--two">Орех соленый 80г.</div>
+    <div class="basket__item basket__item--three">Орех соленый 80г.</div>
+    <div class="basket__item basket__item--four">Орех соленый 80г.</div>
+
+    <div class="basket__quantity basket__quantity--one">
+        <div class="container">
+            <button class="decreaseButton"><i class="icon-filter-option-arrow button-left"></i></button>
+            <span class="number">4</span>
+            <button class="increaseButton"><i class="icon-filter-option-arrow button-right"></i></button>
+        </div>
+    </div>
+    <div class="basket__quantity basket__quantity--two">
+        <div class="container">
+            <button class="decreaseButton"><i class="icon-filter-option-arrow button-left"></i></button>
+            <span class="number">1</span>
+            <button class="increaseButton"><i class="icon-filter-option-arrow button-right"></i></button>
+        </div>
+    </div>
+    <div class="basket__quantity basket__quantity--three">
+        <div class="container">
+            <button class="decreaseButton"><i class="icon-filter-option-arrow button-left"></i></button>
+            <span class="number">1</span>
+            <button class="increaseButton"><i class="icon-filter-option-arrow button-right"></i></button>
+        </div>
+    </div>
+    <div class="basket__quantity basket__quantity--four">
+        <div class="container">
+            <button class="decreaseButton"><i class="icon-filter-option-arrow button-left"></i></button>
+            <span class="number">1</span>
+            <button class="increaseButton"><i class="icon-filter-option-arrow button-right"></i></button>
+        </div>
+    </div>
+
+    <div class="basket__price basket__price--one">25 грн.</div>
+    <div class="basket__price basket__price--two">25 грн.</div>
+    <div class="basket__price basket__price--three">25 грн.</div>
+    <div class="basket__price basket__price--four">25 грн.</div>
+
+    <div class="basket__finish-price basket__finish-price--one">&nbsp100 грн.</div>
+    <div class="basket__finish-price basket__finish-price--two">25 грн.</div>
+    <div class="basket__finish-price basket__finish-price--three">25 грн.</div>
+    <div class="basket__finish-price basket__finish-price--four">25 грн.</div>
+    </div>
+    <div class="basket__button-line">
+        <div class="basket__sum">Всего <span>175<span>грн.</span></span></div>
+    </div>
+    <div class="checkout">
+        <div class="checkout__main">
+            <div class="checkout__contact-title checkout__title">1. Контактные данные</div>
+            <input type="text" class="checkout__input-name input" placeholder="ФИО*" >
+            <input type="text" class="checkout__input-email input" placeholder="Email*" >
+            <input type="number" class="checkout__input-phone input" placeholder="Телефон*">
+            <div class="checkout__delivery-title checkout__title">2. Способ доставки</div>
+            <div class="checkout__radio-item checkout__radio--one">
+                <div class="custom-radio">
+                    <input type="radio" id="option1"  name="option" value="option1">
+                </div>
+                <label for="option1">Новая почта (по Украине &nbspоплата за счет Клиента)</label>
+            </div>
+            <div class="custom-select custom-select-1 adress-info__country">
+                <i class="icon-filter-option-arrow"></i>
+                <span class="custom-select__option"><span>Страна</span></span>
+                <ul class="custom-select__list">
+                <li>Украина</li>
+                </ul>
+            </div>
+            <div class="custom-select custom-select-2 adress-info__region">
+                <i class="icon-filter-option-arrow"></i>
+                <span class="custom-select__option"><span>Область</span></span>
+                <ul class="custom-select__list">
+                <li>Киевская</li>
+                <li>Одесская</li>
+                <li>Полтавская</li>
+                </ul>
+            </div>
+            <div class="checkout__radio-item checkout__radio--two">
+                <div class="custom-radio">
+                    <input type="radio" id="option2" checked name="option" value="option2">
+                </div>
+                <label for="option2">Курьер по Одессе</label>
+            </div>
+            <input type="text" class="checkout__input-adress input" placeholder="Адрес*" >
+            <div class="checkout__radio-item checkout__radio--three">
+                <div class="custom-radio">
+                    <input type="radio" id="option3" name="option" value="option3">
+                </div>
+                <label for="option3">Самовывоз со склада</label>
+            </div>
+            <div class="checkout__pay-title checkout__title">3. Способ оплаты</div>
+            <div class="checkout__radio-item checkout__radio--four">
+                <div class="custom-radio">
+                    <input type="radio" id="option5" checked name="option2" value="option5">
+                </div>
+                <label for="option5">Безналичный расчет</label>
+            </div>
+            <div class="checkout__radio-item checkout__radio--five">
+                <div class="custom-radio">
+                    <input type="radio" id="option6" name="option2" value="option5">
+                </div>
+                <label for="option6">LiqPay / Приват24</label>
+            </div>
+            <div class="checkout__radio-item checkout__radio--six">
+                <div class="custom-radio">
+                    <input type="radio" id="option7" name="option2" value="option5">
+                </div>
+                <label for="option7">Наличными при получении (Наложенным платежом)</label>
+            </div>
+            <a href="order-processed.html" class="checkout__button button-two">Продолжить</a>
+        </div>
+    </div>

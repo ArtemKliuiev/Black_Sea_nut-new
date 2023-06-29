@@ -343,6 +343,13 @@
   }
 }
 @media (max-width: 550px) {
+  .one-news-top {
+    max-width: 1332px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template: 36px 15px 57px 120px 12px 25px 10px/208px 1fr;
+  }
   .news-block {
     grid-template: 21px 63px 9px 300px 10px 300px 10px 300px 25px 300px/1fr minmax(auto, 220px) 1fr;
   }
@@ -396,5 +403,8 @@
   .news-block__our-networks-links {
     grid-column: 1;
     grid-row: 6;
+  }
+  .one-news {
+    margin: 0 auto 0px;
   }
 }

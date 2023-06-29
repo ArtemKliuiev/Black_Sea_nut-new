@@ -45,7 +45,7 @@ customSelects.forEach((select) => {
 });
 
 
-//Табуляция доставка и оплата
+//Табуляция
 const registration = document.querySelector('.registration')
 function registrTab (number) {
   if(number===1){

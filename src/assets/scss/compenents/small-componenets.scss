@@ -378,6 +378,15 @@ a{
         margin-top: 66px;
     }
 }
+@media (max-width: 600px) {
+    .image-banner {
+        height: 250px;
+        &__title{
+            font-size: 36px;
+            margin-top: 40px;
+        }
+    }
+}
 //////////////////////////////////////////////////////////////////////////
 .input{
     height: 47px;
@@ -396,6 +405,11 @@ a{
         outline: none;
         border: 1px solid #337D5A; 
       }
+}
+@media (max-width: 400px) {
+    .input{
+        height: 35px;
+    }
 }
 
 ////////////////////////////////////////////

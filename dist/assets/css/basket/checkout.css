@@ -714,4 +714,10 @@ main {
         width: 20px;
         height: 20px;
     }
+
+    .checkout__button {
+        line-height: 42px;
+        height: 42px;
+        width: 150px;
+    }
 }

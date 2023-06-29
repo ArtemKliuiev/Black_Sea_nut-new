@@ -187,7 +187,6 @@ main {
 
 .goods-button {
     margin: 71px auto 196px;
-    line-height: 52px;
     letter-spacing: 0.8px;
 }
 
@@ -258,6 +257,10 @@ main {
     bottom: 0;
     left: 0;
     background-color: #337D5A;
+}
+
+.about-production .icon-slider-arrow-one {
+    margin: -3px 0px 0 2px;
 }
 
 .about-production__swiper .swiper {

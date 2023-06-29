@@ -45,6 +45,10 @@
 }
 
 @media (max-width: 450px) {
+    .tabs {
+        grid-template: 40px auto 20px/1fr minmax(auto, 1070px) 1fr;
+    }
+
     .tabs span {
         font-size: 8px;
         line-height: 16px;

@@ -366,6 +366,10 @@ main {
     margin: 16px 0 22px 0px;
 }
 
+.checkout__input-company {
+    margin-bottom: 16px;
+}
+
 .checkout__input-name {
     margin-bottom: 16px;
 }
@@ -375,7 +379,7 @@ main {
 }
 
 .checkout__input-phone {
-    margin-bottom: 41px;
+    margin-bottom: 43px;
 }
 
 .checkout__delivery-title {
@@ -394,7 +398,7 @@ main {
 }
 
 .checkout__radio--two {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .checkout__radio--two label {
@@ -413,6 +417,7 @@ main {
 
 .checkout__input-adress {
     margin-bottom: 12px;
+    display: none;
 }
 
 .checkout__radio--three {
@@ -469,6 +474,10 @@ main {
 }
 
 .new-mail .custom-select-2 {
+    display: block;
+}
+
+.courier .checkout__input-adress {
     display: block;
 }
 
@@ -713,5 +722,11 @@ main {
     .container button {
         width: 20px;
         height: 20px;
+    }
+
+    .checkout__button {
+        line-height: 42px;
+        height: 42px;
+        width: 150px;
     }
 }

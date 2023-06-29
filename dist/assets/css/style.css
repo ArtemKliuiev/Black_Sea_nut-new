@@ -7,3 +7,61 @@ body {
     overflow: hidden;
     overflow-y: auto;
 }
+
+main {
+    height: 100%;
+}
+
+.container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 110px;
+    height: 30px;
+}
+
+.container:hover .number {
+    border: 1px solid #93B474;
+}
+
+.container button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.number {
+    width: 44px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.icon-filter-option-arrow {
+    font-size: 8px;
+    color: rgb(138, 138, 138);
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+}
+
+.button-left {
+    rotate: 90deg;
+    -webkit-transform: translate(-3px, -4px);
+    transform: translate(-3px, -4px);
+    font-size: 7px;
+}
+
+.button-right {
+    rotate: -90deg;
+    -webkit-transform: translate(1px, -4px);
+    transform: translate(1px, -4px);
+    font-size: 7px;
+}

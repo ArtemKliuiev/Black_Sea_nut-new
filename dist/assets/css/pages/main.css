@@ -226,7 +226,7 @@ main {
 }
 
 .bottom-image {
-    background: url(../../images/main/bottom-img.jpg) center/cover no-repeat;
+    background: url(../../images/main/bottom-img.webp) center/cover no-repeat;
     grid-template: 226px 72px 44px 60px 14px 100px 1fr/1fr;
     margin: 59px 0 -6px 0;
 }
@@ -383,5 +383,12 @@ main {
     .main-bottom-button {
         margin: 50px auto 50px;
         width: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .slider-arrow {
+        width: 80px;
+        height: 35px;
     }
 }

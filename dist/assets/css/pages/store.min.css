@@ -9,6 +9,15 @@ main {
   margin-top: 75px;
 }
 
+.icon-filter-option-arrow {
+  position: absolute;
+  z-index: 1;
+  right: 19px;
+  top: 25px !important;
+  color: #337D5A;
+  font-size: 6px;
+}
+
 .filter {
   position: relative;
   z-index: 3;

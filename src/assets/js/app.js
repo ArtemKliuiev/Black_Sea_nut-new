@@ -1,111 +1,178 @@
+const linkSelectors = [
+  '.link-row__link1',
+  '.link-row__link2',
+  '.link-row__link3',
+  '.link-row__link4',
+  '.link-row__link5',
+  '.link-row__link6'
+];
 
-// Получение элементов ссылок
-var link1 = document.querySelector('.link-row__link1');
-var link2 = document.querySelector('.link-row__link2');
-var link3 = document.querySelector('.link-row__link3');
-var link4 = document.querySelector('.link-row__link4');
-var link5 = document.querySelector('.link-row__link5');
-var link6 = document.querySelector('.link-row__link6');
-
-var link21 = document.querySelector('.bottom-menu__link1');
-var link22 = document.querySelector('.bottom-menu__link2');
-var link23 = document.querySelector('.bottom-menu__link3');
-var link24 = document.querySelector('.bottom-menu__link4');
-var link25 = document.querySelector('.bottom-menu__link5');
-var link26 = document.querySelector('.bottom-menu__link6');
-var link27 = document.querySelector('.bottom-menu__link7');
-
+const bottomMenuSelectors = [
+  '.bottom-menu__link1',
+  '.bottom-menu__link2',
+  '.bottom-menu__link3',
+  '.bottom-menu__link4',
+  '.bottom-menu__link5',
+  '.bottom-menu__link6',
+  '.bottom-menu__link7'
+];
 
 
 function clearDynamicScripts() {
-  var scripts = document.head.getElementsByTagName('script');
-  for (var i = scripts.length - 1; i >= 0; i--) {
-    if (scripts[i].getAttribute('data-dynamic') === 'true') {
-      document.head.removeChild(scripts[i]);
-    }
-  }
+  const scripts = Array.from(document.head.getElementsByTagName('script'));
+  scripts
+    .filter(script => script.getAttribute('data-dynamic') === 'true')
+    .forEach(script => script.remove());
 }
-clearDynamicScripts();
+
 
 function refreshBrowserScriptInfo() {
-  var tempScript = document.createElement('script');
-  tempScript.textContent = ' ';
+  const tempScript = document.createElement('script');
   document.head.appendChild(tempScript);
   document.head.removeChild(tempScript);
 }
 
 
 function loadScript(url) {
-  var script = document.createElement('script');
+  const script = document.createElement('script');
   script.src = url;
-  script.setAttribute('data-dynamic', 'true'); // Добавляем атрибут data-dynamic
+  script.setAttribute('data-dynamic', 'true');
   document.head.appendChild(script);
 }
 
 
-// Функция для загрузки страницы через XMLHttpRequest
 function loadPage(url) {
-  var xhttp = new XMLHttpRequest();
+  const xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState === 4 && this.status === 200) {
       document.getElementById("content").innerHTML = this.responseText;
 
-      // Получите все элементы с классом .active
       const activeElements = document.querySelectorAll('.active');
-
-      // Переберите все найденные элементы и удалите класс .active
       activeElements.forEach(element => {
         element.classList.remove('active');
       });
 
-      if (url == "page1.html") {
-        link1.classList.add('active');
-        link21.classList.add('active');
-      } else if (url == 'page2.html') {
-        link2.classList.add('active');
-        link22.classList.add('active');
-      } else if (url == 'page3.html') {
-        link3.classList.add('active');
-        link23.classList.add('active');
-      } else if (url == 'page4.html') {
-        link4.classList.add('active');
-        link24.classList.add('active');
-      } else if (url == 'page5.html') {
-        link5.classList.add('active');
-        link25.classList.add('active');
-      }  else if (url == 'page7.html') {
-        link27.classList.add('active');
+      const linkIndex = url.slice(4, 5);
+      const linkElement = document.querySelector(linkSelectors[linkIndex - 1]);
+      if (linkElement) linkElement.classList.add('active');
+
+      const bottomMenuIndex = url.slice(4, 5);
+      const bottomMenuElement = document.querySelector(bottomMenuSelectors[bottomMenuIndex - 1]);
+      if (bottomMenuElement) bottomMenuElement.classList.add('active');
+
+      clearDynamicScripts();
+      refreshBrowserScriptInfo();
+
+      
+      if (url === 'page1.html') {
+          loadScript('assets/js/store.js');
+          loadScript('assets/js/goods.js');
+          const customSelectsTwo = document.querySelectorAll('.custom-select');
+
+
+      customSelectsTwo.forEach((select) => {
+        const selectedOption = select.querySelector('.custom-select__option');
+        const optionsList = select.querySelector('.custom-select__list');
+        const options = optionsList.querySelectorAll('li');
+
+        selectedOption.addEventListener('click', () => {
+          // При клике на выбранную опцию отображаем или скрываем список опций
+          // optionsList.style.display = optionsList.style.display === 'none' ? 'block' : 'none';
+        });
+
+  options.forEach((option) => {
+    option.addEventListener('click', () => {
+      selectedOption.textContent = option.textContent;
+
+      options.forEach((option) => {
+        option.classList.remove('selected');
+      });
+
+      option.classList.add('selected');
+
+      // optionsList.style.display = 'none';
+
+      if (select.classList.contains('custom-select-1')) {
+        // Действия для первого списка
+        if (option.textContent === 'Сладкие') {
+          console.log('Выбрана Сладкие');
+        } else if (option.textContent === 'Соленые') {
+          console.log('Выбрана Соленые');
+        }
+      } else if (select.classList.contains('custom-select-2')) {
+        // Действия для второго списка
+        if (option.textContent === '40г') {
+          console.log('Выбрана 40г');
+        } else if (option.textContent === '80г') {
+          console.log('Выбрана 80г');
+        }
+      }
+      
+    });
+  });
+});
+        
+        
+      } else if (url === 'page2.html') {
+          loadScript('assets/js/production.js');
+          let yTube = document.querySelector("#movie_player > div.ytp-chrome-bottom");
+          let videoSlider = document.querySelector('.swiper-slide1');
+          letarrowSlider = document.querySelector('.slider-arrow');
+          videoSlider.onclick = function(){
+            this.classList.add('ready');
+            arrowSlider.classList.add('ready');
+          }
+          let videoSlider2 = document.querySelector('.swiper-slide2');
+          videoSlider2.onclick = function(){
+            this.classList.add('ready');
+            arrowSlider.classList.add('ready');
+          }
+          let videoSlider3 = document.querySelector('.swiper-slide3');
+          videoSlider3.onclick = function(){
+            this.classList.add('ready');
+            arrowSlider.classList.add('ready');
+          }
+
+
+        //Бесконечная прогрузка Галерея
+        var galleryDiv = document.querySelector(".gallery");
+        var loadMoreButton = document.getElementById("load_more_button");
+        var lastGalleryClone = galleryDiv; // Ссылка на последний клон
+
+        function duplicateGallery() {
+          var galleryClone = galleryDiv.cloneNode(true);
+          lastGalleryClone.parentNode.insertBefore(galleryClone, lastGalleryClone.nextSibling);
+          lastGalleryClone = galleryClone; // Обновляем ссылку на последний клон
+        }
+
+        loadMoreButton.addEventListener("click", duplicateGallery);
+      } else {
+        loadScript('другой скрипт');
       }
 
-      // Выполнение кода после загрузки страницы
-      if (url == 'page1.html') {
-        clearDynamicScripts();
-        refreshBrowserScriptInfo()
-        loadScript('assets/js/store.js');
-        loadScript('assets/js/goods.js');
-      } else if (url == 'page2.html') {
-        clearDynamicScripts();
-        refreshBrowserScriptInfo()
-        loadScript('assets/js/production.js');
-
-      } else if (url == 'page3.html') {
-        loadScript('другой скрипт');
-      } else if (url == 'page4.html') {
-        loadScript('другой скрипт');
-      } else if (url == 'page5.html') {
-        loadScript('другой скрипт');
-      } else if (url == 'page6.html') {
-        loadScript('другой скрипт');
-      } else if (url == 'page7.html') {
-        loadScript('другой скрипт');
-      } else if (url == 'page8.html') {
-        loadScript('другой скрипт');
-      } 
+      // Назначить обработчик клика на каждую ссылку
+      const links = document.querySelectorAll('.link');
+      links.forEach(link => {
+        link.addEventListener('click', linkClickHandler);
+      });
     }
   };
   xhttp.open("GET", url, true);
   xhttp.send();
 }
+
+// Обработчик клика на ссылку
+function linkClickHandler(event) {
+  event.preventDefault();
+  const url = event.target.href;
+  loadPage(url);
+}
+
+// Назначить обработчик клика на каждую ссылку
+const links = document.querySelectorAll('.link');
+links.forEach(link => {
+  link.addEventListener('click', linkClickHandler);
+});
 
 loadPage("page1.html");
 

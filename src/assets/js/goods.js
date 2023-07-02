@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper1", {
+new Swiper(".mySwiper1", {
     loop: true,
     navigation: {
       nextEl: ".product__slider-right1",

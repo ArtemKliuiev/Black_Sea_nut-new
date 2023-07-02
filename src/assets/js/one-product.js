@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper1", {
+ new Swiper(".mySwiper1", {
     loop: true,
     navigation: {
       nextEl: ".product__slider-right1",
@@ -8,7 +8,7 @@ var swiper = new Swiper(".mySwiper1", {
 
 
   //Табуляция доставка и оплата
-const mainDelivery = document.querySelector('.block-info')
+let mainDelivery = document.querySelector('.block-info')
 function showTab (number) {
   if(number===1){
     mainDelivery.classList.remove('package', 'payment', 'delivery' )

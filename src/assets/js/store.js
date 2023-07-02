@@ -1,8 +1,8 @@
-var swiperNews = new Swiper('.news-row__slider-swiper', {
+new Swiper('.news-row__slider-swiper', {
     slidesPerView: 1,
     loop: true,
     spaceBetween: 33,
-    direction: getDirection(),
+    direction: window.innerWidth <= 0 ? 'vertical' : 'horizontal',
     navigation: {
       nextEl: '.news-row__button-right',
       prevEl: '.news-row__button-left',
@@ -27,12 +27,6 @@ var swiperNews = new Swiper('.news-row__slider-swiper', {
   });
   
 
-  function getDirection() {
-    var windowWidth = window.innerWidth;
-    var direction = window.innerWidth <= 0 ? 'vertical' : 'horizontal';
-
-    return direction;
-  }
 
 
   // const videoSwiper1 = document.querySelector('.swiper-slide__video1');
@@ -47,52 +41,10 @@ var swiperNews = new Swiper('.news-row__slider-swiper', {
 
 
 // Получаем список всех выпадающих списков
-const customSelectsTwo = document.querySelectorAll('.custom-select');
 
-// Проходимся по каждому выпадающему списку и привязываем события
-customSelectsTwo.forEach((select) => {
-  const selectedOption = select.querySelector('.custom-select__option');
-  const optionsList = select.querySelector('.custom-select__list');
-  const options = optionsList.querySelectorAll('li');
-
-  selectedOption.addEventListener('click', () => {
-    // При клике на выбранную опцию отображаем или скрываем список опций
-    // optionsList.style.display = optionsList.style.display === 'none' ? 'block' : 'none';
-  });
-
-  options.forEach((option) => {
-    option.addEventListener('click', () => {
-      selectedOption.textContent = option.textContent;
-
-      options.forEach((option) => {
-        option.classList.remove('selected');
-      });
-
-      option.classList.add('selected');
-
-      // optionsList.style.display = 'none';
-
-      if (select.classList.contains('custom-select-1')) {
-        // Действия для первого списка
-        if (option.textContent === 'Сладкие') {
-          console.log('Выбрана Сладкие');
-        } else if (option.textContent === 'Соленые') {
-          console.log('Выбрана Соленые');
-        }
-      } else if (select.classList.contains('custom-select-2')) {
-        // Действия для второго списка
-        if (option.textContent === '40г') {
-          console.log('Выбрана 40г');
-        } else if (option.textContent === '80г') {
-          console.log('Выбрана 80г');
-        }
-      }
-      
-    });
-  });
-});
 ////////////////////////////////////////////////////////////
-const swiperStore = new Swiper('.about-production__slider-swiper', {
+
+new Swiper('.about-production__slider-swiper', {
   // Optional parameters
   direction:  'horizontal',
   loop: true,
@@ -115,3 +67,4 @@ const swiperStore = new Swiper('.about-production__slider-swiper', {
 
 
 });
+

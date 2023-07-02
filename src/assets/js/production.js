@@ -1,4 +1,4 @@
-const swiperAbout = new Swiper('.about-production__slider-swiper', {
+new Swiper('.about-production__slider-swiper', {
     // Optional parameters
     direction:  'horizontal',
     loop: true,
@@ -17,7 +17,7 @@ const swiperAbout = new Swiper('.about-production__slider-swiper', {
 
   });
 
-  const swiperTwo = new Swiper('.swiper-two', {
+ new Swiper('.swiper-two', {
     // Optional parameters
     direction:  'horizontal',
     // loop: true,
@@ -28,40 +28,8 @@ const swiperAbout = new Swiper('.about-production__slider-swiper', {
     navigation: {
       nextEl: '.slider-arrow__button-right--two',
       prevEl: '.slider-arrow__button-left--two',
-    },
-  
+    },  
 
   });
 
   
-  const yTube = document.querySelector("#movie_player > div.ytp-chrome-bottom");
-  const videoSlider = document.querySelector('.swiper-slide1');
-  const arrowSlider = document.querySelector('.slider-arrow');
-  videoSlider.onclick = function(){
-    this.classList.add('ready');
-    arrowSlider.classList.add('ready');
-  }
-  const videoSlider2 = document.querySelector('.swiper-slide2');
-  videoSlider2.onclick = function(){
-    this.classList.add('ready');
-    arrowSlider.classList.add('ready');
-  }
-  const videoSlider3 = document.querySelector('.swiper-slide3');
-  videoSlider3.onclick = function(){
-    this.classList.add('ready');
-    arrowSlider.classList.add('ready');
-  }
-
-
-//Бесконечная прогрузка Галерея
-var galleryDiv = document.querySelector(".gallery");
-var loadMoreButton = document.getElementById("load_more_button");
-var lastGalleryClone = galleryDiv; // Ссылка на последний клон
-
-function duplicateGallery() {
-  var galleryClone = galleryDiv.cloneNode(true);
-  lastGalleryClone.parentNode.insertBefore(galleryClone, lastGalleryClone.nextSibling);
-  lastGalleryClone = galleryClone; // Обновляем ссылку на последний клон
-}
-
-loadMoreButton.addEventListener("click", duplicateGallery);

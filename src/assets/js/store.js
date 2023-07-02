@@ -115,5 +115,3 @@ const swiperStore = new Swiper('.about-production__slider-swiper', {
 
 
 });
-
-console.log('store')

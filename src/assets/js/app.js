@@ -1,114 +1,114 @@
 
-// // Получение элементов ссылок
-// var link1 = document.querySelector('.link-row__link1');
-// var link2 = document.querySelector('.link-row__link2');
-// var link3 = document.querySelector('.link-row__link3');
-// var link4 = document.querySelector('.link-row__link4');
-// var link5 = document.querySelector('.link-row__link5');
-// var link6 = document.querySelector('.link-row__link6');
+// Получение элементов ссылок
+var link1 = document.querySelector('.link-row__link1');
+var link2 = document.querySelector('.link-row__link2');
+var link3 = document.querySelector('.link-row__link3');
+var link4 = document.querySelector('.link-row__link4');
+var link5 = document.querySelector('.link-row__link5');
+var link6 = document.querySelector('.link-row__link6');
 
-// var link21 = document.querySelector('.bottom-menu__link1');
-// var link22 = document.querySelector('.bottom-menu__link2');
-// var link23 = document.querySelector('.bottom-menu__link3');
-// var link24 = document.querySelector('.bottom-menu__link4');
-// var link25 = document.querySelector('.bottom-menu__link5');
-// var link26 = document.querySelector('.bottom-menu__link6');
-// var link27 = document.querySelector('.bottom-menu__link7');
-
-
-
-// function clearDynamicScripts() {
-//   var scripts = document.head.getElementsByTagName('script');
-//   for (var i = scripts.length - 1; i >= 0; i--) {
-//     if (scripts[i].getAttribute('data-dynamic') === 'true') {
-//       document.head.removeChild(scripts[i]);
-//     }
-//   }
-// }
-// clearDynamicScripts();
-
-// function refreshBrowserScriptInfo() {
-//   var tempScript = document.createElement('script');
-//   tempScript.textContent = ' ';
-//   document.head.appendChild(tempScript);
-//   document.head.removeChild(tempScript);
-// }
+var link21 = document.querySelector('.bottom-menu__link1');
+var link22 = document.querySelector('.bottom-menu__link2');
+var link23 = document.querySelector('.bottom-menu__link3');
+var link24 = document.querySelector('.bottom-menu__link4');
+var link25 = document.querySelector('.bottom-menu__link5');
+var link26 = document.querySelector('.bottom-menu__link6');
+var link27 = document.querySelector('.bottom-menu__link7');
 
 
-// function loadScript(url) {
-//   var script = document.createElement('script');
-//   script.src = url;
-//   script.setAttribute('data-dynamic', 'true'); // Добавляем атрибут data-dynamic
-//   document.head.appendChild(script);
-// }
+
+function clearDynamicScripts() {
+  var scripts = document.head.getElementsByTagName('script');
+  for (var i = scripts.length - 1; i >= 0; i--) {
+    if (scripts[i].getAttribute('data-dynamic') === 'true') {
+      document.head.removeChild(scripts[i]);
+    }
+  }
+}
+clearDynamicScripts();
+
+function refreshBrowserScriptInfo() {
+  var tempScript = document.createElement('script');
+  tempScript.textContent = ' ';
+  document.head.appendChild(tempScript);
+  document.head.removeChild(tempScript);
+}
 
 
-// // Функция для загрузки страницы через XMLHttpRequest
-// function loadPage(url) {
-//   var xhttp = new XMLHttpRequest();
-//   xhttp.onreadystatechange = function() {
-//     if (this.readyState == 4 && this.status == 200) {
-//       document.getElementById("content").innerHTML = this.responseText;
+function loadScript(url) {
+  var script = document.createElement('script');
+  script.src = url;
+  script.setAttribute('data-dynamic', 'true'); // Добавляем атрибут data-dynamic
+  document.head.appendChild(script);
+}
 
-//       // Получите все элементы с классом .active
-//       const activeElements = document.querySelectorAll('.active');
 
-//       // Переберите все найденные элементы и удалите класс .active
-//       activeElements.forEach(element => {
-//         element.classList.remove('active');
-//       });
+// Функция для загрузки страницы через XMLHttpRequest
+function loadPage(url) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("content").innerHTML = this.responseText;
 
-//       if (url == "page1.html") {
-//         link1.classList.add('active');
-//         link21.classList.add('active');
-//       } else if (url == 'page2.html') {
-//         link2.classList.add('active');
-//         link22.classList.add('active');
-//       } else if (url == 'page3.html') {
-//         link3.classList.add('active');
-//         link23.classList.add('active');
-//       } else if (url == 'page4.html') {
-//         link4.classList.add('active');
-//         link24.classList.add('active');
-//       } else if (url == 'page5.html') {
-//         link5.classList.add('active');
-//         link25.classList.add('active');
-//       }  else if (url == 'page7.html') {
-//         link27.classList.add('active');
-//       }
+      // Получите все элементы с классом .active
+      const activeElements = document.querySelectorAll('.active');
 
-//       // Выполнение кода после загрузки страницы
-//       if (url == 'page1.html') {
-//         clearDynamicScripts();
-//         refreshBrowserScriptInfo()
-//         loadScript('assets/js/store.js');
-//         loadScript('assets/js/goods.js');
-//       } else if (url == 'page2.html') {
-//         clearDynamicScripts();
-//         refreshBrowserScriptInfo()
-//         loadScript('assets/js/production.js');
+      // Переберите все найденные элементы и удалите класс .active
+      activeElements.forEach(element => {
+        element.classList.remove('active');
+      });
 
-//       } else if (url == 'page3.html') {
-//         loadScript('другой скрипт');
-//       } else if (url == 'page4.html') {
-//         loadScript('другой скрипт');
-//       } else if (url == 'page5.html') {
-//         loadScript('другой скрипт');
-//       } else if (url == 'page6.html') {
-//         loadScript('другой скрипт');
-//       } else if (url == 'page7.html') {
-//         loadScript('другой скрипт');
-//       } else if (url == 'page8.html') {
-//         loadScript('другой скрипт');
-//       } 
-//     }
-//   };
-//   xhttp.open("GET", url, true);
-//   xhttp.send();
-// }
+      if (url == "page1.html") {
+        link1.classList.add('active');
+        link21.classList.add('active');
+      } else if (url == 'page2.html') {
+        link2.classList.add('active');
+        link22.classList.add('active');
+      } else if (url == 'page3.html') {
+        link3.classList.add('active');
+        link23.classList.add('active');
+      } else if (url == 'page4.html') {
+        link4.classList.add('active');
+        link24.classList.add('active');
+      } else if (url == 'page5.html') {
+        link5.classList.add('active');
+        link25.classList.add('active');
+      }  else if (url == 'page7.html') {
+        link27.classList.add('active');
+      }
 
-// loadPage("page1.html");
-console.log('app')
+      // Выполнение кода после загрузки страницы
+      if (url == 'page1.html') {
+        clearDynamicScripts();
+        refreshBrowserScriptInfo()
+        loadScript('assets/js/store.js');
+        loadScript('assets/js/goods.js');
+      } else if (url == 'page2.html') {
+        clearDynamicScripts();
+        refreshBrowserScriptInfo()
+        loadScript('assets/js/production.js');
+
+      } else if (url == 'page3.html') {
+        loadScript('другой скрипт');
+      } else if (url == 'page4.html') {
+        loadScript('другой скрипт');
+      } else if (url == 'page5.html') {
+        loadScript('другой скрипт');
+      } else if (url == 'page6.html') {
+        loadScript('другой скрипт');
+      } else if (url == 'page7.html') {
+        loadScript('другой скрипт');
+      } else if (url == 'page8.html') {
+        loadScript('другой скрипт');
+      } 
+    }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
+
+loadPage("page1.html");
+
 
 //Бургер
 let burgerOn = document.querySelector('.adaptive-header__burger');

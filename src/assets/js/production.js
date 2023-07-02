@@ -17,21 +17,21 @@ const swiperAbout = new Swiper('.about-production__slider-swiper', {
 
   });
 
-  // const swiperTwo = new Swiper('.swiper-two', {
-  //   // Optional parameters
-  //   direction:  'horizontal',
-  //   // loop: true,
-  //   slidesPerView: 3,
-  //   spaceBetween: 32,
+  const swiperTwo = new Swiper('.swiper-two', {
+    // Optional parameters
+    direction:  'horizontal',
+    // loop: true,
+    slidesPerView: 3,
+    spaceBetween: 32,
   
-  //   // Navigation arrows
-  //   navigation: {
-  //     nextEl: '.slider-arrow__button-right--two',
-  //     prevEl: '.slider-arrow__button-left--two',
-  //   },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.slider-arrow__button-right--two',
+      prevEl: '.slider-arrow__button-left--two',
+    },
   
 
-  // });
+  });
 
   
   const yTube = document.querySelector("#movie_player > div.ytp-chrome-bottom");
@@ -53,3 +53,15 @@ const swiperAbout = new Swiper('.about-production__slider-swiper', {
   }
 
 
+//Бесконечная прогрузка Галерея
+var galleryDiv = document.querySelector(".gallery");
+var loadMoreButton = document.getElementById("load_more_button");
+var lastGalleryClone = galleryDiv; // Ссылка на последний клон
+
+function duplicateGallery() {
+  var galleryClone = galleryDiv.cloneNode(true);
+  lastGalleryClone.parentNode.insertBefore(galleryClone, lastGalleryClone.nextSibling);
+  lastGalleryClone = galleryClone; // Обновляем ссылку на последний клон
+}
+
+loadMoreButton.addEventListener("click", duplicateGallery);

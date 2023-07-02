@@ -71,13 +71,13 @@ function html() {
   panini.refresh();
   return src(path.src.html, { base: srcPath })
     .pipe(plumber())
-    .pipe(panini({
-      root: srcPath,
-      layouts: srcPath + 'layouts/',
-      partials: srcPath + 'partials/',
-      helpers: srcPath + 'helpers/',
-      data: srcPath + 'data/'
-    }))
+    // .pipe(panini({
+    //   root: srcPath,
+    //   layouts: srcPath + 'layouts/',
+    //   partials: srcPath + 'partials/',
+    //   helpers: srcPath + 'helpers/',
+    //   data: srcPath + 'data/'
+    // }))
     .pipe(dest(path.build.html))
     .pipe(browserSync.reload({ stream: true }));
 }

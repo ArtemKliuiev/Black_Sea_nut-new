@@ -8,10 +8,12 @@ body {
   overflow-y: auto;
 }
 
-
-main{
-  height: 100%;
+a{
+  cursor: pointer;
 }
+
+
+
 .container {
   display: flex;
   align-items: center;
@@ -58,4 +60,15 @@ cursor: pointer;
   rotate: -90deg;
   transform: translate( 1px, -4px);
   font-size: 7px;
+}
+main{
+  height: 100%;
+}
+#content{
+  height: 100%;
+}
+
+main{
+  height: 100%;
+
 }

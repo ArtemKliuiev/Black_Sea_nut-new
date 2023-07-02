@@ -47,10 +47,10 @@ var swiperNews = new Swiper('.news-row__slider-swiper', {
 
 
 // Получаем список всех выпадающих списков
-const customSelects = document.querySelectorAll('.custom-select');
+const customSelectsTwo = document.querySelectorAll('.custom-select');
 
 // Проходимся по каждому выпадающему списку и привязываем события
-customSelects.forEach((select) => {
+customSelectsTwo.forEach((select) => {
   const selectedOption = select.querySelector('.custom-select__option');
   const optionsList = select.querySelector('.custom-select__list');
   const options = optionsList.querySelectorAll('li');
@@ -115,3 +115,5 @@ const swiperStore = new Swiper('.about-production__slider-swiper', {
 
 
 });
+
+console.log('store')

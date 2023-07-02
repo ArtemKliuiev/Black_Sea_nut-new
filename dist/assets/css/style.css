@@ -8,8 +8,8 @@ body {
     overflow-y: auto;
 }
 
-main {
-    height: 100%;
+a {
+    cursor: pointer;
 }
 
 .container {
@@ -64,4 +64,8 @@ main {
     -webkit-transform: translate(1px, -4px);
     transform: translate(1px, -4px);
     font-size: 7px;
+}
+
+main {
+    height: 100%;
 }

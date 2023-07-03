@@ -1,67 +1,62 @@
-const swiperAbout = new Swiper('.about-production__slider-swiper', {
-    // Optional parameters
-    direction:  'horizontal',
+(function() {
+  var swiperAbout = new Swiper('.about-production__slider-swiper', {
+    direction: 'horizontal',
     loop: true,
-  
     effect: 'cube',
     cubeEffect: {
       slideShadows: false,
     },
-  
-    // Navigation arrows
     navigation: {
       nextEl: '.slider-arrow__button-right',
       prevEl: '.slider-arrow__button-left',
     },
-  
-
   });
 
-  const swiperTwo = new Swiper('.swiper-two', {
-    // Optional parameters
-    direction:  'horizontal',
-    // loop: true,
+  var swiperTwo = new Swiper('.news-row__slider-swiper', {
+    direction: 'horizontal',
+    loop: true,
     slidesPerView: 3,
     spaceBetween: 32,
-  
-    // Navigation arrows
     navigation: {
-      nextEl: '.slider-arrow__button-right--two',
-      prevEl: '.slider-arrow__button-left--two',
+      nextEl: '.news-row__button-right',
+      prevEl: '.news-row__button-left',
     },
-  
-
   });
 
-  
-  const yTube = document.querySelector("#movie_player > div.ytp-chrome-bottom");
-  const videoSlider = document.querySelector('.swiper-slide1');
-  const arrowSlider = document.querySelector('.slider-arrow');
-  videoSlider.onclick = function(){
-    this.classList.add('ready');
-    arrowSlider.classList.add('ready');
+  var yTube = document.querySelector("#movie_player > div.ytp-chrome-bottom");
+  var videoSlider = document.querySelector('.swiper-slide1');
+  var arrowSlider = document.querySelector('.slider-arrow');
+  if (videoSlider) {
+    videoSlider.onclick = function() {
+      this.classList.add('ready');
+      arrowSlider.classList.add('ready');
+    }
   }
-  const videoSlider2 = document.querySelector('.swiper-slide2');
-  videoSlider2.onclick = function(){
-    this.classList.add('ready');
-    arrowSlider.classList.add('ready');
+  var videoSlider2 = document.querySelector('.swiper-slide2');
+  if (videoSlider2) {
+    videoSlider2.onclick = function() {
+      this.classList.add('ready');
+      arrowSlider.classList.add('ready');
+    }
   }
-  const videoSlider3 = document.querySelector('.swiper-slide3');
-  videoSlider3.onclick = function(){
-    this.classList.add('ready');
-    arrowSlider.classList.add('ready');
+  var videoSlider3 = document.querySelector('.swiper-slide3');
+  if (videoSlider3) {
+    videoSlider3.onclick = function() {
+      this.classList.add('ready');
+      arrowSlider.classList.add('ready');
+    }
   }
 
+})();
 
-//Бесконечная прогрузка Галерея
-var galleryDiv = document.querySelector(".gallery");
-var loadMoreButton = document.getElementById("load_more_button");
-var lastGalleryClone = galleryDiv; // Ссылка на последний клон
 
-function duplicateGallery() {
-  var galleryClone = galleryDiv.cloneNode(true);
-  lastGalleryClone.parentNode.insertBefore(galleryClone, lastGalleryClone.nextSibling);
-  lastGalleryClone = galleryClone; // Обновляем ссылку на последний клон
-}
 
-loadMoreButton.addEventListener("click", duplicateGallery);
+(function() {
+  const videoElements = document.querySelectorAll('.video');
+
+  videoElements.forEach(function(videoElement) {
+    videoElement.addEventListener('click', function() {
+      this.classList.add('ready');
+    });
+  });
+})();

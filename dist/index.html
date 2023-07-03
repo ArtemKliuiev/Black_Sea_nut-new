@@ -2,6 +2,7 @@
 <html>
 <head>
 </style>
+<link rel="icon" href="assets/images/svg/main-logo.webp" type="image/x-icon">
 <link rel="stylesheet" href="assets/css/reset.min.css">
 <link rel="stylesheet" href="assets/fonts/Montserrat/stylesheet.css" >
 <link rel="stylesheet" href="assets/fonts/Gilroy/stylesheet.css">
@@ -27,7 +28,7 @@
 <meta name="description" content="">
 
 
-  <title>Мини-сайт</title>
+  <title class="title" >Главная</title>
 
   <script>
 
@@ -44,8 +45,8 @@
               <div class="top-line__you-tube"><img src="assets/images/svg/youtube.svg" alt=""></div>
               <div class="top-line__title">Ваша персональная скидка - 5%</div>
               <div class="top-line__order-call">Заказать звонок</div>
-              <a href="personal-area/input.html" class="top-line__input"><img src="assets/images/svg/man-user.svg" alt=""><span>Вход</span></a>
-              <a href="personal-area/registration.html" class="top-line__registration"><span>Регистрация</span></a>
+              <a onclick="loadPage('personal-area/input.html')" class="top-line__input"><img src="assets/images/svg/man-user.svg" alt=""><span>Вход</span></a>
+              <a onclick="loadPage('personal-area/registration.html')" class="top-line__registration"><span>Регистрация</span></a>
               <div class="top-line__language">
                 <select name="select" id="sel-1">
                   <option value="ru"><span>Ru</span></option>
@@ -55,7 +56,7 @@
               </div>
             </div>
             <div class="request-call">
-              <a href="index.html" class="request-call__logo">
+              <a onclick="loadPage('main.html')" class="request-call__logo">
                 <div class="request-call__logo-image"><img src="assets/images/svg/logo.webp" alt=""></div>
                 <div class="request-call__loge-title">ОРЕХ ПРИЧЕРНОМОРЬЯ</div>
               </a>
@@ -105,7 +106,7 @@
                 <div class="adaptive-header__logo-image"><img src="assets/images/svg/logo.webp" alt=""></div>
                 <div class="adaptive-header__logo-title">ОРЕХ ПРИЧЕРНОМОРЬЯ</div>
               </div>
-              <a href="/basket/basket.html" class="adaptive-header__basket"><img src="assets/images/svg/basket.svg" alt=""></a>
+              <a onclick="loadPage('basket/basket.html')" class="adaptive-header__basket"><img src="assets/images/svg/basket.svg" alt=""></a>
             </div>
           </div>
         
@@ -131,7 +132,7 @@
                   </div>
                   <div class="basket-hover__price basket-hover__price--one"><span>100 грн. </span> <i class="icon-filter-restart"></i></div>
                   <div class="basket-hover__price basket-hover__price--two"><span>80 грн. </span> <i class="icon-filter-restart icon-filter-restart-two"></i></div>
-                  <div class="basket-hover__sum">Всего <span>175<span>грн.</span></span><a href="/basket/basket.html" class="basket-hover__checkout button-two">Перейти в корзину</a></div>
+                  <div class="basket-hover__sum">Всего <span>175<span>грн.</span></span><a onclick="loadPage('basket/basket.html')" class="basket-hover__checkout button-two">Перейти в корзину</a></div>
                 </div>
               </div>
             </div>
@@ -141,6 +142,7 @@
   </div>
   <div id="content">
     <!-- Содержимое страницы будет загружено с помощью XMLHttpRequest -->
+
   </div>
   <div id="footer">
     <footer>
@@ -219,6 +221,7 @@
       </div>
     </footer>
   </div>
+
   <script src="assets/js/app.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer ></script>
   

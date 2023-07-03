@@ -36,6 +36,9 @@ footer {
   grid-column: 2;
   max-height: 518px;
 }
+.contact__map iframe {
+  display: block;
+}
 .contact__map-marker {
   border: none;
 }

@@ -13,13 +13,6 @@
   }
   </style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" async>
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="">
   <link rel="stylesheet" href="assets/css/pages/one-product.min.css">
   
   
@@ -31,7 +24,7 @@
 <main class="main">
   
   <div class="address-line">
-      <div class="address-line__main"><a href="index.html">Главная</a><div class="address-line__image"><i class="icon-slider-arrow"></i></div><span>Карточка товара</span></div>
+      <div class="address-line__main"><a onclick="loadPage('main.html')">Главная</a><div class="address-line__image"><i class="icon-slider-arrow"></i></div><span>Карточка товара</span></div>
   </div>
       <div class="one-item">
           <div class="one-item__column1">
@@ -44,7 +37,7 @@
                   </div>
                   <div class="product__slider-left product__slider-left1"><i class="icon-slider-arrow-left"></i></div>
                   <div class="product__slider-right product__slider-right1"><i class="icon-slider-arrow-right"></i></div>
-                  <a href="page6.html" class="product__hover">
+                  <a onclick="loadPage('page6.html')" class="product__hover">
                       <div class="product__hover-icon">
                           <img src="assets/images/svg/magnifying-glass.svg" alt="">
                       </div>
@@ -83,7 +76,7 @@
                       <span>19 <span>грн.</span></span>
                       <span>21<span>грн.</span></span>
                   </div>
-                  <div class="one-item__price-column2"><div class="one-item__button button-two">Заказать</div></div>
+                  <div class="one-item__price-column2"><div onclick="loadPage('basket/basket.html')" class="one-item__button button-two">Заказать</div></div>
               </div>
           </div>
   </div>

@@ -66,7 +66,10 @@ video{
 }
 ////////////////////////////////////////////////////////
 .ready{
-
+    display: block !important;
+    iframe{
+        display: block;
+    }
     .video-play{
             display: none;
         }
@@ -75,6 +78,9 @@ video{
         display: grid;
     }
     .address-line {
+        display: none;
+    }
+    .gallery__video-button1, .gallery__video-title, .gallery__video-info{
         display: none;
     }
     .top-video {
@@ -88,13 +94,29 @@ video{
             display: none;
         }
     }
+    .delivery-video {
+        &__button {
+            display: none;
+        }
+        &__video-title {
+            display: none;
+        }
+        &__video-info {
+            display: none;
+        }
+    }
 }
+
+
+
 ///////////////////////////////////////////////////////////////////
 iframe{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: none;
 }
+
 ////////////////////////////////////////////////////////////////////
 .video{
     cursor: pointer;
@@ -103,7 +125,7 @@ iframe{
          .delivery-video__button,
           .top-video__button,
            .about-production__video-play{
-        background: url(../images/svg/play\ icon\ active.svg) center no-repeat;
+        background: url(../../images/svg/play\ icon\ active.svg) center no-repeat;
         }
     }
 }

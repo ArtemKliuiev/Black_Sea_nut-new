@@ -12,16 +12,41 @@
     },
   });
 
-  var swiperTwo = new Swiper('.news-row__slider-swiper', {
-    direction: 'horizontal',
+  var swiperNews = new Swiper('.news-row__slider-swiper', {
+    slidesPerView: 1,
     loop: true,
-    slidesPerView: 3,
-    spaceBetween: 32,
+    spaceBetween: 33,
+    direction: getDirection(),
     navigation: {
       nextEl: '.news-row__button-right',
       prevEl: '.news-row__button-left',
     },
+    on: {
+      resize: function () {
+        swiper.changeDirection(getDirection());
+      },
+    },
+    breakpoints: {
+      // Брейкпоинт 768 пикселей и меньше
+      1360: {
+        slidesPerView: 3,
+      },
+      // Брейкпоинт 576 пикселей и меньше
+      915: {
+        slidesPerView: 2,
+
+      }
+      // Добавьте другие брейкпоинты, если нужно
+    }
   });
+  
+
+  function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 0 ? 'vertical' : 'horizontal';
+
+    return direction;
+  }
 
   var yTube = document.querySelector("#movie_player > div.ytp-chrome-bottom");
   var videoSlider = document.querySelector('.swiper-slide1');
@@ -60,3 +85,4 @@
     });
   });
 })();
+

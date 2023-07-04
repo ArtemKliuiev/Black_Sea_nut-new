@@ -242,6 +242,7 @@ main {
 @media (max-width: 900px) {
   .top-video {
     margin-bottom: 50px;
+    height: 70vw;
   }
   .top-video__title {
     padding-top: 10vw;

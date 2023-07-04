@@ -33,6 +33,10 @@
         color: #337D5A;
     }
 }
+
+video::-webkit-media-controls-panel {
+    margin: 0;
+  }
 /////////////////////////////////////////////////////////////////
 .button-two{
     font-family: 'Raleway';

@@ -98,7 +98,7 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 @media (max-width: 1360px) {
-  video::-webkit-media-controls-panel {
+  .about-production video::-webkit-media-controls-panel {
     margin: 0 0 0 100px;
   }
 }
@@ -159,8 +159,8 @@ video::-webkit-media-controls-start-playback-button {
   }
 }
 @media (max-width: 500px) {
-  video::-webkit-media-controls-panel {
-    margin: 0 0 0 80px;
+  .about-production video::-webkit-media-controls-panel {
+    margin: 0 0 0 80px !important;
   }
 }
 @media (max-width: 400px) {

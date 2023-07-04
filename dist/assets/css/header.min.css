@@ -673,7 +673,7 @@ select:focus {
 }
 .adaptive-menu-active .wrapper {
   padding: 0;
-  top: 0;
+  top: -382px;
   transition: all 500ms ease 0s;
 }
 .adaptive-menu-active .adaptive-header {

@@ -122,7 +122,7 @@
   .news-row .news__center-info {
     flex: 1 0 auto;
     display: grid;
-    grid-template: 20px 20px 9px 50px 10px 80px 20px 20px/22px 1fr;
+    grid-template: 20px 20px 9px 70px 10px 80px 20px 20px/22px 1fr;
   }
   .news-row .news__center-video {
     height: 60vw;

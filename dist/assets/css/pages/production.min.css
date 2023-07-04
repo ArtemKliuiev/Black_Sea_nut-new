@@ -290,7 +290,7 @@
   }
   .bottom-image {
     margin: 30px 0 0px 0;
-    height: 400px;
+    height: 70vw;
     grid-template: 1fr 72px 22px 40px 21px 100px 1fr/1fr;
   }
   .bottom-image__title {
@@ -343,12 +343,12 @@
     height: 70vw;
   }
   .top-video__title {
-    font-size: 18px;
+    font-size: 36px;
     line-height: 22px;
-    margin-top: 15vw;
+    margin: 15vw 0 3vw 0;
   }
   .top-video__info {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
     max-width: 535px;
     margin: 2vw auto 3vw;

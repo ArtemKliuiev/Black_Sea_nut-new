@@ -255,7 +255,7 @@ main{
         margin-bottom: 50px;
         height: 70vw;
         &__title {
-            padding-top: 10vw;
+            padding-top: 20vw;
         }
     }
     .about-production {
@@ -268,7 +268,7 @@ main{
         &__column1 {
             grid-column: 1;
             grid-row: 1;
-            padding: 20px 0;
+            padding: 20px 10px;
         }
         &__column2 {
             grid-column: 1;
@@ -374,5 +374,9 @@ main{
     .slider-arrow {
         width: 80px;
         height: 35px;
+    }
+    .nuts-info {
+        max-width: 450px;
+        grid-template: auto 30px 100vw 30px 100vw /  1fr;
     }
 }

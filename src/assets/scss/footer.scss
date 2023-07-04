@@ -479,13 +479,16 @@ footer {
 }
 
 @media (max-width: 700px) {
+  .fotter-wrapper {
+    margin: 0;
+  }
   .contact {
     margin-bottom: 30px;
-    grid-template: 15px 500px 15px 518px 15px / 0.5fr 0.75fr 2fr 0.75fr 0.5fr;
+    grid-template: 15px auto 15px 300px 15px / 0.5fr 0.75fr 2fr 0.75fr 0.5fr;
 
     &__info {
       grid-column: 3;
-      grid-template: 12px 64px 15px 50px 39px 20px 47px 20px 16px 25px 55px 21px 15px 30px 15px /1fr;
+      grid-template: 12px 64px 15px 50px 39px 20px 47px 20px 16px 25px 55px 21px 15px 30px 30px /1fr;
     }
 
     &__map-marker {
@@ -625,6 +628,7 @@ footer {
 
 @media (max-width: 400px) {
   .contact {
+    margin-bottom: 15px;
     &__info {
       grid-column: 1/6;
     }

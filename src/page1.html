@@ -15,7 +15,10 @@
 
 
 <body id="content">
-  <main class="main">
+    <main class="main preload">
+        <div class="preloader">
+            <div class="loader"></div>
+        </div>
     <div class="image-banner">
       <div class="address-line">
           <div class="address-line__main"><a onclick="loadPage('main.html')">Главная</a><div class="address-line__image"><img src="./assets/images/svg/arrow_gallery.svg" alt=""></div><span>Магазин</span></div>
@@ -343,30 +346,7 @@
   </main>
 </main>
 
-<!-- 
-<script>
-    // Создаем прелоадер
-    var preloader = document.getElementById('preloader');
 
-    // Функция скрытия прелоадера
-    function hidePreloader() {
-      preloader.style.display = 'none';
-    }
-
-    // Показываем прелоадер перед загрузкой скрипта
-    preloader.style.display = 'block';
-
-    // Динамически загружаемый скрипт
-    var script = document.createElement('script');
-    script.src = 'path/to/your-dynamic-script.js';
-    script.onload = function() {
-      // Скрываем прелоадер после загрузки и выполнения скрипта
-      hidePreloader();
-    };
-
-    // Добавляем скрипт в конец body
-    document.body.appendChild(script);
-  </script> -->
   
 </body>
 

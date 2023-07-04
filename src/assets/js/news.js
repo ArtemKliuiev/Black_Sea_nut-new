@@ -10,3 +10,4 @@ function duplicateGallery() {
 }
 
 loadMoreButton.addEventListener("click", duplicateGallery);
+

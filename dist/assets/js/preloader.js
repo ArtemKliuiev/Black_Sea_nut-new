@@ -1,0 +1,1 @@
+!function(){const e=document.querySelector(".main");setTimeout((function(){e.classList.remove("preload")}),700)}();

@@ -88,6 +88,10 @@
     background: url(../../images/production/pic.webp) center/cover no-repeat;
 }
 
+.about-production .ready {
+    display: grid !important;
+}
+
 video {
     display: none;
     width: 100%;

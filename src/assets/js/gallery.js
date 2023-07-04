@@ -20,3 +20,4 @@ loadMoreButton.addEventListener("click", duplicateGallery);
     });
   });
 })();
+

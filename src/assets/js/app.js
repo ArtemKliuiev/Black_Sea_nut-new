@@ -86,6 +86,7 @@ function loadPage(url) {
       if (url == 'main.html') {
         clearDynamicScripts();
         refreshBrowserScriptInfo()
+        loadScript('assets/js/preloader.js');
         loadScript('assets/js/main.js');
         loadScript('assets/js/goods.js');
         loadScript('assets/js/production.js');
@@ -93,87 +94,104 @@ function loadPage(url) {
       } else if (url == 'page1.html') {
       clearDynamicScripts();
       refreshBrowserScriptInfo()
+      loadScript('assets/js/preloader.js');
       loadScript('assets/js/store.js');
       loadScript('assets/js/goods.js');
       title.innerHTML = 'Магазин'
       } else if (url == 'page2.html') {
         clearDynamicScripts();
         refreshBrowserScriptInfo()
+        loadScript('assets/js/preloader.js');
         loadScript('assets/js/production.js');
         title.innerHTML = 'О производителе'
       } else if (url == 'page3.html') {
         clearDynamicScripts();
         refreshBrowserScriptInfo()
+        loadScript('assets/js/preloader.js');
         loadScript('assets/js/delivery.js');
         title.innerHTML = 'Оплата и доставка'
       } else if (url == 'page4.html') {
         clearDynamicScripts();
         refreshBrowserScriptInfo()
+        loadScript('assets/js/preloader.js');
         loadScript('assets/js/wholesale.js');
         title.innerHTML = 'Оптовым и корпоративным клиентам'
       } else if (url == 'page5.html') {
         clearDynamicScripts();
-        refreshBrowserScriptInfo()
+        refreshBrowserScriptInfo();
+        loadScript('assets/js/preloader.js');
         loadScript('assets/js/video.js');
         title.innerHTML = 'Новости и статьи'
       } else if (url == 'page6.html') {
         clearDynamicScripts();
-        refreshBrowserScriptInfo()
+        refreshBrowserScriptInfo();
+        loadScript('assets/js/preloader.js');
         loadScript('assets/js/one-product.js');
         title.innerHTML = 'Карточка товара'
       } else if (url == 'page7.html') {
         clearDynamicScripts();
-        refreshBrowserScriptInfo()
+        refreshBrowserScriptInfo();
+        loadScript('assets/js/preloader.js');
         loadScript('assets/js/gallery.js');
         title.innerHTML = 'Галерея'
       } else if (url == 'personal-area/registration.html') {
         clearDynamicScripts();
         refreshBrowserScriptInfo();
+        loadScript('assets/js/preloader.js');
         loadScript('../assets/js/registration.js');
         title.innerHTML = 'Регистрация'
       } else if (url == 'personal-area/personal-area2.html') {
         clearDynamicScripts();
         refreshBrowserScriptInfo();
+        loadScript('assets/js/preloader.js');
         loadScript('../assets/js/personal-area.js');
         title.innerHTML = 'Личный кабинет'
       } else if (url == 'personal-area/personal-area.html') {
         clearDynamicScripts();
         refreshBrowserScriptInfo();
+        loadScript('assets/js/preloader.js');
         loadScript('../assets/js/personal-area.js');
         title.innerHTML = 'Личный кабинет'
       } else if (url == 'basket/basket.html') {
         clearDynamicScripts();
         refreshBrowserScriptInfo();
+        loadScript('assets/js/preloader.js');
         loadScript('../assets/js/basket.js');
         title.innerHTML = 'Корзина'
       } else if (url == 'basket/checkout.html') {
         clearDynamicScripts();
         refreshBrowserScriptInfo();
+        loadScript('assets/js/preloader.js');
         loadScript('../assets/js/checkout.js');
         loadScript('../assets/js/basket.js');
         title.innerHTML = 'Оформить заказ'
       } else if (url == 'basket/checkout2.html') {
         clearDynamicScripts();
         refreshBrowserScriptInfo();
+        loadScript('assets/js/preloader.js');
         loadScript('../assets/js/checkout.js');
         loadScript('../assets/js/basket.js');
         title.innerHTML = 'Оформить заказ'
       } else if (url == 'basket/order.html') {
         clearDynamicScripts();
         refreshBrowserScriptInfo();
+        loadScript('assets/js/preloader.js');
         loadScript('../assets/js/basket.js');
         title.innerHTML = 'Заказ'
       } else if (url == 'personal-area/input.html') {
         clearDynamicScripts();
         refreshBrowserScriptInfo();
+        loadScript('assets/js/preloader.js');
         title.innerHTML = 'Вход'
       } else if (url == 'personal-area/recovery.html') {
         clearDynamicScripts();
         refreshBrowserScriptInfo();
+        loadScript('assets/js/preloader.js');
         title.innerHTML = 'Восстановление пароля'
       } else if (url == 'personal-area/password.html') {
         clearDynamicScripts();
         refreshBrowserScriptInfo();
+        loadScript('assets/js/preloader.js');
         title.innerHTML = 'Пароль'
       }
     }

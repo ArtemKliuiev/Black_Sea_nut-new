@@ -53,3 +53,5 @@
     document.querySelector('#photo-input').click();
   });
 })();
+
+

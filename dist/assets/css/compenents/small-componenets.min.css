@@ -28,6 +28,10 @@
     line-height: 40px;
   }
 }
+.custom-link:hover {
+  color: #337D5A;
+}
+
 .button-two {
   font-family: "Raleway";
   box-sizing: border-box;
@@ -248,6 +252,7 @@ a {
   color: rgba(255, 255, 255, 0.5);
   background: #337D5A;
   font-size: 17px;
+  cursor: pointer;
 }
 .slider-arrow__button-left {
   background: #337D5A;

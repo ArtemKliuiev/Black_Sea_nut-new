@@ -27,6 +27,12 @@
         line-height: 40px;
     }
 }
+
+.custom-link{
+    &:hover{
+        color: #337D5A;
+    }
+}
 /////////////////////////////////////////////////////////////////
 .button-two{
     font-family: 'Raleway';
@@ -269,6 +275,7 @@ a{
     color: rgba(255, 255, 255, 0.5);
     background: #337D5A;
     font-size: 17px;
+    cursor: pointer;
     &__button-left {
         background: #337D5A;
         grid-row: 1;

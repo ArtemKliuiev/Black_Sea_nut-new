@@ -76,18 +76,16 @@
 .about-production .ready {
   display: grid !important;
 }
-
-video {
-  display: none;
+.about-production .ready video {
+  display: block;
   width: 100%;
   max-height: 472px;
   object-fit: cover;
 }
-video input {
+.about-production .ready video input {
   margin: 50%;
 }
-
-video::-webkit-media-controls-panel {
+.about-production .ready video::-webkit-media-controls-panel {
   margin: 0 0 0 141px;
 }
 

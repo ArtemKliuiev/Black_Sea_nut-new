@@ -48,7 +48,7 @@
 
 @media (max-width: 1200px) {
     .delivery-video {
-        height: 60vw;
+        height: 70vw;
         grid-template: 1fr auto auto 65px auto auto 1fr/1fr;
     }
 

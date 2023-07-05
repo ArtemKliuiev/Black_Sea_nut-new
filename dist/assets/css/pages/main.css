@@ -271,10 +271,15 @@ main {
 @media (max-width: 900px) {
     .top-video {
         margin-bottom: 50px;
+        height: 70vw;
     }
 
     .top-video__title {
-        padding-top: 10vw;
+        padding: 10vw 0 2vw 0;
+    }
+
+    .top-video__info {
+        font-size: 16px;
     }
 
     .about-production {
@@ -290,7 +295,7 @@ main {
     .nuts-info__column1 {
         grid-column: 1;
         grid-row: 1;
-        padding: 20px 0;
+        padding: 20px 10px;
     }
 
     .nuts-info__column2 {
@@ -362,7 +367,7 @@ main {
 
     .bottom-image {
         margin: 30px 0 0px 0;
-        height: 400px;
+        height: 70vw;
         grid-template: 1fr 72px 22px 40px 21px 100px 1fr/1fr;
     }
 
@@ -390,5 +395,18 @@ main {
     .slider-arrow {
         width: 80px;
         height: 35px;
+    }
+
+    .nuts-info {
+        max-width: 450px;
+        grid-template: auto 30px 70vw 30px 70vw/1fr;
+    }
+
+    .nuts-info__column2-icon {
+        margin: 23vw auto 0;
+    }
+
+    .nuts-info__column3-icon {
+        margin: 23vw auto 0;
     }
 }

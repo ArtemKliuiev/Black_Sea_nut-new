@@ -84,6 +84,27 @@ select:focus {
 .top-line__language {
   grid-column: 14;
 }
+.top-line__language select {
+  color: #000;
+  font-size: 13px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.26px;
+}
+.top-line__language select:focus {
+  outline: none;
+}
+.top-line__language select option {
+  color: #000;
+  font-size: 13px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.26px;
+}
 .top-line span {
   font-family: "Raleway";
   font-style: normal;
@@ -673,7 +694,7 @@ select:focus {
 }
 .adaptive-menu-active .wrapper {
   padding: 0;
-  top: -382px;
+  top: 0;
   transition: all 500ms ease 0s;
 }
 .adaptive-menu-active .adaptive-header {

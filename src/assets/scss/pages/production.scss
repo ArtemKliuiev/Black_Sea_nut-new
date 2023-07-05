@@ -341,6 +341,7 @@
             margin: 0 auto;
         }
     }
+
 }
 @media (max-width: 600px) {
     .news-row{
@@ -363,7 +364,7 @@
         &__title {
             font-size: 36px;
             line-height: 22px;
-            margin: 15vw 0 3vw 0;
+            margin: 7vw 0 5vw 0;
         }
         &__info {
             font-size: 16px;
@@ -384,7 +385,7 @@
         margin: 50px auto 70px;
     }
     .pavel {
-        margin: 45px auto 164px;
+        margin: 45px auto ;
         grid-template: 70vw 3vw auto 3vw 1fr / 1fr  ;
         &__image {
             grid-row: 1;
@@ -409,7 +410,7 @@
             margin: 25px 0 20px 0;
         }
         &__info-text {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 21px;
             letter-spacing: 0.015em;
             margin: 0 0 37px 0;
@@ -430,6 +431,9 @@
             line-height: 40px;
             max-width: 188px;
         }
+    }
+    .numbers{
+        margin-bottom: 45px;   
     }
 }
 

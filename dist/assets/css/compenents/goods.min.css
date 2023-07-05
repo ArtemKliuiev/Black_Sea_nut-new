@@ -242,7 +242,7 @@
   transform: translate(12.5px, 12.5px);
 }
 .product:hover {
-  border: 1.5px solid #93B474;
+  outline: 1.5px solid #93B474;
 }
 .product:hover .product__hover {
   display: block;

@@ -34,6 +34,10 @@
     color: #337D5A;
 }
 
+video::-webkit-media-controls-panel {
+    margin: 0;
+}
+
 .button-two {
     font-family: "Raleway";
     box-sizing: border-box;
@@ -403,13 +407,13 @@ a {
     }
 
     .top-video__title {
-        font-size: 24px;
+        font-size: 36px;
         line-height: 28px;
         padding-top: 0;
     }
 
     .top-video__info {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 20px;
         margin: 2vw auto 2vw;
     }

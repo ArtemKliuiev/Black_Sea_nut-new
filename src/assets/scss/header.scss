@@ -92,6 +92,27 @@ select {
 
   &__language {
     grid-column: 14;
+    select{
+      color: #000;
+      font-size: 13px;
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.26px;
+      &:focus {
+        outline: none;
+      }
+      option{
+        color: #000;
+        font-size: 13px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.26px;
+      }
+    }
   }
 
 
@@ -430,29 +451,7 @@ select {
 
 
 
-.basket-hover {
-  &__main-line {}
-  &__goods {}
-}
-.container {
-}
-.decreaseButton {
-}
-.icon-filter-option-arrow {
-}
-.button-left {
-}
-.number {
-}
-.increaseButton {
-}
-.button-right {
-}
-.basket {
-  &__checkout {}
-}
-.button-two {
-}
+
 
 /*_________________________________________________ADAPTIVE______________________________________________________*/
 
@@ -817,7 +816,7 @@ select {
 
   .wrapper {
     padding: 0;
-    top: -382px;
+    top: 0;
     transition: all 500ms ease 0s;
   }
 

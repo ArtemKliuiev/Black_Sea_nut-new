@@ -36,6 +36,66 @@ video::-webkit-media-controls-panel {
   margin: 0;
 }
 
+.custom-select {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  position: relative;
+  width: 100%;
+  min-width: 100px;
+  height: 48px;
+  line-height: 42px;
+  position: relative;
+  z-index: 1;
+}
+.custom-select__option {
+  display: block;
+  padding: 8px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.custom-select__list {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: #ffffff;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #337D5A;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.custom-select__list li {
+  padding: 8px;
+  cursor: pointer;
+}
+.custom-select__list li:hover {
+  background-color: #337D5A;
+  color: #ffffff;
+}
+.custom-select i {
+  position: absolute;
+  z-index: 1;
+  right: 25px;
+  top: 10px;
+  color: #337D5A;
+  font-size: 10px;
+}
+.custom-select:hover .custom-select__list {
+  display: block;
+}
+.custom-select:hover .icon-filter-option-arrow::before {
+  transform: translate(50%, 0) rotate(180deg);
+  transform-origin: center center;
+}
+
 .button-two {
   font-family: "Raleway";
   box-sizing: border-box;

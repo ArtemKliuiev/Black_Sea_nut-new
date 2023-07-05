@@ -336,7 +336,7 @@
 
     .bottom-image {
         margin: 30px 0 0px 0;
-        height: 400px;
+        height: 70vw;
         grid-template: 1fr 72px 22px 40px 21px 100px 1fr/1fr;
     }
 
@@ -399,13 +399,13 @@
     }
 
     .top-video__title {
-        font-size: 18px;
+        font-size: 36px;
         line-height: 22px;
-        margin-top: 15vw;
+        margin: 7vw 0 5vw 0;
     }
 
     .top-video__info {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 16px;
         max-width: 535px;
         margin: 2vw auto 3vw;
@@ -424,7 +424,7 @@
     }
 
     .pavel {
-        margin: 45px auto 164px;
+        margin: 45px auto;
         grid-template: 70vw 3vw auto 3vw 1fr/1fr;
     }
 
@@ -455,7 +455,7 @@
     }
 
     .pavel__info-text {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 21px;
         letter-spacing: 0.015em;
         margin: 0 0 37px 0;
@@ -478,6 +478,10 @@
         height: 40px;
         line-height: 40px;
         max-width: 188px;
+    }
+
+    .numbers {
+        margin-bottom: 45px;
     }
 }
 

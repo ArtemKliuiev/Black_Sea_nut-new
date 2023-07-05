@@ -255,6 +255,7 @@
   .news__bottom-news {
     grid-column: 1;
     grid-row: 17;
+    height: 60vw;
   }
   .news__center--text {
     max-height: 200px;

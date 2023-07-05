@@ -184,7 +184,7 @@ iframe {
 .video:hover .delivery-video__button,
 .video:hover .top-video__button,
 .video:hover .about-production__video-play {
-  background: url(../../images/svg/play\ icon\ active.svg) center no-repeat;
+  background: url(../../images/svg/play\ icon\ active.svg) center/cover no-repeat;
 }
 
 a {

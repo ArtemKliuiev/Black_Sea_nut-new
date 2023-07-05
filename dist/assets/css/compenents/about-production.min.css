@@ -99,7 +99,7 @@ video::-webkit-media-controls-start-playback-button {
 
 @media (max-width: 1360px) {
   .about-production video::-webkit-media-controls-panel {
-    margin: 0 0 0 100px;
+    margin: 0 0 0 100px !important;
   }
 }
 @media (max-width: 1300px) {

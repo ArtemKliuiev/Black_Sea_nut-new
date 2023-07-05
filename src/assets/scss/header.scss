@@ -2,7 +2,27 @@ header{
   position: relative;
   z-index: 10;
 }
-
+select{
+  color: #000;
+  font-size: 13px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.26px;
+  &:focus {
+    outline: none;
+  }
+  option{
+    color: #000;
+    font-size: 13px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.26px;
+  }
+}
 select {
   border: none;
   appearance: none;
@@ -92,27 +112,6 @@ select {
 
   &__language {
     grid-column: 14;
-    select{
-      color: #000;
-      font-size: 13px;
-      font-family: Raleway;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      letter-spacing: 0.26px;
-      &:focus {
-        outline: none;
-      }
-      option{
-        color: #000;
-        font-size: 13px;
-        font-family: Raleway;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.26px;
-      }
-    }
   }
 
 
@@ -588,29 +587,33 @@ select {
 
     &__exit-burger {
       display: block;
-      position: relative;
       position: absolute;
+      cursor: pointer;
       top: 28px;
       right: 10px;
       z-index: 5;
-
-      &::after,
-      &::before {
-        content: "";
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        background: #1A2F3F;
-        width: 20px;
-        height: 2px;
-      }
-
-      &::after {
-        rotate: 45deg;
-      }
-
-      &::before {
-        rotate: -45deg;
+      width: 30px;
+      height: 16px;
+      span{
+        position: relative;
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+          left: 10px;
+          top: 0px;
+          background: #1A2F3F;
+          width: 20px;
+          height: 2px;
+        }
+  
+        &::after {
+          rotate: 45deg;
+        }
+  
+        &::before {
+          rotate: -45deg;
+        }
       }
     }
 
@@ -659,11 +662,8 @@ select {
       display: flex;
       align-items: center;
     }
-
-
     .active {
       background-color: #337D5A;
-
       a {
         border-bottom: none;
         padding: 0 0 0 12px;
@@ -741,29 +741,35 @@ select {
     &__burger {
       grid-row: 1;
       grid-column: 2;
-      height: 2.62px;
-      width: 19px;
-      background: #000000;
-      position: relative;
+      cursor: pointer;
       margin: 0 0 6px 0;
-
-      &::after,
-      &::before {
-        content: "";
-        position: absolute;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      span{
+        display: block;
         height: 2.62px;
-        background: #000000;
-        left: 0;
-      }
-
-      &::after {
-        top: 7px;
-        width: 13px;
-      }
-
-      &::before {
-        bottom: 7px;
         width: 19px;
+        background: #000000;
+        position: relative;
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+          height: 2.62px;
+          background: #000000;
+          left: 0;
+        }
+  
+        &::after {
+          top: 7px;
+          width: 13px;
+        }
+  
+        &::before {
+          bottom: 7px;
+          width: 19px;
+        }
       }
     }
 

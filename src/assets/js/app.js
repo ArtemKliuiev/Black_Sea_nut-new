@@ -216,97 +216,6 @@ burgerOff.onclick = () => {
 
 
 
-
-//Видео доставка и оплата
-window.addEventListener('DOMContentLoaded', function () {
-  const videos = document.querySelectorAll('.delivery-video');
-  const button = document.querySelector('.delivery-video__button');
-  for (let i = 0; i < videos.length; i++) {
-    const video = videos[i];
-    video.addEventListener('click', function () {
-      if (video.classList.contains('ready')) {
-        return;
-      }
-      video.classList.add('ready');
-      button.insertAdjacentHTML('afterend', '<iframe src="https://www.youtube.com/embed/TdHGupJSMBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
-    });
-  }
-});
-
-//Видео галерея
-//Видео 1
-window.addEventListener('DOMContentLoaded', function () {
-  const videos = document.querySelectorAll('.gallery__image3');
-  const button = document.querySelector('.gallery__video-button1');
-  for (let i = 0; i < videos.length; i++) {
-    const video = videos[i];
-    video.addEventListener('click', function () {
-      if (video.classList.contains('ready')) {
-        return;
-      }
-      video.classList.add('ready');
-      button.insertAdjacentHTML('afterend', '<iframe src="https://www.youtube.com/embed/TdHGupJSMBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
-    });
-  }
-});
-
-
-
-
-//Видео 2
-window.addEventListener('DOMContentLoaded', function () {
-  const videos = document.querySelectorAll('.gallery__image6');
-  const button = document.querySelector('.gallery__video-button2');
-  for (let i = 0; i < videos.length; i++) {
-    const video = videos[i];
-    video.addEventListener('click', function () {
-      if (video.classList.contains('ready')) {
-        return;
-      }
-      video.classList.add('ready');
-      button.insertAdjacentHTML('afterend', '<iframe src="https://www.youtube.com/embed/TdHGupJSMBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
-    });
-  }
-});
-
-
-
-
-
-
-//Видео 3
-window.addEventListener('DOMContentLoaded', function () {
-  const videos = document.querySelectorAll('.gallery__image9');
-  const button = document.querySelector('.gallery__video-button3');
-  for (let i = 0; i < videos.length; i++) {
-    const video = videos[i];
-    video.addEventListener('click', function () {
-      if (video.classList.contains('ready')) {
-        return;
-      }
-      video.classList.add('ready');
-      button.insertAdjacentHTML('afterend', '<iframe src="https://www.youtube.com/embed/TdHGupJSMBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
-    });
-  }
-});
-
-//Видео 4
-window.addEventListener('DOMContentLoaded', function () {
-  const videos = document.querySelectorAll('.gallery__image12');
-  const button = document.querySelector('.gallery__video-button4');
-  for (let i = 0; i < videos.length; i++) {
-    const video = videos[i];
-    video.addEventListener('click', function () {
-      if (video.classList.contains('ready')) {
-        return;
-      }
-      video.classList.add('ready');
-      button.insertAdjacentHTML('afterend', '<iframe src="https://www.youtube.com/embed/TdHGupJSMBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
-    });
-  }
-});
-
-
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 46.4310976, lng: 30.7147007 },
@@ -351,6 +260,7 @@ function initMap() {
     title: 'Местоположение маркера'
   });
 }
+
 
 
 

@@ -1,1 +1,460 @@
-.custom-checkbox{display:none}.checkmark{display:block;margin-bottom:2px;width:13px;height:13px;background-color:#fff;border:1.5px solid #337d5a;cursor:pointer;margin-right:5px}.checkmark:after{content:"";display:none}.custom-checkbox:checked+.checkmark:after{content:"";display:block;top:1.5px;left:1.5px;width:8px;height:8px;border-radius:2px;background-color:#337d5a;transform:translate(1.5px,1.5px)}.upload-container{width:50px;height:50px;cursor:pointer;margin:66px 0 18px;width:131.009px;height:170px;background:url(../../images/account/pic.webp);text-align:center}.upload-container input[type=file]{display:none}input[type=radio],label{cursor:pointer}input[type=radio]{position:relative;height:11px;width:11px;-webkit-appearance:none;appearance:none;outline:none}input[type=radio]:before{width:11px;height:11px;border-radius:50%;background-color:#fff;border:2px solid #337d5a}input[type=radio]:before,input[type=radio]:checked:after{content:"";position:absolute;transform:translate(-50%,-50%)}input[type=radio]:checked:after{width:7px;height:7px;border-radius:50%;background-color:#337d5a;visibility:visible}.registration{max-width:1332px;margin:46px auto 89px;padding:0 20px;display:grid;grid-template:40px 10px 1fr/minmax(auto,474px) minmax(auto,266px) minmax(auto,474px) 1fr}.registration__title{grid-row:1;grid-column:1;font-size:32px;font-family:Raleway;font-weight:800;line-height:32px;letter-spacing:.32px}.registration__column1{grid-row:3;grid-column:1}.registration__column2{grid-row:3;grid-column:3}.registration__contact-title{font-size:17px;font-family:Montserrat;font-weight:700;line-height:32px;letter-spacing:.17px}.registration__tabs{color:#000;font-size:15px;font-family:Montserrat;font-weight:500;line-height:17px;letter-spacing:.4px;margin:32px 0 0;display:grid;grid-template:30px 20px 1fr/minmax(auto,210px) minmax(20px,1fr) minmax(auto,235px)}.registration__contact-tabs1{grid-column:1;padding:2px 0 0 30px}.registration__contact-tabs1,.registration__contact-tabs2{grid-row:1;border-bottom:2.5px solid rgba(51,125,90,0);cursor:pointer}.registration__contact-tabs2{grid-column:3;padding:0 0 0 33px;letter-spacing:.1px}.registration__individual,.registration__legal{display:none;grid-row:3;grid-column:1/4}.registration__input-name{margin:26px 0 14px}.registration__input-name::-webkit-input-placeholder{padding-left:11px}.registration__input-name:-ms-input-placeholder,.registration__input-name::-ms-input-placeholder{padding-left:11px}.registration__input-name::placeholder{padding-left:11px}.registration__input-email{margin-bottom:16px}.registration__input-email::-webkit-input-placeholder{padding-left:11px}.registration__input-email:-ms-input-placeholder,.registration__input-email::-ms-input-placeholder{padding-left:11px}.registration__input-email::placeholder{padding-left:11px}.registration__input-phone{margin-bottom:45px}.registration__input-phone::-webkit-input-placeholder{padding-left:11px}.registration__input-phone:-ms-input-placeholder,.registration__input-phone::-ms-input-placeholder{padding-left:11px}.registration__input-phone::placeholder{padding-left:11px}.registration__address-title{font-size:17px;font-family:Montserrat;font-weight:700;line-height:32px;letter-spacing:.17px;margin-bottom:18px}.registration__country{margin-bottom:13px;position:relative;z-index:2}.registration__region{margin-bottom:20px;position:relative;z-index:1}.registration__input-city{margin-bottom:16px}.registration__input-city::-webkit-input-placeholder{padding-left:12px}.registration__input-city:-ms-input-placeholder,.registration__input-city::-ms-input-placeholder{padding-left:12px}.registration__input-city::placeholder{padding-left:12px}.registration__input-address{margin-bottom:45px}.registration__input-address::-webkit-input-placeholder{padding-left:12px}.registration__input-address:-ms-input-placeholder,.registration__input-address::-ms-input-placeholder{padding-left:12px}.registration__input-address::placeholder{padding-left:12px}.registration__password-title{font-size:17px;font-family:Montserrat;font-weight:700;line-height:32px;letter-spacing:.17px;margin-bottom:21px}.registration__new-password{margin-bottom:15px}.registration__new-password::-webkit-input-placeholder{padding-left:12px}.registration__new-password:-ms-input-placeholder,.registration__new-password::-ms-input-placeholder{padding-left:12px}.registration__new-password::placeholder{padding-left:12px}.registration__confirm-paswword{margin-bottom:18px}.registration__confirm-paswword::-webkit-input-placeholder{padding-left:12px}.registration__confirm-paswword:-ms-input-placeholder,.registration__confirm-paswword::-ms-input-placeholder{padding-left:12px}.registration__confirm-paswword::placeholder{padding-left:12px}.registration__conditions{color:#8a8a8a;font-size:13px;font-family:Montserrat;font-weight:500;line-height:32px;letter-spacing:.13px;margin-left:2px;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;margin-bottom:20px}.registration__conditions span span{color:#337d5a;font-weight:600}.registration__conditions-text{display:block;margin-left:5px}.registration__button{width:100%;font-size:16px;font-family:Raleway;font-weight:700;height:50px;line-height:50px;letter-spacing:.15px}.registration__photo span{display:inline-block;margin-top:79px;color:#fff;font-size:13px;font-family:Montserrat;font-weight:600;line-height:17px;border-bottom:1.5px dashed #fff}.registration__fop-tabs{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;margin-left:1px}.registration__fop-info{display:inline-block;line-height:32px;margin:1px 0 0 5px}.registration__fop-info,.registration__leg-radio-legal{color:#8a8a8a;font-size:13px;font-family:Montserrat;font-weight:500;letter-spacing:.13px}.registration__leg-radio-legal{line-height:6px;margin:26px 0 13px 3px;display:-ms-flexbox;display:flex}.registration__leg-radio-legal label{display:inline-block;margin-left:4px}.registration__leg-radio-fop{color:#8a8a8a;font-size:13px;font-family:Montserrat;font-weight:500;line-height:9px;letter-spacing:.13px;margin:0 0 53px 3px;display:-ms-flexbox;display:flex}.registration__leg-radio-fop label{display:inline-block;margin-left:4px}.registration__leg-requisites-title{font-size:17px;font-family:Montserrat;font-weight:700;line-height:32px;letter-spacing:.17px;margin-bottom:24px}.registration .fop{display:none}.registration__leg-requisites-input{margin-bottom:45px}.registration__leg-legal-adress-title{font-size:17px;font-family:Montserrat;font-weight:700;line-height:32px;letter-spacing:.17px;margin-bottom:17px}.registration__leg-country{margin-bottom:15px;position:relative;z-index:2}.registration__leg-region{margin-bottom:19px;position:relative;z-index:1}.registration__leg-input-city{margin-bottom:14px}.registration__leg-input-address{margin-bottom:16px}.natural-person .registration__individual{display:block}.natural-person .registration__leg-info{display:none}.natural-person .registration__contact-tabs1{border-bottom:2.5px solid #337d5a}.legal-entity .registration__legal{display:block}.legal-entity .registration__photo{margin:66px 0 16px}.legal-entity .registration__fop-tabs{display:none}.legal-entity .registration__contact-tabs2{border-bottom:2.5px solid #337d5a}.legal .leg{display:block}.fop .leg,.legal .fop{display:none}.fop .fop{display:block}.adaptive-button{display:none}@media (max-width:1000px){.registration{grid-template:40px 10px auto auto/10vw 1fr 10vw}.registration__column1{grid-row:3;grid-column:2}.registration__column2{grid-row:4;grid-column:2}.registration__photo{margin-bottom:20px}.registration__photo .upload-container{margin:0 auto}.registration__fop-tabs{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;margin-left:1px}.registration__fop-info{margin:1px 0 0 5px}.registration__leg-info{margin:0 auto}.registration__leg-radio-legal{width:120px;margin:20px auto 0}.registration__leg-radio-fop{width:120px;margin:10px auto 45px}.destop-button{display:none}.adaptive-button{display:block}.adaptive-button-flex{display:-ms-flexbox;display:flex;margin-top:15px}}@media (max-width:600px){.registration{grid-template:40px 10px auto auto/3.4vw 1fr 3.4vw;height:100%}.registration__tabs{grid-template:20px 20px 20px 1fr/1fr}.registration__contact-tabs1{padding:0;grid-column:1;grid-row:1;max-width:160px;list-style:15px}.registration__contact-tabs2{padding:0;grid-column:1;grid-row:3;max-width:160px}.registration__individual,.registration__legal{grid-column:1;grid-row:4}}
+@charset "UTF-8";
+.custom-checkbox {
+  display: none;
+}
+
+.checkmark {
+  display: block;
+  margin-bottom: 2px;
+  width: 13px;
+  height: 13px;
+  background-color: #ffffff;
+  border: 1.5px solid #337D5A;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.checkmark::after {
+  content: "";
+  display: none;
+}
+
+.custom-checkbox:checked + .checkmark::after {
+  content: "";
+  display: block;
+  top: 1.5px;
+  left: 1.5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background-color: #337D5A;
+  transform: translate(1.5px, 1.5px);
+}
+
+.upload-container {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin: 66px 0 18px 0;
+  width: 131.009px;
+  height: 170px;
+  background: url(../../images/account/pic.webp);
+  text-align: center;
+}
+
+.upload-container input[type=file] {
+  display: none;
+}
+
+/* Стилизация радиокнопок */
+input[type=radio],
+label {
+  cursor: pointer;
+}
+
+input[type=radio] {
+  position: relative;
+  height: 11px;
+  width: 11px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input[type=radio]::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid #337D5A;
+}
+
+input[type=radio]:checked::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #337D5A;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+}
+
+.registration {
+  max-width: 1332px;
+  margin: 46px auto 89px;
+  padding: 0 20px;
+  display: grid;
+  grid-template: 40px 10px 1fr/minmax(auto, 474px) minmax(auto, 266px) minmax(auto, 474px) 1fr;
+}
+.registration__title {
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 32px;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: 32px;
+  letter-spacing: 0.32px;
+}
+.registration__column1 {
+  grid-row: 3;
+  grid-column: 1;
+}
+.registration__column2 {
+  grid-row: 3;
+  grid-column: 3;
+}
+.registration__contact-title {
+  font-size: 17px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.17px;
+}
+.registration__tabs {
+  color: #000;
+  font-size: 15px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.4px;
+  margin: 32px 0 0 0;
+  display: grid;
+  grid-template: 30px 20px 1fr/minmax(auto, 210px) minmax(20px, 1fr) minmax(auto, 235px);
+}
+.registration__contact-tabs1 {
+  grid-row: 1;
+  grid-column: 1;
+  padding: 2px 0 0 30px;
+  border-bottom: 2.5px solid rgba(51, 125, 90, 0);
+  cursor: pointer;
+}
+.registration__contact-tabs2 {
+  grid-row: 1;
+  grid-column: 3;
+  padding: 0 0 0 33px;
+  letter-spacing: 0.1px;
+  border-bottom: 2.5px solid rgba(51, 125, 90, 0);
+  cursor: pointer;
+}
+.registration__individual {
+  display: none;
+  grid-row: 3;
+  grid-column: 1/4;
+}
+.registration__legal {
+  display: none;
+  grid-row: 3;
+  grid-column: 1/4;
+}
+.registration__input-name {
+  margin: 26px 0 14px 0;
+}
+.registration__input-name::placeholder {
+  padding-left: 11px;
+}
+.registration__input-email {
+  margin-bottom: 16px;
+}
+.registration__input-email::placeholder {
+  padding-left: 11px;
+}
+.registration__input-phone {
+  margin-bottom: 45px;
+}
+.registration__input-phone::placeholder {
+  padding-left: 11px;
+}
+.registration__address-title {
+  font-size: 17px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.17px;
+  margin-bottom: 18px;
+}
+.registration__country {
+  margin-bottom: 13px;
+  position: relative;
+  z-index: 2;
+}
+.registration__region {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+.registration__input-city {
+  margin-bottom: 16px;
+}
+.registration__input-city::placeholder {
+  padding-left: 12px;
+}
+.registration__input-address {
+  margin-bottom: 45px;
+}
+.registration__input-address::placeholder {
+  padding-left: 12px;
+}
+.registration__password-title {
+  font-size: 17px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.17px;
+  margin-bottom: 21px;
+}
+.registration__new-password {
+  margin-bottom: 15px;
+}
+.registration__new-password::placeholder {
+  padding-left: 12px;
+}
+.registration__confirm-paswword {
+  margin-bottom: 18px;
+}
+.registration__confirm-paswword::placeholder {
+  padding-left: 12px;
+}
+.registration__conditions {
+  color: #8A8A8A;
+  font-size: 13px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.13px;
+  margin-left: 2px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.registration__conditions span span {
+  color: rgb(51, 125, 90);
+  font-weight: 600;
+}
+.registration__conditions-text {
+  display: block;
+  margin-left: 5px;
+}
+.registration__button {
+  width: 100%;
+  font-size: 16px;
+  font-family: Raleway;
+  font-weight: 700;
+  height: 50px;
+  line-height: 50px;
+  letter-spacing: 0.15px;
+}
+.registration__photo span {
+  display: inline-block;
+  margin-top: 79px;
+  color: #FFF;
+  font-size: 13px;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 17px;
+  border-bottom: 1.5px dashed #FFF;
+}
+.registration__fop-tabs {
+  display: flex;
+  align-items: center;
+  margin-left: 1px;
+}
+.registration__fop-info {
+  display: inline-block;
+  color: #8A8A8A;
+  font-size: 13px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.13px;
+  margin: 1px 0 0 5px;
+}
+.registration__leg-radio-legal {
+  color: #8A8A8A;
+  font-size: 13px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 6px;
+  letter-spacing: 0.13px;
+  margin: 26px 0 13px 3px;
+  display: flex;
+}
+.registration__leg-radio-legal label {
+  display: inline-block;
+  margin-left: 4px;
+}
+.registration__leg-radio-fop {
+  color: #8A8A8A;
+  font-size: 13px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 9px;
+  letter-spacing: 0.13px;
+  margin: 0 0 53px 3px;
+  display: flex;
+}
+.registration__leg-radio-fop label {
+  display: inline-block;
+  margin-left: 4px;
+}
+.registration__leg-requisites-title {
+  font-size: 17px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.17px;
+  margin-bottom: 24px;
+}
+.registration .fop {
+  display: none;
+}
+.registration__leg-requisites-input {
+  margin-bottom: 45px;
+}
+.registration__leg-legal-adress-title {
+  font-size: 17px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.17px;
+  margin-bottom: 17px;
+}
+.registration__leg-country {
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+.registration__leg-region {
+  margin-bottom: 19px;
+  position: relative;
+  z-index: 1;
+}
+.registration__leg-input-city {
+  margin-bottom: 14px;
+}
+.registration__leg-input-address {
+  margin-bottom: 16px;
+}
+.natural-person .registration__individual {
+  display: block;
+}
+.natural-person .registration__leg-info {
+  display: none;
+}
+.natural-person .registration__contact-tabs1 {
+  border-bottom: 2.5px solid #337d5a;
+}
+
+.legal-entity .registration__legal {
+  display: block;
+}
+.legal-entity .registration__photo {
+  margin: 66px 0 16px 0;
+}
+.legal-entity .registration__fop-tabs {
+  display: none;
+}
+.legal-entity .registration__contact-tabs2 {
+  border-bottom: 2.5px solid #337d5a;
+}
+
+.legal .leg {
+  display: block;
+}
+.legal .fop {
+  display: none;
+}
+
+.fop .leg {
+  display: none;
+}
+.fop .fop {
+  display: block;
+}
+
+.adaptive-button {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .registration {
+    grid-template: 40px 10px auto auto/10vw 1fr 10vw;
+  }
+  .registration__column1 {
+    grid-row: 3;
+    grid-column: 2;
+  }
+  .registration__column2 {
+    grid-row: 4;
+    grid-column: 2;
+  }
+  .registration__photo {
+    margin-bottom: 20px;
+  }
+  .registration__photo .upload-container {
+    margin: 0 auto;
+  }
+  .registration__fop-tabs {
+    display: flex;
+    align-items: center;
+    margin-left: 1px;
+  }
+  .registration__fop-info {
+    margin: 1px 0 0 5px;
+  }
+  .registration__leg-info {
+    margin: 0 auto;
+  }
+  .registration__leg-radio-legal {
+    width: 120px;
+    margin: 20px auto 0;
+  }
+  .registration__leg-radio-fop {
+    width: 120px;
+    margin: 10px auto 45px;
+  }
+  .destop-button {
+    display: none;
+  }
+  .adaptive-button {
+    display: block;
+  }
+  .adaptive-button-flex {
+    display: flex;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .registration {
+    grid-template: 40px 10px auto auto/3.4vw 1fr 3.4vw;
+    height: 100%;
+  }
+  .registration__tabs {
+    grid-template: 20px 20px 20px 1fr/1fr;
+  }
+  .registration__contact-tabs1 {
+    padding: 0;
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 160px;
+    list-style: 15px;
+  }
+  .registration__contact-tabs2 {
+    padding: 0;
+    grid-column: 1;
+    grid-row: 3;
+    max-width: 160px;
+  }
+  .registration__individual {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .registration__legal {
+    grid-row: 4;
+    grid-column: 1;
+  }
+}

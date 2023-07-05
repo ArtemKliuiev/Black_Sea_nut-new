@@ -1,1 +1,71 @@
-.order-processed{width:100%;height:517px;background:url(../../images/account/Untitled-24.webp) 50%/cover no-repeat;position:relative;z-index:1;display:grid;grid-template:1.23fr auto 30px auto 1fr/1fr}.order-processed__title{grid-row:2;font-size:45px;font-weight:800;line-height:32px;letter-spacing:.45px}.order-processed__info,.order-processed__title{grid-column:1;position:relative;z-index:2;color:#fff;font-family:Raleway;font-style:normal;text-align:center;padding:0 20px}.order-processed__info{grid-row:4;font-size:24px;font-weight:500;line-height:30px;letter-spacing:.24px;max-width:460px;margin:0 auto}.order-processed:before{content:"";position:absolute;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,.4)}@media (max-width:700px){.order-processed{height:70vw}.order-processed__title{font-size:36px}.order-processed__info{font-size:18px}.order-processed:before{content:"";position:absolute;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,.4)}}
+.order-processed {
+  width: 100%;
+  height: 517px;
+  background: url(../../images/account/Untitled-24.webp) center/cover no-repeat;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template: 1.23fr auto 30px auto 1fr/1fr;
+}
+.order-processed__title {
+  grid-column: 1;
+  grid-row: 2;
+  position: relative;
+  z-index: 2;
+  color: #FFF;
+  font-size: 45px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 32px;
+  letter-spacing: 0.45px;
+  text-align: center;
+  padding: 0 20px;
+}
+.order-processed__info {
+  grid-column: 1;
+  grid-row: 4;
+  position: relative;
+  z-index: 2;
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.24px;
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.order-processed::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 700px) {
+  .order-processed {
+    height: 70vw;
+  }
+  .order-processed__title {
+    font-size: 36px;
+  }
+  .order-processed__info {
+    font-size: 18px;
+  }
+  .order-processed::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+}

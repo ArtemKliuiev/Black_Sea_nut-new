@@ -1,1 +1,244 @@
-@charset "UTF-8";.numbers{max-width:1148px;margin:0 auto;display:grid;justify-items:center;grid-template:1fr/160px 2.1fr 160px 1fr 344px 1fr 160px}.numbers__one{grid-column:1;grid-row:1}.numbers__two{grid-column:3;grid-row:1}.numbers__three{grid-column:5;grid-row:1;max-width:315px}.numbers__four{grid-column:7;grid-row:1}.numbers__one-number{display:grid;grid-template:73px 19px 70px/auto auto}.numbers__num{grid-row:1;font-family:Montserrat;font-weight:800;font-size:72px;line-height:88px;letter-spacing:.01em}.numbers__info,.numbers__num{grid-column:1;font-style:normal;text-align:center}.numbers__info{grid-row:3;font-family:Raleway;font-weight:400;font-size:18px;line-height:21px;letter-spacing:.02em}.numbers__info-one{max-width:144px}.numbers__info-two{margin-left:5px}.numbers__info-three{max-width:344px}.numbers__info-four{margin-left:5px}.numbers__num--one{position:relative}.numbers__num--one:after{content:"Га";right:-25px;top:15px;position:absolute;font-family:Raleway;font-style:normal;font-weight:900;font-size:18px;line-height:21px;letter-spacing:.05em}.numbers__num--two{position:relative}.numbers__num--two:after{content:"Га";right:40px;top:14px;position:absolute;font-family:Raleway;font-style:normal;font-weight:900;font-size:18px;line-height:21px;letter-spacing:.05em}.numbers__num--three{position:relative}.numbers__num--three:after{content:"Га";right:95px;top:14px;position:absolute;font-family:Raleway;font-style:normal;font-weight:900;font-size:18px;line-height:21px;letter-spacing:.05em}.numbers__procent{position:relative}.numbers__procent:after{content:"%";right:13px;top:14px;position:absolute;font-family:Raleway;font-style:normal;font-weight:900;font-size:18px;line-height:21px;letter-spacing:.05em}@media (max-width:1250px){.numbers{grid-template:1fr/minmax(auto,160px) 1fr minmax(auto,160px) 1fr minmax(auto,160px) 1fr minmax(auto,160px) 3vw}.numbers__num{font-size:48px;line-height:48px}.numbers__info{font-family:Raleway;font-style:normal;font-weight:400;font-size:12px;line-height:21px;text-align:center;letter-spacing:.02em}.numbers__num--one:after{right:-15px}.numbers__num--one:after,.numbers__num--two:after{top:5px;font-family:Raleway;font-style:normal;font-size:16px;line-height:18px}.numbers__num--two:after{right:40px}.numbers__num--three:after{right:33px}.numbers__num--three:after,.numbers__procent:after{top:5px;position:absolute;font-family:Raleway;font-style:normal;font-size:16px;line-height:18px}.numbers__procent:after{right:28px}}@media (max-width:700px){.numbers{grid-template:1fr 5vw 1fr/1fr minmax(auto,160px) 1fr minmax(auto,160px) 1fr}.numbers__one{grid-column:2;grid-row:1}.numbers__two{grid-column:4;grid-row:1}.numbers__three{grid-column:2;grid-row:3}.numbers__four{grid-column:4;grid-row:3}.numbers__num{font-size:48px;line-height:48px}.numbers__info{font-family:Raleway;font-style:normal;font-weight:400;font-size:12px;line-height:21px;text-align:center;letter-spacing:.02em}.numbers__num--one:after{right:-15px}.numbers__num--one:after,.numbers__num--two:after{top:5px;font-family:Raleway;font-style:normal;font-size:16px;line-height:18px}.numbers__num--two:after{right:40px}.numbers__num--three:after{right:33px}.numbers__num--three:after,.numbers__procent:after{top:5px;position:absolute;font-family:Raleway;font-style:normal;font-size:16px;line-height:18px}.numbers__procent:after{right:28px}}
+@charset "UTF-8";
+.numbers {
+  max-width: 1148px;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  grid-template: 1fr/160px 2.1fr 160px 1fr 344px 1fr 160px;
+}
+.numbers__one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.numbers__two {
+  grid-column: 3;
+  grid-row: 1;
+}
+.numbers__three {
+  grid-column: 5;
+  grid-row: 1;
+  max-width: 315px;
+}
+.numbers__four {
+  grid-column: 7;
+  grid-row: 1;
+}
+.numbers__one-number {
+  display: grid;
+  grid-template: 73px 19px 70px/auto auto;
+}
+.numbers__num {
+  grid-column: 1;
+  grid-row: 1;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+.numbers__info {
+  grid-column: 1;
+  grid-row: 3;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.numbers__info-one {
+  max-width: 144px;
+}
+.numbers__info-two {
+  margin-left: 5px;
+}
+.numbers__info-three {
+  max-width: 344px;
+}
+.numbers__info-four {
+  margin-left: 5px;
+}
+.numbers__num--one {
+  position: relative;
+}
+.numbers__num--one::after {
+  content: "Га";
+  right: -25px;
+  top: 15px;
+  position: absolute;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+}
+.numbers__num--two {
+  position: relative;
+}
+.numbers__num--two::after {
+  content: "Га";
+  right: 40px;
+  top: 14px;
+  position: absolute;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+}
+.numbers__num--three {
+  position: relative;
+}
+.numbers__num--three::after {
+  content: "Га";
+  right: 95px;
+  top: 14px;
+  position: absolute;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+}
+.numbers__procent {
+  position: relative;
+}
+.numbers__procent::after {
+  content: "%";
+  right: 13px;
+  top: 14px;
+  position: absolute;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 1250px) {
+  .numbers {
+    grid-template: 1fr/minmax(auto, 160px) 1fr minmax(auto, 160px) 1fr minmax(auto, 160px) 1fr minmax(auto, 160px) 3vw;
+  }
+  .numbers__num {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .numbers__info {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  .numbers__num--one::after {
+    right: -15px;
+    top: 5px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .numbers__num--two::after {
+    right: 40px;
+    top: 5px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .numbers__num--three::after {
+    right: 33px;
+    top: 5px;
+    position: absolute;
+    font-family: "Raleway";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .numbers__procent::after {
+    right: 28px;
+    top: 5px;
+    position: absolute;
+    font-family: "Raleway";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 700px) {
+  .numbers {
+    grid-template: 1fr 5vw 1fr/1fr minmax(auto, 160px) 1fr minmax(auto, 160px) 1fr;
+  }
+  .numbers__one {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .numbers__two {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .numbers__three {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .numbers__four {
+    grid-column: 4;
+    grid-row: 3;
+  }
+  .numbers__num {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .numbers__info {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  .numbers__num--one::after {
+    right: -15px;
+    top: 5px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .numbers__num--two::after {
+    right: 40px;
+    top: 5px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .numbers__num--three::after {
+    right: 33px;
+    top: 5px;
+    position: absolute;
+    font-family: "Raleway";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .numbers__procent::after {
+    right: 28px;
+    top: 5px;
+    position: absolute;
+    font-family: "Raleway";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

@@ -216,6 +216,9 @@ burgerOff.onclick = () => {
 
 
 
+
+
+
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 46.4310976, lng: 30.7147007 },
@@ -260,7 +263,6 @@ function initMap() {
     title: 'Местоположение маркера'
   });
 }
-
 
 
 

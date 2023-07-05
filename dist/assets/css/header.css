@@ -4,6 +4,30 @@ header {
 }
 
 select {
+    color: #000;
+    font-size: 13px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.26px;
+}
+
+select:focus {
+    outline: none;
+}
+
+select option {
+    color: #000;
+    font-size: 13px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.26px;
+}
+
+select {
     border: none;
     appearance: none;
     -webkit-appearance: none;
@@ -589,29 +613,37 @@ select:focus {
 
     .link-row__exit-burger {
         display: block;
-        position: relative;
         position: absolute;
+        cursor: pointer;
         top: 28px;
         right: 10px;
         z-index: 5;
+        width: 30px;
+        height: 16px;
     }
 
-    .link-row__exit-burger::after, .link-row__exit-burger::before {
+    .link-row__exit-burger span {
+        position: relative;
+    }
+
+    .link-row__exit-burger span::after, .link-row__exit-burger span::before {
         content: "";
         position: absolute;
-        right: 0px;
+        left: 10px;
         top: 0px;
         background: #1A2F3F;
         width: 20px;
         height: 2px;
     }
 
-    .link-row__exit-burger::after {
-        rotate: 45deg;
+    .link-row__exit-burger span::after {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
     }
 
-    .link-row__exit-burger::before {
-        rotate: -45deg;
+    .link-row__exit-burger span::before {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
     }
 
     .link-row__link {
@@ -740,14 +772,24 @@ select:focus {
     .adaptive-header__burger {
         grid-row: 1;
         grid-column: 2;
+        cursor: pointer;
+        margin: 0 0 6px 0;
+        height: 30px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .adaptive-header__burger span {
+        display: block;
         height: 2.62px;
         width: 19px;
         background: #000000;
         position: relative;
-        margin: 0 0 6px 0;
     }
 
-    .adaptive-header__burger::after, .adaptive-header__burger::before {
+    .adaptive-header__burger span::after, .adaptive-header__burger span::before {
         content: "";
         position: absolute;
         height: 2.62px;
@@ -755,12 +797,12 @@ select:focus {
         left: 0;
     }
 
-    .adaptive-header__burger::after {
+    .adaptive-header__burger span::after {
         top: 7px;
         width: 13px;
     }
 
-    .adaptive-header__burger::before {
+    .adaptive-header__burger span::before {
         bottom: 7px;
         width: 19px;
     }

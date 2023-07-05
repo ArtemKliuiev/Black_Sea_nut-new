@@ -2,12 +2,14 @@ html {
     scroll-behavior: smooth;
     overflow: hidden;
     overflow-y: auto;
+    font-display: swap;
 }
 
 body {
     color: #1A2F3F;
     overflow: hidden;
     overflow-y: auto;
+    font-display: swap;
 }
 
 a {

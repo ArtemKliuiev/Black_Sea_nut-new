@@ -75,7 +75,7 @@
 .product__slider-right {
     position: absolute;
     z-index: 2;
-    top: 143px;
+    top: 144px;
     right: 13px;
     font-size: 20px;
     cursor: pointer;
@@ -298,7 +298,7 @@
 }
 
 .product:hover {
-    border: 1.5px solid #93B474;
+    outline: 1.5px solid #93B474;
 }
 
 .product:hover .product__hover {

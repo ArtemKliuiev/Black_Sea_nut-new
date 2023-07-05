@@ -608,11 +608,11 @@ select {
         }
   
         &::after {
-          rotate: 45deg;
+          transform: rotate(45deg);
         }
   
         &::before {
-          rotate: -45deg;
+          transform: rotate(-45deg);
         }
       }
     }
